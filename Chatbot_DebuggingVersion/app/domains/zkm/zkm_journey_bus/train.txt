@@ -1,0 +1,431 @@
+Anfahrt Bahn
+Anfahrt Bus
+Anfahrt mit den öffentlichen 
+Anfahrt Öffentliche Verkehrsmittel
+Anfahrt Öffis
+Anfahrt S-Bahn
+Anfahrt sbahn
+Anfahrt Straßenbahn
+Anfahrtsweg Bahn
+Anfahrtsweg Bus
+Anfahrtsweg Öffentliche Verkehrsmittel
+Anfahrtsweg Öffis
+Anfahrtsweg S-Bahn
+Anfahrtsweg sbahn
+Anfahrtsweg Straßenbahn
+Gibt es bei euch eine bus Haltestelle? 
+Gibt es bei euch eine Haltestelle? 
+Gibt es bei euch eine sbahn Haltestelle? 
+Gibt es bei euch eine Straßenbahn Haltestelle? 
+Gibt es beim ZKM eine Haltestelle? 
+Gibt es beim Zkm eine Haltestelle für die Sbahn?
+Gibt es beim Zkm eine Straßenbahn haltestelle?
+Gibt's bei euch eine bus haltestelle? 
+Gibt's bei euch eine Haltestelle? 
+Gibt's bei euch eine sbahn haltestelle? 
+Gibt's bei euch eine Straßenbahn haltestelle? 
+Gibt's beim ZKM eine haltestelle für den bus? 
+Gibt's beim ZKM eine Haltestelle? 
+Gibt's beim ZKM eine sbahn haltestelle? 
+Gibt's beim ZKM eine Straßenbahn haltestelle? 
+habt ihr eine bus haltestelle?
+Habt ihr eine Haltestelle?
+Habt ihr eine s-bahn haltestelle?
+Habt ihr eine straßenbahn haltestelle?
+Hinweg Bahn
+Hinfahrt Bus
+Hinfahrt öffentliche 
+Hinfahrt Öffentliche Verkehrsmittel
+Hinfahrt öffis
+Hinfahrt S-Bahn
+Hinfahrt sbahn
+Hinfahrt Straßenbahn
+Ist eine Bahnhaltestelle in der Nähe? 
+Ist eine Bushaltestelle in der Nähe? 
+Mit welchen öffentlichen  kann ich das ZKM schnellstmöglich erreichen?
+Mit welchen öffentlichen Verkehrsmitteln kann ich das ZKM am besten erreichen?
+Mit welchen öffentlichen Verkehrsmitteln kann ich das ZKM am schnellsten erreichen?
+Mit welchen öffis  kann ich das ZKM am schnellsten erreichen?
+Muss ich umsteigen wenn ich zum zkm will? 
+Was ist der beste Weg mit dem bus zu euch?
+Was ist der beste Weg mit den Öffentlichen Verkehrsmitteln zu euch?
+Wie ist der beste Weg mit öffentlichen zu euch?
+Was ist der beste Weg mit den öffis zu euch?
+Was ist der beste Weg mit der sbahn zu euch?
+Was ist der beste Weg mit der straßenbahn zu euch?
+Was ist der schnellste Weg mit dem bus zu euch?
+Was ist der schnellste Weg mit den Öffentlichen Verkehrsmitteln zu euch?
+Was ist der schnellste Weg mit den öffentlichen zu euch?
+Was ist der schnellste Weg mit den öffis zu euch?
+Was ist der schnellste Weg mit der sbahn zu euch?
+Was ist der schnellste Weg mit der straßenbahn zu euch?
+Welche Bahn fährt dahin? 
+Welche Bahn fährt zum ZKM? 
+Welche Bahn kann ich zum ZKM nehmen?
+Welche Bahn muss ich nehmen um zum ZKM zu kommen?
+Welche Bahn muss ich zum zkm nehmen?
+Welche Bahn nimmt man am besten ins ZKM? 
+Welche Bahn soll ich nehmen? 
+Welche bahn sollte ich nehmen? 
+Welche straßenbahn sollte ich nehmen? 
+Welchen Bus kann ich nehmen um zum ZKM zu kommen?
+Welchen Bus kann ich zum zkm nehmen?
+Welchen Bus muss ich nehmen um zum ZKM zu kommen?
+Welchen Bus muss ich zum zkm nehmen?
+Welchen Bus nehme ich am besten ins ZKM? 
+Welchen Bus soll ich nehmen? 
+Welchen Bus sollte ich nehmen? 
+Welcher Bus fährt dahin? 
+Welcher Bus fährt zum ZKM? 
+Wie erreiche ich das zkm am besten mit  dem bus?
+Wie erreiche ich das zkm am besten mit  den öffentlichen?
+Wie erreiche ich das zkm am besten mit  öffentlichen verkehresmitteln?
+Wie erreiche ich das zkm am besten mit den öffis?
+Wie erreiche ich das zkm am besten mit der bahn?
+Wie erreiche ich das zkm am besten mit der sbahn?
+Wie erreiche ich das zkm am besten mit der straßenbahn?
+Wie erreiche ich das zkm am schnellsten mit  dem bus?
+Wie erreiche ich das zkm am schnellsten mit  der bahn?
+Wie erreiche ich das zkm schnellstmöglich  mit  der sbahn?
+Wie erreiche ich das zkm am schnellsten mit  der straßenbahn?
+Wie erreiche ich das zkm am schnellsten mit  öffentlichen verkehrsmitteln?
+Wie erreiche ich das zkm am schnellsten mit den öffentlichen?
+Wie erreiche ich das zkm am schnellsten mit den öffis?
+Wie erreiche ich euch am besten mit  den öffentlichen?
+Wie erreiche ich euch am besten mit  öffentlichen verkehresmitteln?
+Wie erreiche ich euch am besten mit den öffis?
+Wie erreiche ich euch am schnellsten mit  öffentlichen verkehrsmitteln?
+Wie erreiche ich euch am schnellsten mit den öffentlichen?
+Wie erreiche ich euch am schnellsten mit den öffis?
+Wie kann ich das zkm am besten mit den öffentlichen erreichen?
+Wie kann ich das zkm am besten mit den öffentlichen verkehrsmitteln erreichen?
+Wie kann ich das zkm am besten mit öffis erreichen?
+Wie kann ich das zkm am schnellsten mit den öffentlichen erreichen?
+Wie kann ich das zkm am schnellsten mit den öffentlichen verkehrsmitteln erreichen?
+Wie kann ich das zkm am schnellsten mit den öffis erreichen?
+Wie kann ich mit  dem Bus von mir zu euch fahren?
+Wie kann ich mit der Bahn von mir zu euch fahren?
+Wie komme ich mit dem Bus  zu euch?
+Wie komme ich mit der Bahn zu euch?
+Wie komme ich vom Bahnhof zum ZKM? 
+Wie kommt man mit dem bus zu euch?
+Wie kommt man mit dem bus zum zkm?
+Wie kommt man mit den  öffis zum zkm?
+Wie kommt man mit den öffentlichen verkehrsmitteln zu euch?
+Wie kommt man mit den öffentlichen verkehrsmitteln zum zkm?
+Wie kommt man mit den öffentlichen zu euch?
+Wie kommt man mit den öffentlichen zum zkm?
+Wie kommt man mit den öffis zu euch?
+Wie kommt man mit der bahn  zu euch?
+Wie kommt man mit der bahn  zum zkm?
+Wie kommt man mit der sbahn  zum zkm?
+Wie kommt man mit der sbahn zu euch?
+Wie kommt man mit der straßenbahn  zum zkm?
+Wie kommt man mit der straßenbahn zu euch?
+Wie weit ist es vom Hauptbahnhof zum ZKM? 
+zum zkm kommen mit bahn
+Zum zkm kommen bus
+zum zkm kommen öffentliche
+zum zkm kommen öffentliche verkehrsmittel
+zum zkm kommen öffis
+zum zkm kommen mit der  s-bahn
+zum zkm kommen sbahn
+zum zkm kommen straßenbahn
+Mit welchem Bus kann ich das ZKM am schnellsten erreichen?
+Mit welcher Bahn kann ich das ZKM am besten erreichen?
+Mit welchem Bus kann ich das ZKM am schnellsten erreichen?
+Mit welcher Bahn kann ich das ZKM am schnellsten erreichen?
+Mit welchem sbahn kann ich das ZKM am schnellsten erreichen?
+Mit welcher straßenbahn kann ich das ZKM am besten erreichen?
+Mit welchem Straßenbahn kann ich das ZKM am schnellsten erreichen?
+Mit welcher sbahn kann ich das ZKM am schnellsten erreichen?
+Mit welchem Bus erreiche ich das ZKM am schnellsten?
+Mit welchem Bus erreiche ich das ZKM am einfachsten?
+Mit welcher Bahn erreiche ich das ZKM am schnellsten?
+Mit welcher Bahn erreiche ich das ZKM am besten?
+Mit welcher sbahn erreiche ich das ZKM am schnellsten?
+Mit welcher sbahn erreiche ich das ZKM am besten?
+Mit welcher straßenbahn erreiche ich das ZKM am schnellsten?
+Mit welcher straßenbahn erreiche ich das ZKM am besten?
+Naafhrt Bahn
+Afnahtr Bus
+Nafahtr mit den öffentlichen 
+Anfahrt Öffentliche Verkhermstietl
+Anfhatr Öffis
+Anfahrt S-Banh
+Anfahrt sbanh
+Afafhrt Straßenbahn
+Nanahrtwseg Bahn
+Naafhrstweg Bus
+Anfahrtsweg Öffentliche Vekrkhsmsittel
+Nafarhtwseg Öffis
+Anfahrtsweg -sBahn
+Anfahrtsweg sabhn
+Anfharstewg Straßenbahn
+Gibt es bei euch eine bus Hlaetstell?e 
+Gibt es bei uech eine Haltestelle? 
+Gibt es bei euch iene sbahn Haltestleele 
+Gibt es bie euch iene Straßenbahn Haltestelle? 
+Gibt es ebim ZKM enie Haltestelle? 
+Gibt es beim Kzm eine Haltestelle für die Sbahn?
+Gibt es beim Zkm enie Straßenbahn ahletstell?e
+Gibts' bei euch eine ubs haltestelle? 
+Gitb's bei euch eine Haltestelle? 
+Gibt's ebi euch eine sbahn hlaetsetlle? 
+Gibts' bei euch eine Straeßbnanh haltestelle? 
+Gibt's beim ZKM iene haltestelle für dne bus? 
+Gibt's ebim ZKM eine Haltestelle? 
+Gibt's beim KZM eine sbahn haltestelle? 
+Gibt's beim ZKM eien Straßenahnh haltestelle? 
+habt irh eine bus haltestelle?
+Habt irh eine Haltestelle?
+Habt ihr eine s-abhn haltestelle?
+Habt ihr eine straßenbahn haltetetll?e
+Hiwneg Bahn
+Hinfartr Bus
+Hinfahrt öffentliche 
+Hinfahrt Öffetnlihce Verkehrsmittel
+Hinfahrt öffsi
+Ihifahrt S-Bahn
+Hifnahtr sbahn
+Hifnhart Straßenbahn
+Sit eine Bahnhaltestelle in edr Nähe? 
+Ist eine Bushlaeseetlle in dre Nähe? 
+Mti wlelhen öffentlichen  kann ich das ZKM chcnelsltmölgich erreichen?
+Imt welchen öffentlichen Verkehrsmitteln aknn ich ads ZKM am besten erreichen?
+Mit welchen öffentlichen Verkehrsmitteln kann ich das ZMK am cshenllsetn erreichen?
+Mit welchen föfis  kann ich das ZMK am cscenllsten erreichen?
+Muss ich umsteigen ewnn ich zmu zkm will? 
+Was ist der beste Weg imt dme bus zu ecuh?
+Was ist der beste Weg imt den Fffenltichen Verkehrsmitteln zu uech?
+Wie ist der beste Weg imt öffentlichen zu euch?
+Was ist der beste Wge mit edn öffis zu euch?
+Was sit der beset Weg mit der sbahn zu euch?
+Was ist der beste Ewg mti der straßenbahn zu euch?
+Aws ist dre schnellste Weg mit dem bus zu euch?
+Was ist edr schnellste Weg imt den Fffenltichen Verkehrsmitteln zu euch?
+Was its der schnellste Weg mit edn öffentlichen zu uech?
+Was ist der schnellste Wge mit edn öffis zu euch?
+Was its der schnellste Wge mit der sbahn zu euch?
+Was its der schnellste Weg mit edr strßanenahn zu euch?
+Welche Bahn fähtr dahin? 
+Welche Bahn fähtr zum ZKM? 
+Welche Abhn kann ich zum ZKM nehem?n
+Welche Bhan muss ich nehmne um zum ZKM zu kommen?
+Ewlche Bahn umss ich zum zkm nehmen?
+Weclhe Bahn nimmt man am ebsten ins ZKM? 
+Welche Banh soll ich nehmen? 
+Welche bahn slolte ich nehmen? 
+Welche strßanebanh sollte ich nehmen? 
+Welchen Bus kann ich nehemn um zum KZM zu kommen?
+Welchen Ubs knan ich zum zkm nehmen?
+Welchen Bus muss cih nehmen um zum ZKM zu okmme?n
+Welchen Ubs muss ich zum zkm nehmnen
+Weclehn Bus nehme ich am besetn ins ZKM? 
+Welchen Bus soll ich nehmen? 
+Welchen Bus sollte ich nehmen? 
+Wechcer Bus fährt dahin? 
+Welcher Ubs fährt zum ZKM? 
+Wei erreiche ich ads zkm am besten mit  dem bu?s
+Wei erreiche ich das zkm am besten imt  dne öffentlichen?
+Wie erercihe ich das kzm am besten mti  öffentlichen verkehresmitteln?
+Wie erreiche ich das zkm am besten mit dne föfis?
+Wie erreiche ich ads zkm am besten imt der bhan?
+Iwe rerecihe ich das zkm am besten mit edr sbahn?
+Wie erreiche ich ads kzm am besten mit der straßenbahn?
+Wie erreiche ich das zkm am schnellsten imt  dem bsu?
+Wie erercihe ihc das zkm am schnellsten mit  der abhn?
+Wie erreiche ich dsa zkm schenllsmtgölich  imt  der sbahn?
+Wie erreiche ihc das zkm am schnellsten mit  dre starßenabh?n
+Wie erreiche ihc dsa zkm am schnellsten mit  öffenltcihne verkehrsmitteln?
+Wie erreiche ich das zkm am schnellsten mit dne föfentlichne?
+Wei erreiche cih das zkm am schnellsten mit den öffis?
+Wie rereihce ich euch am besten mit  dne föfenltiche?n
+Wie erreiche ich euch am betsen mit  öffentlichen vrerehresimttle?n
+Wie erreiche ich euch am besten mti dne öffis?
+Wie erreiche ich euch am schnellsten imt  öffentlichen vekrhesrimtteln?
+Wie erreiche ihc euch am schnellsten mti den öffentlichen?
+Wie erreiche ich euch am schnellsten mit den föfis?
+Wie kann ihc das zkm am besten mti den öffentlichen erreichen?
+Wei kann ich das zkm am besten mit den öffentlichen verkehrsmitteln erreciene?
+Wie kann ihc das zkm am besten mit öffis erreihcne?
+Wie kann ich das zkm am schnellsten mit dne öffentlichen rrreiche?n
+Wie kann ich dsa zmk am schnellsten mit den öffentlichen verkehrsmitteln ererihcen?
+Wei kann ich das zkm am schnellsten mit den öffis erreiceh?n
+Wie kann ich mti  dem Ubs von imr zu euch fahren?
+Wie knan ihc mit der Bahn von mir zu euch fahren?
+Wie komme ich mit dem Bsu  zu euch?
+Wie komme ich imt der Abhn zu euch?
+Wie komme ich ovm Bahnhof uzm ZKM? 
+Wie kommt amn mit dem bus zu euhc?
+Wie kmomt amn mit dem bus zum zkm?
+Wie kommt man mti den  öffis uzm zkm?
+Wie okmmt man mit den öffentlichen verkehrsmitteln zu euc?h
+Wie kommt man mit den öffentlichen verkehrsmitteln zmu zk?m
+Wie kommt man mit den föfentilcehn zu uech?
+Wie kommt man mit den öffentlichen zmu zmk?
+Wie kommt mna mit den öffis zu uech?
+Wie kommt man mit der banh  zu euch?
+Iwe kommt man mit dre bahn  zum zkm?
+Wie kommt mna mit der sbahn  zum zmk?
+Wie kommt amn mit der sbanh zu euch?
+Iwe kommt man mit der straßenbahn  zmu zkm?
+Wei kommt man mit dre straßenbahn zu euch?
+Wei ewit ist es vom Hauptbahnhof zum ZKM? 
+uzm zkm kommen mit bahn
+Zum kzm kommen bus
+zum zkm komemn öffentliche
+zum zkm kommen öffentliche evrkhersmtttel
+zum zkm kommen föfis
+zum zkm kommen mti der  s-bahn
+zum zkm kommen sbanh
+zum zkm kommen tsrßaßnbahn
+Nafahtr Bahn
+Nafahtr Bus
+Anfahrt mit dne öffentlichen 
+Nafarht Öffentliche Verkehrsmittel
+Anahart Öffis
+Anfhatr S-Bahn
+Anfahrt bsahn
+Anfahrt Srtaßenabnh
+Afnahtrsewg Bahn
+Anfahrtsweg Ubs
+Anfahrtsweg Öffentliche Evekhesrmittel
+Anfhartwseg Öffis
+Nafahtrswge S-Bahn
+Anfahrtsweg sbhan
+Anfarhtwsge Straßenbahn
+Igbt es bei ecuh eine bus Haltestelle? 
+Gitb es bei euhc eine Haltestelle? 
+Gibt es bie euch eine sbanh Haltestelle? 
+Gibt es bei euhc enie Straßenbahn Haltestelle? 
+Gbit es beim ZKM eine Haltestelle? 
+Gbit es beim Zkm eine Haltestelle für die Sbahn?
+Igbt es beim Zkm eine Straßenbahn ahletstelle?
+Gibt's bei uech eine bus hatlsetell?e 
+Gitb's bei euch eine Haltestelle? 
+Gitb's bei uech eine sbahn haltestelle? 
+Gitb's bei euch eine Straßenbahn haltestelle? 
+Gitb's beim ZKM eine haltestelle frü den bus? 
+Gibt's ebim ZKM eine Haltestelle? 
+Gibt's beim ZKM eien sbahn hlaetsetlle? 
+Gibt's beim ZMK enie Straßenbahn haltestelle? 
+ahbt ihr eine bus haltestelle?
+Habt ihr eien Haltestelle?
+Habt ihr enie s-bahn haltestelle?
+Habt ihr eine straeßnbanh haltestelle?
+Hniweg Bahn
+Ihnfhart Bus
+Ihnafhrt öffentliche 
+Hinfahrt Öffentliche Verkhesrstitel
+Hinafhtr öffis
+Hinfahrt S-Bhan
+Hinfahrt bsahn
+Hinfahrt Strßanbnahn
+Sit eine Bahnhaltestelle in edr Nähe? 
+Ist eine Bshsalteselele in der Näeh? 
+Mit welchen öffentlciene  kann ich das KZM schnlelsmömglcih erreichen?
+Mit welchen öffentlichen Verkehrsmitteln kann ich ads ZKM am bestne erreihcne?
+Mit weclhen öfefntlihehn Verkehrsmitteln kann ich das ZMK am schnellsten erreichen?
+Mit welchen öffis  knan ich ads ZKM am schnellsten erreichen?
+Muss ich umsteigen wenn ich zum zkm iwll? 
+Was sit der beset Weg mit dem bus zu euc?h
+Wsa ist dre beste Weg mit den Öffentlichen Verkehrsimtetnl zu euch?
+Wie its der beste Weg mit öffentlichen zu ecuh?
+Was ist edr beste Weg mit den föfis zu ecuh?
+Aws ist der beste Weg mit edr sbahn zu euhc?
+Wsa ist der beste Weg mti edr straßenbahn zu euch?
+Was ist der schenlltse Weg mit dem bus zu euc?h
+Was ist der schnellste Weg mti den Öffentlichen Evrkehrmstitlen zu euch?
+Was ist edr schnellste Wge mit den öffentlichen zu euch?
+Was ist der schnellste Weg imt edn öffis zu euch?
+Was sit der schnellste Weg mit dre sbahn zu euch?
+Aws ist der scnhelslet Wge mit der straßenbahn zu euch?
+Welche Banh fährt dahin? 
+Welche Abhn fährt zum ZKM? 
+Welche Bahn kann ich zmu ZMK nehmen?
+Welche Bahn muss ich nehemn um zum ZKM zu okmemn?
+Welche Bahn umss ich zmu zkm nehmen?
+Welche Banh nimmt man am besten ins ZKM? 
+Welche Banh soll ich nehmen? 
+Welche banh sollte ich nehmen? 
+Welche starßenabhn sollte ich nehmen? 
+Welchen Bus kann cih nehmen um zum ZKM zu kmome?n
+Ewclhen Bus kann ich zmu zkm nehmen?
+Weclhen Bus muss ich nehmen um zum ZKM zu kommen?
+Welchen Bus muss ich uzm zmk nehmen?
+Welchen Bus nehme ich am besten ins ZMK? 
+Welchen Bus soll ihc nehmen? 
+Welchen Bus sollte ich nehmen? 
+Wlecehr Bus fährt dahin? 
+Ewclher Bus fährt zum ZKM? 
+Wie erreiche ich dsa zkm am besten mti  dem bus?
+Wie reeriche ich das zkm am besten mit  edn öffnetlcihe?n
+Wie erreiche cih das zkm am bestne mit  öfffntlicehn verkehresmitteln?
+Wie rereiche ihc das zkm am ebsten mit den öffis?
+Iwe erreiche ich das kzm am besten mit der bahn?
+Wie erreiche ich dsa zkm am besten mit dre sbahn?
+Wie erreiche ich das kzm am besten imt der strßaenbha?n
+Wei erreiche ich das zkm am schnellsten imt  dem bu?s
+Wie errecice ich das zmk am schnellsten mit  der bahn?
+Wie erreiche ich ads zmk schnellstmöglich  mit  edr sbahn?
+Iwe erreiche ihc das zkm am cshnellstne mit  der straßenbahn?
+Wie erreiche ich das zkm am schnellsten mti  öffentlichen verkehsrimttle?n
+Wie erreiche ich dsa zkm am schnellsten mit edn öffentlichen?
+Wie erreiche cih ads zkm am schnellsten mit den föfis?
+Wei erericeh ich euch am besten mit  dne öffentlichen?
+Wie erreiche ihc euch am besten imt  öffentlichen verkehresmitteln?
+Wie erreiche ich ecuh am besten mti den öffis?
+Wei erreiche ich euch am shcnelltetn imt  öffentlichen verkehrsmitteln?
+Iwe erreiche ich euch am schnelstsne mit den öffentlichen?
+Wie erreiche ich euhc am schnellsten mit den öffsi?
+Wie kann ich dsa kzm am besten imt den öffentlichen erreichen?
+Wie kann ich das zmk am betsen mit den öffentlichen evkrhersmitteln erreichen?
+Wie kann ich ads zmk am besetn mit öffis erreichen?
+Wie aknn ich ads zkm am schenlltsen mit den öffentlichen erreichen?
+Wie kann ich das zkm am schnellsten imt edn öffentlichen evkrhersmitteln erreichen?
+Wie kann ich das zmk am schnellsten imt den öfifs erreichen?
+Wie kann ich mit  edm Bus von mir zu euch fahren?
+Wie kann ich mti dre Abhn von mir zu euch fahren?
+Wie komme ihc mit dem Bsu  zu euch?
+Wei okmme ich mit der Bahn zu euch?
+Wie komem ich vom Bahnhof zum ZKM? 
+Wie kommt man mit dem bsu zu euch?
+Iwe kommt man mit edm bus zum zkm?
+Wie okmmt man mit den  öffis zum zkm?
+Iwe kommt man mit den öffentlichen verkehrsmitteln zu euc?h
+Wie kommt amn mit den öffentlichen verkehrsmitteln zum kzm?
+Wie kommt man mti den öffentlichen zu euch?
+Wie kommt amn mit den öffentlichen zum zk?m
+Wie kommt man imt edn öffis zu euch?
+Wie kommt man mit edr bahn  zu euch?
+Iwe kommt man mit der bahn  zum kzm?
+Wie kommt man mit der sbahn  uzm zkm?
+Wie kommt man mit edr sbahn zu euch?
+Wie kommt man mti der straßenbahn  zmu zkm?
+Wie okmmt man mit der straßenbahn zu uech?
+Wie weit ist es vom Hauptbahnhof zmu ZK?m 
+zum zkm komemn mit bahn
+Zum kzm kommen bus
+zum zkm komemn öffentliche
+zum zkm kommen öffentliche evrekermsittel
+uzm zkm kommen öffis
+uzm zkm kommen mit der  s-bahn
+zum zkm kmomen sbahn
+zum zkm okmmen straßenbahn
+Mit wlecehm Bus kann ich das ZMK am schnellsten erreichen?
+Imt welcher Banh kann ihc das ZKM am besten erreichen?
+Mit welchem Bus kann ihc das KZM am schnleslten erreichen?
+Imt welcher Bahn aknn ihc das ZKM am schnellsten erreichen?
+Mit welchem sbahn aknn cih ads ZKM am schnellsten erreichen?
+Mti welcher straßenbahn kann ich ads ZMK am besten erreichen?
+Mit welchem Straßenbahn kann ich das ZKM am schnellsten erreiceh?n
+Mit welcher bsahn kann ich das KZM am scheleslten erreichen?
+Mit ewclhem Bus erreiche ich ads ZKM am schnellsten?
+Mit weclhme Bus erreiche ich das ZMK am einfachsten?
+Mit welcher Banh erreiche ich das ZKM am schnellsten?
+Mti weclher Bahn erreiche ich das ZKM am besten?
+Mit welcher sbahn erreiche ich das ZKM am schnelltet?n
+Mit wlechre sbahn erreiche ihc das ZKM am besten?
+Mit welcher straßenbahn erreiche ich dsa ZKM am cshnelsletn?
+Mit welcher straßenbahn errieihe ich das ZKM am besten?

@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>ZKM Chat Bot</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- style for thumbs up/down -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<!-- cursor is set in chat line after loading the HTML script -->
+
+<body onLoad="this.document.getElementById('input_chatbot').focus();">
+
+  <!-- header with ZKM logo and support mode switch -->
+  <div class="headerBar">
+    <button id="home">Home</button>
+    <div class="zkm_bild"><img src="{{ url_for('static',filename='zkm_logo.png') }}"></div>
+    <p class="title">ZKM Chat Bot</p>
+    <!-- Rounded switch -->
+    <p class="develop">Supportmodus?</p>
+    <label class="switch">
+      <input type="checkbox" id="toggle_switch">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- container which contains the chat -->
+  <div class="chatbox">
+
+    <div class="chatlogs">
+
+      <!-- bot picture and initial bot message -->
+      <div class="chat friend">
+        <div class="user-photo"><img src="{{ url_for('static',filename='bot.png') }}"></div>
+        <p class="chat-message" id="output_chatbot">Hallo! Ich bin dein persönlicher ZKM Chatbot. Ich kann dir Fragen
+          zum ZKM allgemein und zu den Ausstellungen und Künstlern beantworten. Über den Home-Button oben links kannst
+          du jederzeit zur nachfolgenden Übersicht zurückkehren.</p>
+      </div>
+
+      <!-- hidden gif to simulate bot typing -->
+      <div class="chat friend" id="loadingGif" style="display: none;">
+        <div class="user-photo"><img src="{{ url_for('static',filename='bot.png') }}"></div>
+        <div class="gif"><img src="{{ url_for('static',filename='loading.gif') }}"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- text field for the user -->
+  <div class="chat-form">
+    <div id="inputDiv">
+      <textarea class="input" id="input_chatbot" placeholder="Nachricht eingeben..." rows="1"
+        data-min-rows='1'></textarea>
+    </div>
+    <button id="senden">Senden</button>
+  </div>
+
+  <!-- javascript for program logic -->
+  <script type="text/javascript">
+
+    //  Variables to be used for storing the last message sent and received
+    var lastSentMessage = "";
+    //var lastRecievedMessage = 1;
+
+    // time delay to simulate bot typing
+    var DEFAULT_TIME_DELAY = 2000;
+
+    // Variable for the chatlogs div
+    var $chatlogs = $('.chatlogs');
+
+    // number of buttons for developing mode to identify multiple thumbs up/down in one chat
+    var number_buttons = 0;
+    // to call current exhibitions several times
+    var number_ausstellungen = 0;
+    // to call current artists several times
+    var number_kuenstler = 0;
+    // to tranform output which contains links several times
+    var number_links = 0;
+
+    var number_tabelle = 0;
+
+    // function to set the focus on the text input field when the toggle switch is triggered
+    document.getElementById("toggle_switch").addEventListener("click", function () {
+      $('#input_chatbot').focus();
+    });
+
+    // function which is called when the home button is clicked
+    document.getElementById("home").addEventListener("click", function () {
+      vorschlag_buttons();
+    });
+
+    //----------------------User Sends Message Methods--------------------------------//
+    // Method which executes once the enter key on the keyboard is pressed
+    // Primary function sends the text which the user typed
+    $('document').ready(function () {
+      $("#input_chatbot").keypress(function (event) {
+
+        // If the enter key is pressed
+        if (event.which === 13) {
+
+          // Ignore the default function of the enter key (Don't go to a new line)
+          event.preventDefault();
+
+          // Call the method for sending a message, pass in the text from the user
+          send(this.value);
+
+          // reset the size of the text area
+          $(".input").attr("rows", "1");
+
+          // Clear the text area
+          this.value = "";
+
+        }
+      });
+    });
+
+    // set the picture on the home button
+    home_button = document.getElementById("home");
+    home_button.innerHTML = '<img src = "{{ url_for('static',filename='home_2.png') }}" width = 30px/>';
+
+    // call the recommending function
+    vorschlag_buttons();
+
+    // recommending function to guide the user
+    function vorschlag_buttons() {
+
+      $chatlogs.append(
+        $('<div/>', { 'class': 'chat friend' }).append(
+          $('<div/>', { 'class': 'user-photo' }),
+          $('<p/>', { 'class': 'chat-message', 'text': "Wozu willst du mehr erfahren? Klicke bitte auf einen Button." })));
+
+      // selection of possible topics the bot can handle
+      $chatlogs.append(
+        $('<div/>', { 'class': 'chat friend' }).append(
+          $('<button/>', { 'class': 'intent_button', 'text': "Öffnungszeiten", 'id': "zeiten", 'onclick': 'zeiten()' }),
+          $('<button/>', { 'class': 'intent_button', 'text': "Anfahrt", 'id': "anfahrt", 'onclick': 'anfahrt()' }),
+          $('<button/>', { 'class': 'intent_button', 'text': "Künstler", 'id': "kuenstler", 'onclick': 'kuenstler()' }),
+          $('<button/>', { 'class': 'intent_button', 'text': "Hintergrund des ZKM", 'id': "hintergrund", 'onclick': 'hintergrund()' }),
+          $('<button/>', { 'class': 'intent_button', 'text': "Ausstellungen", 'id': "ausstellungen", 'onclick': 'ausstellungen()' }),
+        ));
+
+      focus_input();
+
+    }
+
+    // send message to the user for the topic "Öffnungszeiten"
+    function zeiten() {
+      $chatlogs.append(
+        $('<div/>', { 'class': 'chat friend' }).append(
+          $('<div/>', { 'class': 'user-photo' }),
+          $('<p/>', { 'class': 'chat-message', 'text': "Was möchtest du zu den Öffnungszeiten wissen?" })));
+
+      focus_input();
+    }
+
+    // send message to the user for the topic "Anfahrt"
+    function anfahrt() {
+      $chatlogs.append(
+        $('<div/>', { 'class': 'chat friend' }).append(
+          $('<div/>', { 'class': 'user-photo' }),
+          $('<p/>', { 'class': 'chat-message', 'text': "Ich kann dir Auskunft über die Anfahrt mit dem Auto oder der Bahn geben. Welche Frage hast du?" })));
+
+      focus_input();
+    }
+
+    // send message to the user for the topic "Hintergrund des ZKM"
+    function hintergrund() {
+      $chatlogs.append(
+        $('<div/>', { 'class': 'chat friend' }).append(
+          $('<div/>', { 'class': 'user-photo' }),
+          $('<p/>', { 'class': 'chat-message', 'text': "Welche Fragen hast du zum ZKM?" })));
+
+      focus_input();
+    }
+
+    // send message to the user for the topic "Künstler"
+    function kuenstler() {
+      number_kuenstler = number_kuenstler + 1;
+      // send request to the backend to receive a list of artists
+      $.getJSON('/get_artists', {
+
+      }, function (data) {
+
+        // table of 10 artists at the ZKM
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            '<div class="chat-message"> Diese zehn Künstler sind beispielsweise aktuell in unseren Ausstellungen zu sehen: <table id="current_artists' + number_kuenstler + '"> </table> </div>'));
+
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<p/>', { 'class': 'chat-message', 'text': "Wir haben Informationen über das Geburtsjahr und Alter, den Geburtsort und über den allgemeinen Werdegang des Künstlers. Was ist deine Frage?" })));
+
+        // variable for artist table
+        var table_artists = document.getElementById("current_artists" + number_kuenstler);
+
+        // fill the table dynamically depending on the number of current artists
+        for (i = 1; i <= data.artists.length; i++) {
+          var row = table_artists.insertRow(i - 1);
+          var cell = row.insertCell(0);
+          cell.innerHTML = data.artists[i - 1];
+        }
+
+        focus_input();
+
+      });
+
+    }
+
+    // send message to the user for the topic "Ausstellungen"
+    function ausstellungen() {
+      number_ausstellungen = number_ausstellungen + 1;
+      // send request to the backend to receive a list of exhibitions
+      $.getJSON('/get_exhibitions', {
+
+      }, function (data) {
+
+        // table of 10 exhibitions at the ZKM
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            '<div class="chat-message"> Aktuell sind diese Ausstellungen im ZKM zu sehen: <table id="current_exhibitions' + number_ausstellungen + '"> </table> </div>'));
+
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<p/>', { 'class': 'chat-message', 'text': "Wir haben Informationen über den Zeitraum, die zugehörigen Events, den Inhalt, die ausgestellten Künstler und eine Kurzbeschreibung. Was ist deine Frage?" })));
+
+        // variable for exhibition table
+        var table_exhibitions = document.getElementById("current_exhibitions" + number_ausstellungen);
+
+        // fill the table dynamically depending on the number of current exhibitions
+        for (i = 1; i <= data.exhibitions.length; i++) {
+          var row = table_exhibitions.insertRow(i - 1);
+          var cell = row.insertCell(0);
+          cell.innerHTML = data.exhibitions[i - 1];
+        }
+
+        focus_input();
+
+      });
+
+    }
+
+    // send message to the user if the user wants to know the current exhibtions by a message
+    function ausstellungen_2() {
+      number_ausstellungen = number_ausstellungen + 1;
+      // send request to the backend to receive a list of exhibitions
+      $.getJSON('/get_exhibitions', {
+
+      }, function (data) {
+
+        // table of 10 exhibitions at the ZKM
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            '<div class="chat-message"> Folgende Ausstellungen sind aktuell geöffnet: <table id="current_exhibitions' + number_ausstellungen + '"> </table> </div>'));
+
+        // variable for exhibition table
+        var table_exhibitions = document.getElementById("current_exhibitions" + number_ausstellungen);
+
+        // fill the table dynamically depending on the number of current exhibitions
+        for (i = 1; i <= data.exhibitions.length; i++) {
+          var row = table_exhibitions.insertRow(i - 1);
+          var cell = row.insertCell(0);
+          cell.innerHTML = data.exhibitions[i - 1];
+        }
+
+        focus_input();
+
+      });
+
+    }
+
+    // function to transform the enumeration of artists related to an exhibition in a table
+    function tabelle_mitwirkende_kuenstler(umwandeln) {
+      number_tabelle = number_tabelle + 1;
+      // send request to the backend to receive a list of artists participating in an exhibition
+      $.getJSON('/tabelle_umwandeln', {
+        transformieren: umwandeln
+      }, function (data) {
+
+        // table of artists
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            '<div class="chat-message"> Bei der Ausstellung ' + data.exhibition + ' haben folgende Künstler mitgewirkt: <table id="current_tabelle' + number_tabelle + '"> </table> </div>'));
+
+        // variable for artist table
+        var table_tabelle = document.getElementById("current_tabelle" + number_tabelle);
+
+        // fill the table dynamically depending on the number of artists who participated
+        for (i = 1; i <= data.liste.length; i++) {
+          var row = table_tabelle.insertRow(i - 1);
+          var cell = row.insertCell(0);
+          cell.innerHTML = data.liste[i - 1];
+        }
+
+        focus_input();
+
+      });
+    }
+
+    // alternatively to hit the enter button, the send button can be clicked
+    document.getElementById("senden").addEventListener("click", function () {
+      send($('#input_chatbot').val());
+      $(".input").attr("rows", "1");
+      //$('#input_chatbot').val() = "";
+      $('#input_chatbot').focus();
+    });
+
+    // Method which takes the users text and sends an AJAX post request to our Mindmeld Chat Bot
+    // Creates a new Div with the users text, and receives a response message from Flask
+    function send(text) {
+      // Create a div with the text that the user typed in
+      $chatlogs.append(
+        $('<div/>', { 'class': 'chat self' }).append(
+          $('<p/>', { 'class': 'chat-message', 'text': text })));
+
+      // Find the last message in the chatlogs
+      var $sentMessage = $(".chatlogs .chat").last();
+
+      // Check to see if that message is visible
+      checkVisibility($sentMessage);
+
+      // update the last message sent variable to be stored in the database and store in database
+      lastSentMessage = text;
+
+      // define variables for server and fill them with values from client
+      $.getJSON('/process_form', {
+
+        // send JSON with input to backend
+        input: $('#input_chatbot').val(),
+
+        //Transferring output to website
+      }, function (data) {
+
+        // Show the typing indicator
+        showLoading();
+
+        // After 2 seconds call the createNewMessage function
+        setTimeout(function () {
+          createNewMessage(data.output_chatbot, data.intent_prediction, text);
+        }, DEFAULT_TIME_DELAY);
+
+        // write the chatbot output to the console
+        console.log('output:', data.output_chatbot);
+
+      });
+
+    }
+
+    // Method to create a new div showing the text from the chatbot
+    function createNewMessage(message, intent, text) {
+
+      // change counter for unique id of thumbs up/down
+      number_buttons = number_buttons + 1
+
+      // Hide the typing indicator
+      hideLoading();
+
+      // visualise links as hyperref
+      if (message.includes("https://")) {
+
+        // variable to count current id
+        number_links = number_links + 1;
+
+        // Append a new div to the chatlogs body, with an image and the text from the chat bot
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }).append($('<img src="{{ url_for('static',filename='bot.png') }}" />')),
+            $('<p/>', { 'class': 'chat-message', 'id': 'https_format' + number_links })));
+
+        // variables to transform the text with hyperlinks
+        var remaining_message = message;
+        var output_message = "";
+
+        // as long as the remaining message includes a hyperlink, transform it further
+        while (remaining_message.includes("https://")) {
+
+          // extract text before url
+          var text_before_url = remaining_message.substring(0, remaining_message.indexOf("https://"));
+
+          // concatenate strings for the chatbot output
+          output_message = output_message + text_before_url;
+          //console.log(output_message);
+
+          // message after url
+          remaining_message = remaining_message.substring(remaining_message.indexOf("https://"));
+          //console.log(remaining_message);
+
+
+          // search for separator to find link
+          if (remaining_message.includes(" ")) {
+            var index_leerzeichen = remaining_message.indexOf(" ");
+          } else {
+            var index_leerzeichen = 99999999;
+          }
+
+          if (remaining_message.includes(". ")) {
+            var index_punkt = remaining_message.indexOf(". ");
+          } else {
+            var index_punkt = 99999999;
+          }
+
+          if (remaining_message.includes("). ")) {
+            var index_klammer = remaining_message.indexOf("). ");
+          } else {
+            var index_klammer = 99999999;
+          }
+
+          if ((index_leerzeichen < index_punkt) && (index_leerzeichen < index_klammer)) {
+
+            var trennelement = " ";
+
+          } else {
+            if (index_punkt < index_klammer) {
+
+              var trennelement = ". ";
+
+            } else {
+
+              var trennelement = "). ";
+
+            }
+          }
+
+          // add link to output line
+          output_message = output_message + '<a target="_blank" rel="noopener" href="' + remaining_message.substring(0, remaining_message.indexOf(trennelement)) + '">' + "Link" + '</a>';
+          //console.log(output_message);
+          remaining_message = remaining_message.substring(remaining_message.indexOf(trennelement));
+          //console.log(remaining_message);
+          if (!remaining_message.includes("https://")) {
+            output_message = output_message + remaining_message;
+          }
+        }
+        //document.getElementById('test').innerHTML = message.substring(0, message.indexOf("https://")) + '<a href="' + message.substring(message.indexOf("https://")).substring(0, message.substring(message.indexOf("https://")).indexOf(" ")) + '">' + message.substring(message.indexOf("https://")).substring(0, message.substring(message.indexOf("https://")).indexOf(" ")) + '</a>';
+        //console.log("" + message.substring(message.indexOf("https://")).substring(0, message.substring(message.indexOf("https://")).indexOf(" ")) + "");
+
+        // add created message to the chat field
+        document.getElementById('https_format' + number_links).innerHTML = output_message;
+      } else {
+        if (message.includes("Folgende Ausstellungen sind aktuell geöffnet: ")) {
+          ausstellungen_2();
+        } else {
+          if (message.includes("haben folgende Künstler mitgewirkt: ")) {
+            tabelle_mitwirkende_kuenstler(message);
+          } else {
+
+            // if no hyperlink is included in the message, just give the message to the user
+            $chatlogs.append(
+              $('<div/>', { 'class': 'chat friend' }).append(
+                $('<div/>', { 'class': 'user-photo' }).append($('<img src="{{ url_for('static',filename='bot.png') }}" />')),
+                $('<p/>', { 'class': 'chat-message', 'text': message })));
+
+          }
+        }
+      }
+
+      // update visibility of chat messages
+      focus_input();
+
+      // if intent unsupported is predicted by chatbot, a suggestion by levenshtein distance is given
+      // execution is independent from support mode (toggle switch)
+      // if the bot did not get the user intent, this function is disabled
+
+      /* if (intent == 'unsupported' && message != "Sorry, das habe ich nicht verstanden.") */
+      if (message.includes("Sorry, das habe ich nicht verstanden, aber meintest du vielleicht: ")) {
+
+        // hint for the user
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<p/>', { 'class': 'chat-message', 'text': "Klicke bitte auf den entsprechenden Daumen." })));
+
+        // add thumbs up/down
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<div/>', { 'class': "fa fa-thumbs-up fa-3x like", 'id': 'yes' + number_buttons, 'aria-hidden': "true", 'style': 'color:rgb(64, 172, 246);' }),
+            $('<div/>', { 'class': "fa fa-thumbs-down fa-3x like", 'id': 'no' + number_buttons, 'aria-hidden': "true", 'style': 'color:rgb(64, 172, 246);' })));
+
+        // update visibility of chat messages
+        focus_input();
+
+        // if thumbs down is chosen by the user
+        document.getElementById("no" + number_buttons).onclick = function fun() {
+          $chatlogs.append(
+            $('<div/>', { 'class': 'chat friend' }).append(
+              $('<div/>', { 'class': 'user-photo' }),
+              $('<p/>', { 'class': 'chat-message', 'text': "Alles klar, ich versuche mich zu verbessern! Stelle mir bitte eine andere Frage." })));
+
+          // update visibility of chat messages
+          focus_input();
+
+          // send false corrected question to backend and receive the output of the chatbot
+          $.getJSON('/false_corrected_question', {
+
+            // extracted question (IMPORTANT: Sorry, das habe ich nicht verstanden, aber meintest du vielleicht: .. should not be changed!!)
+            input: message.substring(67),
+            // original user input
+            user_message: text
+
+            // print bot message on the console
+          }, function (data) {
+            console.log('bot:', data.answer);
+          });
+        }
+
+        // if thumbs up is chosen by the user
+        document.getElementById("yes" + number_buttons).onclick = function fun() {
+
+          // send proper corrected question to backend and receive the output of the chatbot
+          $.getJSON('/corrected_question', {
+
+            // extracted question (IMPORTANT: Sorry, das habe ich nicht verstanden, aber meintest du vielleicht: .. should not be changed!!)
+            input: message.substring(67),
+            // original user input
+            user_message: text
+
+          }, function (data) {
+
+            //Transferring output to website
+            // After 0 seconds call the createNewMessage function
+            setTimeout(function () {
+              $chatlogs.append(
+                $('<div/>', { 'class': 'chat friend' }).append(
+                  $('<div/>', { 'class': 'user-photo' }),
+                  $('<p/>', { 'class': 'chat-message', 'text': data.output_chatbot })));
+            }, 0);
+
+            // update visibility of chat messages
+            focus_input();
+
+            // write the chatbot default answer and output to the console
+            console.log('bot:', data.answer);
+            console.log('output:', data.output_chatbot);
+
+          });
+        }
+      }
+
+      // if the bot is not able to answer the question, it is again recommended to use the guiding menu
+      if (intent == 'unsupported' && message == "Sorry, das habe ich nicht verstanden.") {
+
+        // hint for the user
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<p/>', { 'class': 'chat-message', 'text': "Über den Home-Button oben links kannst du dich navigieren lassen." })));
+
+      }
+
+      // define variable for toggle switch
+      var toggleSwitch = document.getElementById("toggle_switch");
+
+      // in case support mode is selected and intent is not unsupported
+      if (toggleSwitch.checked == true && !(intent == 'unsupported' && message != "Sorry, das habe ich nicht verstanden.")) {
+
+        // question the user whether the correct intent was predicted
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<p/>', { 'class': 'chat-message', 'text': "Gehört deine Frage zum Intent " + intent + "? Klicke bitte auf den entsprechenden Daumen." })));
+
+        // add thumbs up/down to the chat
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<div/>', { 'class': "fa fa-thumbs-up fa-3x like", 'id': 'yes' + number_buttons, 'aria-hidden': "true", 'style': 'color:rgb(64, 172, 246);' }),
+            $('<div/>', { 'class': "fa fa-thumbs-down fa-3x like", 'id': 'no' + number_buttons, 'aria-hidden': "true", 'style': 'color:rgb(64, 172, 246);' })));
+
+        // update visibility of chat messages
+        focus_input();
+
+        // in case thumbs up is chosen
+        document.getElementById("yes" + number_buttons).onclick = function fun() {
+          // call function to report correct training samples
+          intent_learning_alright(intent, lastSentMessage, message);
+        }
+
+        // in case thumbs down is chosen
+        document.getElementById("no" + number_buttons).onclick = function fun() {
+
+          // send reply to the user
+          $chatlogs.append(
+            $('<div/>', { 'class': 'chat friend' }).append(
+              $('<div/>', { 'class': 'user-photo' }),
+              $('<p/>', { 'class': 'chat-message', 'text': "Ok, da muss ich mich noch verbessern! Welchen Intent meintest du denn? Klicke bitte auf den entsprechenden Button." })));
+
+          // create buttons for all possible intents known by the bot
+          // IMPORTANT: if further intents are added, they have to be defined manually here and a function intent_... has to be written
+          $chatlogs.append(
+            $('<div/>', { 'class': 'chat friend' }).append(
+              $('<button/>', { 'class': 'intent_button', 'text': "greet", 'id': "greet" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "exit", 'id': "exit" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "how_are_you", 'id': "how_are_you" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "jokes", 'id': "jokes" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "unsupported", 'id': "unsupported" + number_buttons }),
+
+              $('<button/>', { 'class': 'intent_button', 'text': "artist_age", 'id': "artist_age" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "artist_birthplace", 'id': "artist_birthplace" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "artist_birthyear", 'id': "artist_birthyear" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "artist_information", 'id': "artist_information" + number_buttons }),
+
+              /*
+              $('<button/>', { 'class': 'intent_button', 'text': "event_date", 'id': "event_date" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "event_exhibition", 'id': "event_exhibition" + number_buttons }),
+              */
+
+              $('<button/>', { 'class': 'intent_button', 'text': "exhibition_artist", 'id': "exhibition_artist" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "exhibition_current", 'id': "exhibition_current" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "exhibition_description", 'id': "exhibition_description" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "exhibition_duration", 'id': "exhibition_duration" + number_buttons }),
+
+              $('<button/>', { 'class': 'intent_button', 'text': "openinghours", 'id': "openinghours" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "zkm_cinema", 'id': "zkm_cinema" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "zkm_content", 'id': "zkm_content" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "zkm_general", 'id': "zkm_general" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "zkm_journey_bus", 'id': "zkm_journey_bus" + number_buttons }),
+              $('<button/>', { 'class': 'intent_button', 'text': "zkm_journey_car", 'id': "zkm_journey_car" + number_buttons }),
+
+              $('<button/>', { 'class': 'intent_button', 'text': "Sonstiges", 'id': "Sonstiges" + number_buttons })));
+
+          document.getElementById("greet" + number_buttons).onclick = function fun() {
+            intent_learning_improve("greet", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("exit" + number_buttons).onclick = function fun() {
+            intent_learning_improve("exit", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("how_are_you" + number_buttons).onclick = function fun() {
+            intent_learning_improve("how_are_you", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("jokes" + number_buttons).onclick = function fun() {
+            intent_learning_improve("jokes", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("unsupported" + number_buttons).onclick = function fun() {
+            intent_learning_improve("unsupported", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("artist_age" + number_buttons).onclick = function fun() {
+            intent_learning_improve("artist_age", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("artist_birthplace" + number_buttons).onclick = function fun() {
+            intent_learning_improve("artist_birthplace", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("artist_birthyear" + number_buttons).onclick = function fun() {
+            intent_learning_improve("artist_birthyear", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("artist_information" + number_buttons).onclick = function fun() {
+            intent_learning_improve("artist_information", lastSentMessage, message, intent);
+          }
+
+          /*
+          document.getElementById("event_date" + number_buttons).onclick = function fun() {
+            intent_learning_improve("event_date", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("event_exhibition" + number_buttons).onclick = function fun() {
+            intent_learning_improve("event_exhibition", lastSentMessage, message, intent);
+          }
+          */
+
+          document.getElementById("exhibition_artist" + number_buttons).onclick = function fun() {
+            intent_learning_improve("exhibition_artist", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("exhibition_current" + number_buttons).onclick = function fun() {
+            intent_learning_improve("exhibition_current", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("exhibition_description" + number_buttons).onclick = function fun() {
+            intent_learning_improve("exhibition_description", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("exhibition_duration" + number_buttons).onclick = function fun() {
+            intent_learning_improve("exhibition_duration", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("openinghours" + number_buttons).onclick = function fun() {
+            intent_learning_improve("openinghours", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("zkm_cinema" + number_buttons).onclick = function fun() {
+            intent_learning_improve("zkm_cinema", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("zkm_content" + number_buttons).onclick = function fun() {
+            intent_learning_improve("zkm_content", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("zkm_general" + number_buttons).onclick = function fun() {
+            intent_learning_improve("zkm_general", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("zkm_journey_bus" + number_buttons).onclick = function fun() {
+            intent_learning_improve("zkm_journey_bus", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("zkm_journey_car" + number_buttons).onclick = function fun() {
+            intent_learning_improve("zkm_journey_car", lastSentMessage, message, intent);
+          }
+
+          document.getElementById("Sonstiges" + number_buttons).onclick = function fun() {
+            intent_learning_improve("Sonstiges", lastSentMessage, message, intent);
+          }
+
+          // update visibility of chat messages
+          focus_input();
+
+        }
+      }
+
+      // update visibility of chat messages
+      focus_input();
+    }
+
+    // function which is called by the help functions
+    function intent_learning_improve(correct_intent, text, output, false_intent) {
+
+      // communicate with the Mindmeld backend if training sample is labeled manually in the support mode
+      $.getJSON('/intent_learning_improve', {
+
+        // training sample create by the support mode user
+        user_input: text,
+        output_chatbot: output,
+        // correct intent of training sample
+        correct_label: correct_intent,
+        false_label: false_intent
+
+      }, function (data) {
+
+        // write the default chatbot answer to the console
+        console.log('bot:', data.answer);
+
+        // update the user that his training sample was added to the training file of the according intent
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<p/>', { 'class': 'chat-message', 'text': "Super, danke für Dein Feedback! Ich habe deine Frage dem Intent " + correct_intent + " hinzugefügt." })));
+
+        // update visibility of chat messages
+        focus_input();
+      });
+    }
+
+    // if prediction of the bot was right, report it
+    function intent_learning_alright(intent, text, output) {
+
+      // communicate with the Mindmeld backend
+      $.getJSON('/intent_learning_alright', {
+
+        // training sample create by the support mode user
+        user_input: text,
+        output_chatbot: output,
+        // correct intent of training sample
+        correct_label: intent,
+
+      }, function (data) {
+
+        // write the default chatbot answer to the console
+        console.log('bot:', data.answer);
+
+        // send a message to the user
+        $chatlogs.append(
+          $('<div/>', { 'class': 'chat friend' }).append(
+            $('<div/>', { 'class': 'user-photo' }),
+            $('<p/>', { 'class': 'chat-message', 'text': "Perfekt, das kann ich also schon!" })));
+
+        // update visibility of chat messages
+        focus_input();
+      });
+    }
+
+    function focus_input() {
+      // Find the last message in the chatlogs
+      var $newMessage = $(".chatlogs .chat").last();
+
+      // Call the method to see if the message is visible
+      checkVisibility($newMessage);
+
+      // set cursor in input text field
+      $('#input_chatbot').focus();
+    }
+
+    // shows the chatbot typing gif
+    function showLoading() {
+
+      // update visibility of chat messages
+      focus_input();
+
+      // change visibility of gif
+      $chatlogs.append($('#loadingGif'));
+      $("#loadingGif").show();
+      $('.chat-form').css('visibility', 'hidden');
+    }
+
+    // Function which hides the typing indicator
+    function hideLoading() {
+      $('.chat-form').css('visibility', 'visible');
+      $("#loadingGif").hide();
+
+      // Clear the text area of text
+      $(".input").val("");
+
+      // reset the size of the text area
+      $(".input").attr("rows", "1");
+
+    }
+
+    // Method which checks to see if a message is visible
+    function checkVisibility(message) {
+
+      // Scroll the view down a certain amount
+      $chatlogs.stop().animate({ scrollTop: $chatlogs[0].scrollHeight });
+    }
+
+    //----------------------------------------- Resize the textarea ------------------------------------------//
+    $(document)
+      .one('focus.input', 'textarea.input', function () {
+        var savedValue = this.value;
+        this.value = '';
+        this.baseScrollHeight = this.scrollHeight;
+        this.value = savedValue;
+      })
+      .on('input.input', 'textarea.input', function () {
+        var minRows = this.getAttribute('data-min-rows') | 0, rows;
+        this.rows = minRows;
+        rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
+        this.rows = minRows + rows;
+      });
+
+  // end of javascript logic
+  </script>
+
+  <!-- CSS file -->
+  <style type="text/css">
+    * {
+
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      box-sizing: border-box;
+      font-weight: 100;
+
+    }
+
+    body {
+      background: rgb(0, 158, 249);
+    }
+
+    .chatbox {
+
+      width: 500px;
+      min-width: 390px;
+      height: 600px;
+      background: white;
+      padding: 25px;
+      margin: 0px auto 0px auto;
+      box-shadow: 0 3px #ccc;
+
+    }
+
+    .chatlogs {
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    /*Styling the scrolllbar*/
+    .chatlogs::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .chatlogs::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background: rgb(229, 229, 234);
+    }
+
+
+    .chat {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .user-photo img {
+      background-color: rgb(0, 158, 249);
+      padding: 4px;
+      width: 100%;
+    }
+
+    .zkm_bild img {
+      width: 100%;
+    }
+
+    .chat .chat-message {
+      padding: 15px;
+      margin: 5px 10px 0;
+      font-size: 18px;
+    }
+
+    .user-photo {
+      width: 60px;
+      height: 60px;
+      background: rgb(255, 255, 255);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .zkm_bild {
+      width: 60px;
+      overflow: hidden;
+    }
+
+    .friend .chat-message {
+      color: black;
+      width: auto;
+      max-width: 70%;
+      background: rgb(229, 229, 234);
+      border-radius: 20px 20px 20px 0;
+    }
+
+    .self .chat-message {
+      color: white;
+      max-width: 80%;
+      width: auto;
+      margin: 5px 0 5px auto;
+      border-radius: 20px 20px 0px 20px;
+      background: rgb(64, 172, 246);
+      overflow-wrap: break-word;
+    }
+
+    .headerBar {
+      font-size: 25px;
+      color: white;
+      padding: 25px;
+      width: 500px;
+      min-width: 390px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      margin: 20px auto 0px auto;
+      background: rgb(112, 205, 178);
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .headerBar .title {
+      margin: auto 10px;
+    }
+
+    .headerBar .develop {
+      margin: auto 11px;
+      font-size: 12px;
+    }
+
+    .headerBar .zkm_bild {
+      margin: 0px 0px 0px 10px;
+    }
+
+    .headerBar .zkm_bild img {
+      width: 100%;
+    }
+
+    .chat-form {
+
+      margin: 0px auto 0px auto;
+      display: flex;
+      width: 500px;
+      min-width: 390px;
+      align-items: flex-start;
+      overflow: auto;
+      background: rgb(244, 243, 244);
+      border-radius: 0 0 10px 10px;
+      border-top: 5px solid rgb(212, 212, 212);
+
+    }
+
+
+    #inputDiv {
+      width: 75%;
+      margin-right: 15px;
+
+    }
+
+
+    .chat-form textarea {
+      padding: 5px 5px 5px 15px;
+      background: #fbfbfb;
+      width: 100%;
+      min-height: 5px;
+      border: 2px solid lightblue;
+      border-radius: 20px;
+      resize: none;
+      font-size: 18px;
+      color: #000;
+      margin: 15px 0px 15px 10px;
+      display: block;
+      overflow: hidden;
+      box-shadow: none;
+      outline: none;
+
+    }
+
+    .chat-form textarea:focus {
+      background: #fff;
+    }
+
+    .gif img {
+      margin: 10px;
+      border-radius: 20px;
+    }
+
+    #rec {
+      max-width: 40px;
+      max-height: 40px;
+    }
+
+    /* The switch - the box around the slider */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgb(229, 229, 234);
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked+.slider {
+      background-color: rgb(64, 172, 246);
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    /* Like and dislike buttons */
+    .like,
+    .dislike {
+      display: inline-block;
+      cursor: pointer;
+      margin: 0px;
+    }
+
+    .like:before {
+      margin-left: 20px;
+    }
+
+    .dislike:hover,
+    .like:hover {
+      color: rgb(64, 172, 246);
+      transition: all .2s ease-in-out;
+      transform: scale(1.1);
+    }
+
+    .active {
+      color: rgb(64, 172, 246);
+    }
+
+    /* sending button at the bottom */
+    #senden {
+      margin: 15px 0px 15px 10px;
+      padding: 5px 10px 5px 10px;
+      font-size: 18px;
+      text-align: center;
+      background-color: rgb(0, 158, 249);
+      border-radius: 20px;
+      border: none;
+      color: white;
+      border: 1px solid lightblue;
+      margin-right: 10px;
+    }
+
+    /* design the home button */
+    #home {
+      background-color: rgb(112, 205, 178);
+      border: none;
+      margin-right: 5px;
+    }
+
+    /* button to choose the correct intent of user comment in support mode */
+    .intent_button {
+      margin: 0px 0px 5px 5px;
+      padding: 0px 10px 0px 10px;
+      font-size: 18px;
+      text-align: center;
+      background-color: rgb(0, 158, 249);
+      border-radius: 20px;
+      border: none;
+      color: white;
+      border: 1px solid lightblue;
+    }
+
+    td {
+      font-style: sans-serif;
+      text-align: left;
+      box-shadow: inset 1px 3px 5px -3px rgba(0, 0, 0, 0.5);
+      padding: 0.2em 0.5em;
+      border-radius: 0.1em;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #e4ebf2;
+      color: #000;
+    }
+
+    /* end of CSS file */
+  </style>
+
+</body>
+
+</html>

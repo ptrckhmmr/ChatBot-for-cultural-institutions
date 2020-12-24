@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.6.3" />
+<title>webapp.flask_app API documentation</title>
+<meta name="description" content="This module contains the flask app.
+It also incorporates the trained models of the folder app and other mindmeld dependencies, such as the nlp unit." />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase;cursor:pointer}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>webapp.flask_app</code></h1>
+</header>
+<section id="section-intro">
+<p>This module contains the flask app.
+It also incorporates the trained models of the folder app and other mindmeld dependencies, such as the nlp unit.</p>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">&#34;&#34;&#34;
+This module contains the flask app.
+It also incorporates the trained models of the folder app and other mindmeld dependencies, such as the nlp unit.
+&#34;&#34;&#34;
+
+# importing necessary modules
+from mindmeld.components import NaturalLanguageProcessor
+from mindmeld.components.dialogue import Conversation
+
+# function for loading previously trained classifier
+from loadClassifier import loadClassif
+
+# loading predefined logger
+from logging_config import Logger
+
+# Define logfile for user input and chatbot output
+logger = Logger(&#34;chat.log&#34;)
+
+# configuring logging
+import logging
+import mindmeld as mm
+logging.getLogger(&#39;mindmeld&#39;).setLevel(logging.INFO)
+mm.configure_logs()
+
+# setting the correct path of the chat bot app
+import os
+app_path = os.path.abspath((os.path.join(os.path.dirname(__file__), &#39;..&#39;)))
+app_path = app_path + &#34;/app&#34;
+
+# setting up NLU
+nlp = NaturalLanguageProcessor(app_path)
+loadClassif(nlp,app_path)
+
+conv = Conversation(nlp=nlp, app_path=app_path)
+
+#### flask app
+
+from flask import Flask, jsonify, render_template, request
+
+# initializing flask app
+app = Flask(__name__)
+
+# endpoint for processing the input values for chatbot
+@app.route(&#39;/process_form&#39;)
+def process_form():
+    &#34;&#34;&#34;
+    The input form of the html file is processed here. Furthermore, the chat is logged.
+
+    Returns:
+        The chatbot output and the intent used for the output are jsonified
+    &#34;&#34;&#34;
+
+    #### Input for chatbot
+    input = request.args.get(&#39;input&#39;)
+
+    #### Process input
+    if not (input is None or input == &#39;&#39;):
+
+        # predict output and intent of user input
+        output = conv.say(input)[0]
+        intent = nlp.process(input)[&#34;intent&#34;]
+
+        logger.log(&#34;Input: &#34; + input + &#34; Output: &#34; + output)
+
+        chat_protokoll = open(&#34;Chat_Protokoll.txt&#34;, &#34;a&#34;)
+        chat_protokoll.write(input + &#34;;&#34; + output + &#34;\n&#34;)
+        chat_protokoll.close()
+
+    #### Return output and predicted intent
+    return jsonify(output_chatbot=output, intent_prediction=intent)
+
+# function for automatically corrected questions in intent unsupported
+@app.route(&#39;/corrected_question&#39;)
+def corrected_question():
+
+    &#34;&#34;&#34;
+    This function logs automatically the corrected questions for the intent &#39;unsupported&#39;
+
+    Returns:
+        The chatbot output and a message that the adjustment was done correctly are jsonified
+    &#34;&#34;&#34;
+
+    # get parameters of front end
+    input = request.args.get(&#39;input&#39;)
+    user_message = request.args.get(&#39;user_message&#39;)
+
+    if not (input is None or input == &#39;&#39;):
+
+        output = conv.say(input)[0]
+        #intent = nlp.process(input)[&#34;intent&#34;]
+
+        logger.log(&#34;Input: &#34; + input + &#34; Output: &#34; + output)
+
+        # write corrected questions to file
+        corrected_questions = open(&#34;corrected_questions.txt&#34;, &#34;a&#34;)
+        corrected_questions.write(user_message + &#34; (Correct Question: &#34; + input + &#34;)&#34; + &#34;\n&#34;)
+        corrected_questions.close()
+
+        # Levenshtein report
+        log_file = open(&#34;Levenshtein_Auswertung.txt&#34;, &#34;a&#34;)
+        log_file.write(user_message + &#34;;&#34; + input + &#34;;true&#34; + &#34;\n&#34;)
+        log_file.close()
+
+    #### Return console answer and output
+    return jsonify(answer=&#34;correctly adjusted question received&#34;, output_chatbot=output)
+
+# function for false corrected questions in intent unsupported
+@app.route(&#39;/false_corrected_question&#39;)
+def false_corrected_question():
+    &#34;&#34;&#34;
+    This function logs automatically the falsely corrected questions for the intent &#39;unsupported&#39;
+
+    Returns:
+        A message that the adjustment was done incorrectly is jsonified
+    &#34;&#34;&#34;
+
+    # get parameters of front end
+    input = request.args.get(&#39;input&#39;)
+    user_message = request.args.get(&#39;user_message&#39;)
+
+    if not (input is None or input == &#39;&#39;):
+
+        # write false corrected questions to file
+        false_corrected_questions = open(&#34;false_corrected_questions.txt&#34;, &#34;a&#34;)
+        false_corrected_questions.write(user_message + &#34; (Incorrect Question: &#34; + input + &#34;)&#34; + &#34;\n&#34;)
+        false_corrected_questions.close()
+
+        # Levenshtein report
+        log_file = open(&#34;Levenshtein_Auswertung.txt&#34;, &#34;a&#34;)
+        log_file.write(user_message + &#34;;&#34; + input + &#34;;false&#34; + &#34;\n&#34;)
+        log_file.close()
+
+    #### Return console answer
+    return jsonify(answer=&#34;false corrected question received&#34;)
+
+# function to report false modelled intents
+@app.route(&#39;/intent_learning_improve&#39;)
+def intent_learning_improve():
+    &#34;&#34;&#34;
+    This function reports the false modelled intents
+
+    Returns:
+        A message that the intent was modelled falsely is jsonified.
+    &#34;&#34;&#34;
+
+    # get parameters of front end
+    user_input = request.args.get(&#39;user_input&#39;)
+    correct_label = request.args.get(&#39;correct_label&#39;)
+    false_label = request.args.get(&#39;false_label&#39;)
+    output_chatbot = request.args.get(&#39;output_chatbot&#39;)
+
+    # file name contains intent labels
+    fileName = correct_label + &#34;_improve.txt&#34;
+
+    if not (user_input is None or user_input == &#39;&#39;):
+
+        # write false modelled training data to intent file
+        change_file = open(fileName, &#34;a&#34;)
+        change_file.write(user_input + &#34;\n&#34;)
+        change_file.close()
+
+        # Marie function
+        log_file = open(&#34;Marie_Auswertung.txt&#34;, &#34;a&#34;)
+        log_file.write(user_input + &#34;;&#34; + output_chatbot + &#34;;&#34; + false_label + &#34;;false;&#34; + correct_label + &#34;\n&#34;)
+        log_file.close()
+
+    #### Return console answer
+    return jsonify(answer=&#34;intent modelled false&#34;)
+
+# function to report correctly modelled intents
+@app.route(&#39;/intent_learning_alright&#39;)
+def intent_learning_alright():
+    &#34;&#34;&#34;
+    This function reports the correctly modelled intents
+
+    Returns:
+        A message that the intent was modelled correctly is jsonified.
+    &#34;&#34;&#34;
+
+    # get parameters of front end
+    user_input = request.args.get(&#39;user_input&#39;)
+    correct_label = request.args.get(&#39;correct_label&#39;)
+    output_chatbot = request.args.get(&#39;output_chatbot&#39;)
+
+    # file name contains intent labels
+    fileName = correct_label + &#34;_alright.txt&#34;
+
+    if not (user_input is None or user_input == &#39;&#39;):
+
+        # write correctly modelled training data to intent file
+        change_file = open(fileName, &#34;a&#34;)
+        change_file.write(user_input + &#34;\n&#34;)
+        change_file.close()
+
+        # Marie function
+        log_file = open(&#34;Marie_Auswertung.txt&#34;, &#34;a&#34;)
+        log_file.write(user_input + &#34;;&#34; + output_chatbot + &#34;;&#34; + correct_label + &#34;;true;&#34; + correct_label + &#34;\n&#34;)
+        log_file.close()
+
+    #### Return console answer
+    return jsonify(answer=&#34;intent already correctly modelled&#34;)
+
+# function to send 10 artists to the frontend
+@app.route(&#39;/get_artists&#39;)
+def get_artists():
+    &#34;&#34;&#34;
+        This function sends 10 artists to the frontend
+
+        Returns:
+            A list of 10 artists is jsonified.
+        &#34;&#34;&#34;
+
+    # get 10 artists of the database
+    artists = conv.say(&#39;ZKM gerade Ausstellungen &amp;+*bnbn??&#39;)[0]
+    # store these in a list which is received from the frontend
+    artists_list = []
+    # search for the first comma
+    index = artists.index(&#34;,&#34;)
+    # add the first artist to the list
+    artists_list.append(artists[1:index])
+    # remove the artist from the string
+    artists = artists[index + 1:]
+
+    # loop to get the artists in the middle of the string
+    for i in range(8):
+        index = artists.index(&#34;,&#34;)
+        artists_list.append(artists[1:index])
+        artists = artists[index + 1:]
+
+    # add the last artist to the list
+    artists_list.append(artists[1:-1])
+
+    return jsonify(artists=artists_list)
+
+# function to send 10 current exhibitions to the frontend
+@app.route(&#39;/get_exhibitions&#39;)
+def get_exhibitions():
+    &#34;&#34;&#34;
+    This function sends 10 exhibtions to the frontend
+
+    Returns:
+        A list of 10 exibitions is jsonified.
+    &#34;&#34;&#34;
+
+    # get 10 exhibitions of the database
+    exhibitions = conv.say(&#39;ZKM gerade Ausstellungen &amp;+*bnbn?&#39;)[0]
+    print(exhibitions)
+    # store these in a list which is received from the frontend
+    exhibitions_list = []
+    # search for the first comma
+    index = exhibitions.index(&#34;,&#34;)
+    # add the first exhibition to the list
+    exhibitions_list.append(exhibitions[0:index])
+    # remove the exhibition from the string
+    exhibitions = exhibitions[index + 1:]
+
+    # loop to get the exhibitions in the middle of the string
+    while(exhibitions != &#34; &#34;):
+        index = exhibitions.index(&#34;,&#34;)
+        exhibitions_list.append(exhibitions[1:index])
+        exhibitions = exhibitions[index + 1:]
+
+    return jsonify(exhibitions=exhibitions_list)
+
+# function to transform chatbot output related to artists in exhibitons in table
+@app.route(&#39;/tabelle_umwandeln&#39;)
+def tabelle_umwandeln():
+    &#34;&#34;&#34;
+    This function creates a table of artists based on the output of the chatbot
+
+    Returns:
+        The exhibition and a list of artist is jsonified.
+    &#34;&#34;&#34;
+
+    # get the message to be transformed
+    nachricht = request.args.get(&#39;transformieren&#39;)
+    # list to store the artists in
+    nachricht_list = []
+
+    # get name of the exhibition
+    ab_ausstellung = nachricht[20:]
+    index = ab_ausstellung.index(&#34;haben folgende Künstler mitgewirkt: &#34;)
+    ausstellung = ab_ausstellung[0:index - 1]
+
+    # rest of the string containing the artists
+    kuenstler = ab_ausstellung[index + 36:]
+
+    # compute the number of commas as separator
+    anzahl_komma = 0
+    for zeichen in kuenstler:
+        if zeichen == &#34;,&#34;:
+            anzahl_komma = anzahl_komma + 1
+
+
+    # get index of comma
+    komma = kuenstler.index(&#34;,&#34;)
+    # append first artist
+    nachricht_list.append(kuenstler[0:komma-1])
+    # remove artist from string
+    kuenstler = kuenstler[komma+2:]
+
+    # repeat this procedure for all artists in the string
+    for i in range(anzahl_komma-1):
+        komma = kuenstler.index(&#34;,&#34;)
+        nachricht_list.append(kuenstler[0:komma-1])
+        kuenstler = kuenstler[komma+2:]
+
+    # append the last artist
+    nachricht_list.append(kuenstler)
+
+    return jsonify(exhibition=ausstellung, liste=nachricht_list)
+
+
+# Render HTML Datei
+@app.route(&#39;/&#39;)
+def render_static():
+    &#34;&#34;&#34;
+    This function renders the index html file
+
+    Returns:
+        Rendered html file.
+    &#34;&#34;&#34;
+
+    return render_template(&#39;index.html&#39;)
+
+# run web app for chatbot
+app.run(debug = True, use_reloader = False, host = &#39;0.0.0.0&#39;)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="webapp.flask_app.corrected_question"><code class="name flex">
+<span>def <span class="ident">corrected_question</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>This function logs automatically the corrected questions for the intent 'unsupported'</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>The</code> <code>chatbot</code> <code>output</code> <code>and</code> <code>a</code> <code>message</code> <code>that</code> <code>the</code> <code>adjustment</code> <code>was</code> <code>done</code> <code>correctly</code> <code>are</code> <code>jsonified</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/corrected_question&#39;)
+def corrected_question():
+
+    &#34;&#34;&#34;
+    This function logs automatically the corrected questions for the intent &#39;unsupported&#39;
+
+    Returns:
+        The chatbot output and a message that the adjustment was done correctly are jsonified
+    &#34;&#34;&#34;
+
+    # get parameters of front end
+    input = request.args.get(&#39;input&#39;)
+    user_message = request.args.get(&#39;user_message&#39;)
+
+    if not (input is None or input == &#39;&#39;):
+
+        output = conv.say(input)[0]
+        #intent = nlp.process(input)[&#34;intent&#34;]
+
+        logger.log(&#34;Input: &#34; + input + &#34; Output: &#34; + output)
+
+        # write corrected questions to file
+        corrected_questions = open(&#34;corrected_questions.txt&#34;, &#34;a&#34;)
+        corrected_questions.write(user_message + &#34; (Correct Question: &#34; + input + &#34;)&#34; + &#34;\n&#34;)
+        corrected_questions.close()
+
+        # Levenshtein report
+        log_file = open(&#34;Levenshtein_Auswertung.txt&#34;, &#34;a&#34;)
+        log_file.write(user_message + &#34;;&#34; + input + &#34;;true&#34; + &#34;\n&#34;)
+        log_file.close()
+
+    #### Return console answer and output
+    return jsonify(answer=&#34;correctly adjusted question received&#34;, output_chatbot=output)</code></pre>
+</details>
+</dd>
+<dt id="webapp.flask_app.false_corrected_question"><code class="name flex">
+<span>def <span class="ident">false_corrected_question</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>This function logs automatically the falsely corrected questions for the intent 'unsupported'</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>A</code> <code>message</code> <code>that</code> <code>the</code> <code>adjustment</code> <code>was</code> <code>done</code> <code>incorrectly</code> <code>is</code> <code>jsonified</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/false_corrected_question&#39;)
+def false_corrected_question():
+    &#34;&#34;&#34;
+    This function logs automatically the falsely corrected questions for the intent &#39;unsupported&#39;
+
+    Returns:
+        A message that the adjustment was done incorrectly is jsonified
+    &#34;&#34;&#34;
+
+    # get parameters of front end
+    input = request.args.get(&#39;input&#39;)
+    user_message = request.args.get(&#39;user_message&#39;)
+
+    if not (input is None or input == &#39;&#39;):
+
+        # write false corrected questions to file
+        false_corrected_questions = open(&#34;false_corrected_questions.txt&#34;, &#34;a&#34;)
+        false_corrected_questions.write(user_message + &#34; (Incorrect Question: &#34; + input + &#34;)&#34; + &#34;\n&#34;)
+        false_corrected_questions.close()
+
+        # Levenshtein report
+        log_file = open(&#34;Levenshtein_Auswertung.txt&#34;, &#34;a&#34;)
+        log_file.write(user_message + &#34;;&#34; + input + &#34;;false&#34; + &#34;\n&#34;)
+        log_file.close()
+
+    #### Return console answer
+    return jsonify(answer=&#34;false corrected question received&#34;)</code></pre>
+</details>
+</dd>
+<dt id="webapp.flask_app.get_artists"><code class="name flex">
+<span>def <span class="ident">get_artists</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>This function sends 10 artists to the frontend</p>
+<h2 id="returns">Returns</h2>
+<p>A list of 10 artists is jsonified.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/get_artists&#39;)
+def get_artists():
+    &#34;&#34;&#34;
+        This function sends 10 artists to the frontend
+
+        Returns:
+            A list of 10 artists is jsonified.
+        &#34;&#34;&#34;
+
+    # get 10 artists of the database
+    artists = conv.say(&#39;ZKM gerade Ausstellungen &amp;+*bnbn??&#39;)[0]
+    # store these in a list which is received from the frontend
+    artists_list = []
+    # search for the first comma
+    index = artists.index(&#34;,&#34;)
+    # add the first artist to the list
+    artists_list.append(artists[1:index])
+    # remove the artist from the string
+    artists = artists[index + 1:]
+
+    # loop to get the artists in the middle of the string
+    for i in range(8):
+        index = artists.index(&#34;,&#34;)
+        artists_list.append(artists[1:index])
+        artists = artists[index + 1:]
+
+    # add the last artist to the list
+    artists_list.append(artists[1:-1])
+
+    return jsonify(artists=artists_list)</code></pre>
+</details>
+</dd>
+<dt id="webapp.flask_app.get_exhibitions"><code class="name flex">
+<span>def <span class="ident">get_exhibitions</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>This function sends 10 exhibtions to the frontend</p>
+<h2 id="returns">Returns</h2>
+<p>A list of 10 exibitions is jsonified.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/get_exhibitions&#39;)
+def get_exhibitions():
+    &#34;&#34;&#34;
+    This function sends 10 exhibtions to the frontend
+
+    Returns:
+        A list of 10 exibitions is jsonified.
+    &#34;&#34;&#34;
+
+    # get 10 exhibitions of the database
+    exhibitions = conv.say(&#39;ZKM gerade Ausstellungen &amp;+*bnbn?&#39;)[0]
+    print(exhibitions)
+    # store these in a list which is received from the frontend
+    exhibitions_list = []
+    # search for the first comma
+    index = exhibitions.index(&#34;,&#34;)
+    # add the first exhibition to the list
+    exhibitions_list.append(exhibitions[0:index])
+    # remove the exhibition from the string
+    exhibitions = exhibitions[index + 1:]
+
+    # loop to get the exhibitions in the middle of the string
+    while(exhibitions != &#34; &#34;):
+        index = exhibitions.index(&#34;,&#34;)
+        exhibitions_list.append(exhibitions[1:index])
+        exhibitions = exhibitions[index + 1:]
+
+    return jsonify(exhibitions=exhibitions_list)</code></pre>
+</details>
+</dd>
+<dt id="webapp.flask_app.intent_learning_alright"><code class="name flex">
+<span>def <span class="ident">intent_learning_alright</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>This function reports the correctly modelled intents</p>
+<h2 id="returns">Returns</h2>
+<p>A message that the intent was modelled correctly is jsonified.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/intent_learning_alright&#39;)
+def intent_learning_alright():
+    &#34;&#34;&#34;
+    This function reports the correctly modelled intents
+
+    Returns:
+        A message that the intent was modelled correctly is jsonified.
+    &#34;&#34;&#34;
+
+    # get parameters of front end
+    user_input = request.args.get(&#39;user_input&#39;)
+    correct_label = request.args.get(&#39;correct_label&#39;)
+    output_chatbot = request.args.get(&#39;output_chatbot&#39;)
+
+    # file name contains intent labels
+    fileName = correct_label + &#34;_alright.txt&#34;
+
+    if not (user_input is None or user_input == &#39;&#39;):
+
+        # write correctly modelled training data to intent file
+        change_file = open(fileName, &#34;a&#34;)
+        change_file.write(user_input + &#34;\n&#34;)
+        change_file.close()
+
+        # Marie function
+        log_file = open(&#34;Marie_Auswertung.txt&#34;, &#34;a&#34;)
+        log_file.write(user_input + &#34;;&#34; + output_chatbot + &#34;;&#34; + correct_label + &#34;;true;&#34; + correct_label + &#34;\n&#34;)
+        log_file.close()
+
+    #### Return console answer
+    return jsonify(answer=&#34;intent already correctly modelled&#34;)</code></pre>
+</details>
+</dd>
+<dt id="webapp.flask_app.intent_learning_improve"><code class="name flex">
+<span>def <span class="ident">intent_learning_improve</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>This function reports the false modelled intents</p>
+<h2 id="returns">Returns</h2>
+<p>A message that the intent was modelled falsely is jsonified.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/intent_learning_improve&#39;)
+def intent_learning_improve():
+    &#34;&#34;&#34;
+    This function reports the false modelled intents
+
+    Returns:
+        A message that the intent was modelled falsely is jsonified.
+    &#34;&#34;&#34;
+
+    # get parameters of front end
+    user_input = request.args.get(&#39;user_input&#39;)
+    correct_label = request.args.get(&#39;correct_label&#39;)
+    false_label = request.args.get(&#39;false_label&#39;)
+    output_chatbot = request.args.get(&#39;output_chatbot&#39;)
+
+    # file name contains intent labels
+    fileName = correct_label + &#34;_improve.txt&#34;
+
+    if not (user_input is None or user_input == &#39;&#39;):
+
+        # write false modelled training data to intent file
+        change_file = open(fileName, &#34;a&#34;)
+        change_file.write(user_input + &#34;\n&#34;)
+        change_file.close()
+
+        # Marie function
+        log_file = open(&#34;Marie_Auswertung.txt&#34;, &#34;a&#34;)
+        log_file.write(user_input + &#34;;&#34; + output_chatbot + &#34;;&#34; + false_label + &#34;;false;&#34; + correct_label + &#34;\n&#34;)
+        log_file.close()
+
+    #### Return console answer
+    return jsonify(answer=&#34;intent modelled false&#34;)</code></pre>
+</details>
+</dd>
+<dt id="webapp.flask_app.process_form"><code class="name flex">
+<span>def <span class="ident">process_form</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>The input form of the html file is processed here. Furthermore, the chat is logged.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>The</code> <code>chatbot</code> <code>output</code> <code>and</code> <code>the</code> <code>intent</code> <code>used</code> <code>for</code> <code>the</code> <code>output</code> <code>are</code> <code>jsonified</code></dt>
+<dd>&nbsp;</dd>
+</dl></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/process_form&#39;)
+def process_form():
+    &#34;&#34;&#34;
+    The input form of the html file is processed here. Furthermore, the chat is logged.
+
+    Returns:
+        The chatbot output and the intent used for the output are jsonified
+    &#34;&#34;&#34;
+
+    #### Input for chatbot
+    input = request.args.get(&#39;input&#39;)
+
+    #### Process input
+    if not (input is None or input == &#39;&#39;):
+
+        # predict output and intent of user input
+        output = conv.say(input)[0]
+        intent = nlp.process(input)[&#34;intent&#34;]
+
+        logger.log(&#34;Input: &#34; + input + &#34; Output: &#34; + output)
+
+        chat_protokoll = open(&#34;Chat_Protokoll.txt&#34;, &#34;a&#34;)
+        chat_protokoll.write(input + &#34;;&#34; + output + &#34;\n&#34;)
+        chat_protokoll.close()
+
+    #### Return output and predicted intent
+    return jsonify(output_chatbot=output, intent_prediction=intent)</code></pre>
+</details>
+</dd>
+<dt id="webapp.flask_app.render_static"><code class="name flex">
+<span>def <span class="ident">render_static</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>This function renders the index html file</p>
+<h2 id="returns">Returns</h2>
+<p>Rendered html file.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/&#39;)
+def render_static():
+    &#34;&#34;&#34;
+    This function renders the index html file
+
+    Returns:
+        Rendered html file.
+    &#34;&#34;&#34;
+
+    return render_template(&#39;index.html&#39;)</code></pre>
+</details>
+</dd>
+<dt id="webapp.flask_app.tabelle_umwandeln"><code class="name flex">
+<span>def <span class="ident">tabelle_umwandeln</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>This function creates a table of artists based on the output of the chatbot</p>
+<h2 id="returns">Returns</h2>
+<p>The exhibition and a list of artist is jsonified.</p></section>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python">@app.route(&#39;/tabelle_umwandeln&#39;)
+def tabelle_umwandeln():
+    &#34;&#34;&#34;
+    This function creates a table of artists based on the output of the chatbot
+
+    Returns:
+        The exhibition and a list of artist is jsonified.
+    &#34;&#34;&#34;
+
+    # get the message to be transformed
+    nachricht = request.args.get(&#39;transformieren&#39;)
+    # list to store the artists in
+    nachricht_list = []
+
+    # get name of the exhibition
+    ab_ausstellung = nachricht[20:]
+    index = ab_ausstellung.index(&#34;haben folgende Künstler mitgewirkt: &#34;)
+    ausstellung = ab_ausstellung[0:index - 1]
+
+    # rest of the string containing the artists
+    kuenstler = ab_ausstellung[index + 36:]
+
+    # compute the number of commas as separator
+    anzahl_komma = 0
+    for zeichen in kuenstler:
+        if zeichen == &#34;,&#34;:
+            anzahl_komma = anzahl_komma + 1
+
+
+    # get index of comma
+    komma = kuenstler.index(&#34;,&#34;)
+    # append first artist
+    nachricht_list.append(kuenstler[0:komma-1])
+    # remove artist from string
+    kuenstler = kuenstler[komma+2:]
+
+    # repeat this procedure for all artists in the string
+    for i in range(anzahl_komma-1):
+        komma = kuenstler.index(&#34;,&#34;)
+        nachricht_list.append(kuenstler[0:komma-1])
+        kuenstler = kuenstler[komma+2:]
+
+    # append the last artist
+    nachricht_list.append(kuenstler)
+
+    return jsonify(exhibition=ausstellung, liste=nachricht_list)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="webapp" href="index.html">webapp</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="webapp.flask_app.corrected_question" href="#webapp.flask_app.corrected_question">corrected_question</a></code></li>
+<li><code><a title="webapp.flask_app.false_corrected_question" href="#webapp.flask_app.false_corrected_question">false_corrected_question</a></code></li>
+<li><code><a title="webapp.flask_app.get_artists" href="#webapp.flask_app.get_artists">get_artists</a></code></li>
+<li><code><a title="webapp.flask_app.get_exhibitions" href="#webapp.flask_app.get_exhibitions">get_exhibitions</a></code></li>
+<li><code><a title="webapp.flask_app.intent_learning_alright" href="#webapp.flask_app.intent_learning_alright">intent_learning_alright</a></code></li>
+<li><code><a title="webapp.flask_app.intent_learning_improve" href="#webapp.flask_app.intent_learning_improve">intent_learning_improve</a></code></li>
+<li><code><a title="webapp.flask_app.process_form" href="#webapp.flask_app.process_form">process_form</a></code></li>
+<li><code><a title="webapp.flask_app.render_static" href="#webapp.flask_app.render_static">render_static</a></code></li>
+<li><code><a title="webapp.flask_app.tabelle_umwandeln" href="#webapp.flask_app.tabelle_umwandeln">tabelle_umwandeln</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.6.3</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

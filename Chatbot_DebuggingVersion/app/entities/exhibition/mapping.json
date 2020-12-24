@@ -1,0 +1,3984 @@
+{
+    "entities": [
+        {
+            "cname": "High Performance. The JULIA STOSCHEK COLLECTION as Guest at the ZKM",
+            "id": 190,
+            "whitelist": [
+                "High Performance"
+            ]
+        },
+        {
+            "cname": "Julia Bornefeld: Vanity and High Fidelity",
+            "id": 192,
+            "whitelist": [
+                "Vanity and High Fidelity"
+            ]
+        },
+        {
+            "cname": "Mapping Spaces",
+            "id": 196,
+            "whitelist": []
+        },
+        {
+            "cname": "Beuys Brock Vostell",
+            "id": 197,
+            "whitelist": []
+        },
+        {
+            "cname": "Jean-Jacques Lebel. The Highest of All the Arts is Insurrection",
+            "id": 199,
+            "whitelist": []
+        },
+        {
+            "cname": "Kata Legrady: Smart Pistols",
+            "id": 235,
+            "whitelist": [
+                "Smart Pistols"
+            ]
+        },
+        {
+            "cname": "global aCtIVISm",
+            "id": 237,
+            "whitelist": []
+        },
+        {
+            "cname": "SCHRIFTFILME",
+            "id": 238,
+            "whitelist": []
+        },
+        {
+            "cname": "Weltreise. Kunst aus Deutschland unterwegs",
+            "id": 239,
+            "whitelist": [
+                "Weltreise"
+            ]
+        },
+        {
+            "cname": "GJ Lischka. Present Mind",
+            "id": 276,
+            "whitelist": [
+                "GJ Lischka"
+            ]
+        },
+        {
+            "cname": "Notation (Akademie der bildenden Künste)",
+            "id": 14342,
+            "whitelist": []
+        },
+        {
+            "cname": "Matjuschin und die Leningrader Avantgarde",
+            "id": 14343,
+            "whitelist": []
+        },
+        {
+            "cname": "Pèlerinages Kunstfest Weimar",
+            "id": 14344,
+            "whitelist": []
+        },
+        {
+            "cname": "bilder*codes# 1992–2002",
+            "id": 14345,
+            "whitelist": []
+        },
+        {
+            "cname": "Nam June Paik",
+            "id": 14346,
+            "whitelist": []
+        },
+        {
+            "cname": "Weinbrenners Traum",
+            "id": 14347,
+            "whitelist": []
+        },
+        {
+            "cname": "Achim Stößer: Computergraphiken und Animationen",
+            "id": 14348,
+            "whitelist": [
+                "Computergraphiken und Animationen"
+            ]
+        },
+        {
+            "cname": "VideoWege",
+            "id": 14349,
+            "whitelist": []
+        },
+        {
+            "cname": "Bewegte Bilder. Elektronische Kunst",
+            "id": 14350,
+            "whitelist": [
+                "Bewegte Bilder"
+            ]
+        },
+        {
+            "cname": "Orgelpunktkommastrich",
+            "id": 14351,
+            "whitelist": []
+        },
+        {
+            "cname": "neuFundland",
+            "id": 14352,
+            "whitelist": []
+        },
+        {
+            "cname": "Das ZKM im Hallenbau",
+            "id": 14353,
+            "whitelist": []
+        },
+        {
+            "cname": "Soul Search",
+            "id": 14354,
+            "whitelist": []
+        },
+        {
+            "cname": "Videokunst. Die neue Generation",
+            "id": 14355,
+            "whitelist": [
+                "Videokunst"
+            ]
+        },
+        {
+            "cname": "Experimenta+",
+            "id": 14356,
+            "whitelist": []
+        },
+        {
+            "cname": "Freie Wahl?",
+            "id": 14357,
+            "whitelist": []
+        },
+        {
+            "cname": "Gib mich die Kirsche!",
+            "id": 14358,
+            "whitelist": []
+        },
+        {
+            "cname": "Wahlheimat",
+            "id": 14359,
+            "whitelist": []
+        },
+        {
+            "cname": "Sabine Schäfer, Sybille Wagner: cinq cycles, Musik-Installation",
+            "id": 14360,
+            "whitelist": [
+                "cinq cycles, Musik-Installation"
+            ]
+        },
+        {
+            "cname": "Native Land. Stop Eject",
+            "id": 14361,
+            "whitelist": [
+                "Native Land"
+            ]
+        },
+        {
+            "cname": "Kunst lebt!",
+            "id": 14362,
+            "whitelist": []
+        },
+        {
+            "cname": "Peter Weibel: Sozialmatrix",
+            "id": 14363,
+            "whitelist": [
+                "Sozialmatrix"
+            ]
+        },
+        {
+            "cname": "Fiction & Science",
+            "id": 14364,
+            "whitelist": []
+        },
+        {
+            "cname": "Dialoge? Medientechnologische Apparate",
+            "id": 14365,
+            "whitelist": []
+        },
+        {
+            "cname": "Licht und Klang(sch)wellen",
+            "id": 14366,
+            "whitelist": []
+        },
+        {
+            "cname": "Kunst aus dem Exploratorium San Francisco",
+            "id": 14367,
+            "whitelist": []
+        },
+        {
+            "cname": "Dialog im Dunkeln",
+            "id": 14368,
+            "whitelist": []
+        },
+        {
+            "cname": "Museum der Medienkunst",
+            "id": 14369,
+            "whitelist": []
+        },
+        {
+            "cname": "William Latham: The Conquest of Form",
+            "id": 14370,
+            "whitelist": [
+                "The Conquest of Form"
+            ]
+        },
+        {
+            "cname": "Das ZKM im Hallenbau. Entwurf und Baustelle",
+            "id": 14371,
+            "whitelist": [
+                "Das ZKM im Hallenbau"
+            ]
+        },
+        {
+            "cname": "Fin de Siècle",
+            "id": 14372,
+            "whitelist": []
+        },
+        {
+            "cname": "Mediengeschichten",
+            "id": 14373,
+            "whitelist": []
+        },
+        {
+            "cname": "neuFundland II",
+            "id": 14374,
+            "whitelist": []
+        },
+        {
+            "cname": "Wenyon & Gamble: Heavens (Zone 1-4), Holographie-Installation",
+            "id": 14375,
+            "whitelist": [
+                "Heavens (Zone 1-4), Holographie-Installation"
+            ]
+        },
+        {
+            "cname": "Bühnenbild heute. Bühnenbild der Zukunft",
+            "id": 14376,
+            "whitelist": [
+                "Bühnenbild heute"
+            ]
+        },
+        {
+            "cname": "Coolhunters",
+            "id": 14377,
+            "whitelist": []
+        },
+        {
+            "cname": "Harun Farocki: Auge/Maschine I-III",
+            "id": 14378,
+            "whitelist": [
+                "Auge/Maschine I-III"
+            ]
+        },
+        {
+            "cname": "Temporal Values",
+            "id": 14379,
+            "whitelist": []
+        },
+        {
+            "cname": "Resonanzen",
+            "id": 14380,
+            "whitelist": []
+        },
+        {
+            "cname": "Werner Cee, Gereon Lepper und Schüler des Helmholtz-Gymnasiums",
+            "id": 14381,
+            "whitelist": []
+        },
+        {
+            "cname": "Chiara Dynys: In alto",
+            "id": 14382,
+            "whitelist": [
+                "In alto"
+            ]
+        },
+        {
+            "cname": "Bill Viola: Stations",
+            "id": 14383,
+            "whitelist": [
+                "Stations"
+            ]
+        },
+        {
+            "cname": "Interconnect @ Between Attention and Immersion",
+            "id": 14384,
+            "whitelist": []
+        },
+        {
+            "cname": "Current",
+            "id": 14385,
+            "whitelist": []
+        },
+        {
+            "cname": "Jon Jost: Trinity",
+            "id": 14386,
+            "whitelist": [
+                "Trinity"
+            ]
+        },
+        {
+            "cname": "Zachary Seldess: A Head of View",
+            "id": 14387,
+            "whitelist": [
+                "A Head of View"
+            ]
+        },
+        {
+            "cname": "Bernhard Leitner: Akustische Architektur",
+            "id": 14388,
+            "whitelist": [
+                "Akustische Architektur"
+            ]
+        },
+        {
+            "cname": "Jochen Gerz: Anthologie der Kunst",
+            "id": 14389,
+            "whitelist": [
+                "Anthologie der Kunst"
+            ]
+        },
+        {
+            "cname": "In Szene gesetzt",
+            "id": 14390,
+            "whitelist": []
+        },
+        {
+            "cname": "Keith Haring: Heaven and Hell",
+            "id": 14391,
+            "whitelist": [
+                "Heaven and Hell"
+            ]
+        },
+        {
+            "cname": "Lee Bontecou: Insights",
+            "id": 14392,
+            "whitelist": [
+                "Insights"
+            ]
+        },
+        {
+            "cname": "Phonorama",
+            "id": 14393,
+            "whitelist": []
+        },
+        {
+            "cname": "Imagination Becomes Reality",
+            "id": 14394,
+            "whitelist": []
+        },
+        {
+            "cname": "Obsessive Malerei",
+            "id": 14395,
+            "whitelist": []
+        },
+        {
+            "cname": "Thermocline of Art",
+            "id": 14396,
+            "whitelist": []
+        },
+        {
+            "cname": "Stefano Cagol: 11 Settembre",
+            "id": 14397,
+            "whitelist": [
+                "11 Settembre"
+            ]
+        },
+        {
+            "cname": "Banquete. Nodes and Networks",
+            "id": 14398,
+            "whitelist": [
+                "Banquete"
+            ]
+        },
+        {
+            "cname": "Bill Bollinger: Die Retrospektive",
+            "id": 14399,
+            "whitelist": [
+                "Die Retrospektive"
+            ]
+        },
+        {
+            "cname": "Candida Höfer: Werkgruppen seit 1968",
+            "id": 14400,
+            "whitelist": [
+                "Werkgruppen seit 1968"
+            ]
+        },
+        {
+            "cname": "Collectors’ Choice I + II",
+            "id": 14401,
+            "whitelist": []
+        },
+        {
+            "cname": "Der diskrete Charme der Technologie",
+            "id": 14402,
+            "whitelist": []
+        },
+        {
+            "cname": "Diamonds and Bars",
+            "id": 14403,
+            "whitelist": []
+        },
+        {
+            "cname": "Elmgreen & Dragset: Celebrity",
+            "id": 14404,
+            "whitelist": [
+                "Celebrity"
+            ]
+        },
+        {
+            "cname": "Extended",
+            "id": 14405,
+            "whitelist": []
+        },
+        {
+            "cname": "Fast Forward 2. The Power of Motion",
+            "id": 14406,
+            "whitelist": [
+                "Fast Forward 2"
+            ]
+        },
+        {
+            "cname": "Faster! Bigger! Better! light",
+            "id": 14407,
+            "whitelist": []
+        },
+        {
+            "cname": "Faster! Bigger! Better!",
+            "id": 14408,
+            "whitelist": []
+        },
+        {
+            "cname": "Francesco Lo Savio, Tano Festa: The Lack of the Other",
+            "id": 14409,
+            "whitelist": [
+                "The Lack of the Other"
+            ]
+        },
+        {
+            "cname": "Franz West: In & Out",
+            "id": 14410,
+            "whitelist": [
+                "In & Out"
+            ]
+        },
+        {
+            "cname": "Giuseppe Uncini",
+            "id": 14411,
+            "whitelist": []
+        },
+        {
+            "cname": "High Times, Hard Times",
+            "id": 14412,
+            "whitelist": []
+        },
+        {
+            "cname": "The DaimlerChrysler Collection",
+            "id": 14413,
+            "whitelist": []
+        },
+        {
+            "cname": "Tobias Rehberger: Geläut - bis ich's hör' ...",
+            "id": 14414,
+            "whitelist": [
+                "Geläut - bis ich's hör' ...",
+                "Tobias Rehberger: Geläut - bis ich's hör' "
+            ]
+        },
+        {
+            "cname": "Bruce Nauman",
+            "id": 14415,
+            "whitelist": []
+        },
+        {
+            "cname": "just what is it...",
+            "id": 14416,
+            "whitelist": [
+                "just what is it"
+            ]
+        },
+        {
+            "cname": "The Global Contemporary",
+            "id": 14417,
+            "whitelist": []
+        },
+        {
+            "cname": "Exit_Ausstieg aus dem Bild",
+            "id": 14418,
+            "whitelist": []
+        },
+        {
+            "cname": "Making Things Public",
+            "id": 14419,
+            "whitelist": []
+        },
+        {
+            "cname": "Minimal Art",
+            "id": 14420,
+            "whitelist": []
+        },
+        {
+            "cname": "Von ZERO bis 2002",
+            "id": 14421,
+            "whitelist": []
+        },
+        {
+            "cname": "Medium Religion",
+            "id": 14422,
+            "whitelist": []
+        },
+        {
+            "cname": "Mischa Kuball: Platon’s Mirror",
+            "id": 14423,
+            "whitelist": [
+                "Platon’s Mirror"
+            ]
+        },
+        {
+            "cname": "Lichtkunst aus Kunstlicht",
+            "id": 14424,
+            "whitelist": []
+        },
+        {
+            "cname": "Klio",
+            "id": 14425,
+            "whitelist": []
+        },
+        {
+            "cname": "Michael Kunze: Messieurs d'Avignon",
+            "id": 14426,
+            "whitelist": [
+                "Messieurs d'Avignon"
+            ]
+        },
+        {
+            "cname": "Sylvie Fleury. 49000",
+            "id": 14427,
+            "whitelist": [
+                "Sylvie Fleury"
+            ]
+        },
+        {
+            "cname": "Totalstadt. Beijing Case",
+            "id": 14428,
+            "whitelist": [
+                "Totalstadt"
+            ]
+        },
+        {
+            "cname": "Werke aus der Sammlung Boros",
+            "id": 14429,
+            "whitelist": []
+        },
+        {
+            "cname": "Paul Thek",
+            "id": 14430,
+            "whitelist": []
+        },
+        {
+            "cname": "Martin Kippenberger: Das 2. Sein",
+            "id": 14431,
+            "whitelist": [
+                "Das 2. Sein",
+                "Martin Kippenberger: Das 2"
+            ]
+        },
+        {
+            "cname": "Rom – offene Malerei",
+            "id": 14432,
+            "whitelist": []
+        },
+        {
+            "cname": "Malerei",
+            "id": 14433,
+            "whitelist": []
+        },
+        {
+            "cname": "Artificial/Art Light InKa",
+            "id": 14434,
+            "whitelist": []
+        },
+        {
+            "cname": "Vor dem ZKM",
+            "id": 14435,
+            "whitelist": []
+        },
+        {
+            "cname": "Sounds",
+            "id": 14436,
+            "whitelist": []
+        },
+        {
+            "cname": "Jürgen Klauke: Ästhetische Paranoia",
+            "id": 14437,
+            "whitelist": [
+                "Ästhetische Paranoia"
+            ]
+        },
+        {
+            "cname": "Katrin Jakobsen: Alles wird gut",
+            "id": 14438,
+            "whitelist": [
+                "Alles wird gut"
+            ]
+        },
+        {
+            "cname": "Stephan von Huene: The Song of the Line",
+            "id": 14439,
+            "whitelist": [
+                "The Song of the Line"
+            ]
+        },
+        {
+            "cname": "Architektur und Identität",
+            "id": 14440,
+            "whitelist": []
+        },
+        {
+            "cname": "Atlas. How To Carry The World On One’s Back?",
+            "id": 14441,
+            "whitelist": [
+                "Atlas"
+            ]
+        },
+        {
+            "cname": "Frédéric Chaubin: CCCP",
+            "id": 14442,
+            "whitelist": [
+                "CCCP"
+            ]
+        },
+        {
+            "cname": "Emil Wachter: Stille und Bewegung",
+            "id": 14443,
+            "whitelist": [
+                "Stille und Bewegung"
+            ]
+        },
+        {
+            "cname": "Robert Wilson: Video Portraits",
+            "id": 14444,
+            "whitelist": [
+                "Video Portraits"
+            ]
+        },
+        {
+            "cname": "Martin Walde: Hallucigenia",
+            "id": 14445,
+            "whitelist": [
+                "Hallucigenia"
+            ]
+        },
+        {
+            "cname": "SurroGate",
+            "id": 14446,
+            "whitelist": []
+        },
+        {
+            "cname": "Kunst Computer Werke",
+            "id": 14447,
+            "whitelist": []
+        },
+        {
+            "cname": "intermedium 2 (Ausstellung)",
+            "id": 14448,
+            "whitelist": []
+        },
+        {
+            "cname": "Circles 1",
+            "id": 14449,
+            "whitelist": []
+        },
+        {
+            "cname": "cITy – Daten zur Stadt unter den Bedingungen der Informationstechnologie",
+            "id": 14450,
+            "whitelist": ["cITy"]
+        },
+        {
+            "cname": "Elektrisieren",
+            "id": 14451,
+            "whitelist": []
+        },
+        {
+            "cname": "Freddy Paul Grunert: toweringterms. access2innosense",
+            "id": 14452,
+            "whitelist": [
+                "toweringterms. access2innosense",
+                "Freddy Paul Grunert: toweringterms"
+            ]
+        },
+        {
+            "cname": "Stop. Watch",
+            "id": 14453,
+            "whitelist": [
+                "Stop"
+            ]
+        },
+        {
+            "cname": "Space Invaders",
+            "id": 14454,
+            "whitelist": []
+        },
+        {
+            "cname": "rosalie: Hyperion_Fragment",
+            "id": 14455,
+            "whitelist": [
+                "Hyperion_Fragment"
+            ]
+        },
+        {
+            "cname": "Eran Schaerf: Die Stimme des Hörers",
+            "id": 14456,
+            "whitelist": [
+                "Die Stimme des Hörers"
+            ]
+        },
+        {
+            "cname": "Unknown Quantity",
+            "id": 14457,
+            "whitelist": []
+        },
+        {
+            "cname": "Edmund Kuppel: Wiederentdeckt",
+            "id": 14458,
+            "whitelist": [
+                "Wiederentdeckt"
+            ]
+        },
+        {
+            "cname": "science + fiction",
+            "id": 14459,
+            "whitelist": []
+        },
+        {
+            "cname": "Edmund Kuppel: Projektionen 1970–2010",
+            "id": 14460,
+            "whitelist": [
+                "Projektionen 1970–2010"
+            ]
+        },
+        {
+            "cname": "Kunst der Gegenwart",
+            "id": 14461,
+            "whitelist": []
+        },
+        {
+            "cname": "Unexpected Obstacles. The Work of Perry Hoberman 1982–1997",
+            "id": 14462,
+            "whitelist": [
+                "Unexpected Obstacles"
+            ]
+        },
+        {
+            "cname": "Stephan von Huene: Grenzgänger, Grenzverschieber",
+            "id": 14463,
+            "whitelist": [
+                "Grenzgänger, Grenzverschieber"
+            ]
+        },
+        {
+            "cname": "Call me ISTANBUL ist mein Name",
+            "id": 14464,
+            "whitelist": []
+        },
+        {
+            "cname": "CTRL [Space]. Rhetorik der Überwachung",
+            "id": 14465,
+            "whitelist": [
+                "CTRL [Space]"
+            ]
+        },
+        {
+            "cname": "Der anagrammatische Körper",
+            "id": 14466,
+            "whitelist": []
+        },
+        {
+            "cname": "Fast Forward",
+            "id": 14467,
+            "whitelist": []
+        },
+        {
+            "cname": "Future Cinema",
+            "id": 14468,
+            "whitelist": []
+        },
+        {
+            "cname": "Iannis Xenakis: Musik und Architektur",
+            "id": 14469,
+            "whitelist": [
+                "Musik und Architektur"
+            ]
+        },
+        {
+            "cname": "Olafur Eliasson: Your Spiral View, 2002",
+            "id": 14470,
+            "whitelist": [
+                "Your Spiral View, 2002"
+            ]
+        },
+        {
+            "cname": "YOU_ser",
+            "id": 14471,
+            "whitelist": []
+        },
+        {
+            "cname": "Ingeborg Lüscher: Die andere Seite",
+            "id": 14472,
+            "whitelist": [
+                "Die andere Seite"
+            ]
+        },
+        {
+            "cname": "Video Cult/ures",
+            "id": 14473,
+            "whitelist": []
+        },
+        {
+            "cname": "Amodal Suspension. Relational Architecture 8, 2003",
+            "id": 14474,
+            "whitelist": [
+                "Amodal Suspension"
+            ]
+        },
+        {
+            "cname": "art_clips.ch.at.de",
+            "id": 14475,
+            "whitelist": [
+                "art_clips"
+            ]
+        },
+        {
+            "cname": "bit international. [Nove] tendencije",
+            "id": 14476,
+            "whitelist": [
+                "bit international"
+            ]
+        },
+        {
+            "cname": "Car Culture. Medien der Mobilität",
+            "id": 14477,
+            "whitelist": [
+                "Car Culture"
+            ]
+        },
+        {
+            "cname": "Das Museum der zeitbasierten Künste",
+            "id": 14478,
+            "whitelist": []
+        },
+        {
+            "cname": "EU-Projekt Scalex",
+            "id": 14479,
+            "whitelist": []
+        },
+        {
+            "cname": "Hermen Maat: Paranoid Panopticon",
+            "id": 14480,
+            "whitelist": [
+                "Paranoid Panopticon"
+            ]
+        },
+        {
+            "cname": "Web of Life",
+            "id": 14481,
+            "whitelist": []
+        },
+        {
+            "cname": "YOU_ser 2.0. Celebration of the Consumer",
+            "id": 14482,
+            "whitelist": [
+                "YOU_ser 2"
+            ]
+        },
+        {
+            "cname": "Die algorithmische Revolution",
+            "id": 14483,
+            "whitelist": []
+        },
+        {
+            "cname": "Iconoclash",
+            "id": 14484,
+            "whitelist": []
+        },
+        {
+            "cname": "Imagining Media@ZKM",
+            "id": 14485,
+            "whitelist": []
+        },
+        {
+            "cname": "Eröffnung ZKM | Medienmuseum",
+            "id": 14486,
+            "whitelist": []
+        },
+        {
+            "cname": "net_condition",
+            "id": 14487,
+            "whitelist": []
+        },
+        {
+            "cname": "Our Literal Speed",
+            "id": 14488,
+            "whitelist": []
+        },
+        {
+            "cname": "Seeing Time",
+            "id": 14489,
+            "whitelist": []
+        },
+        {
+            "cname": "Text/Ton",
+            "id": 14490,
+            "whitelist": []
+        },
+        {
+            "cname": "Welt der Spiele. Reloaded",
+            "id": 14491,
+            "whitelist": [
+                "Welt der Spiele"
+            ]
+        },
+        {
+            "cname": "Olafur Eliasson: Surroundings Surrounded",
+            "id": 14492,
+            "whitelist": [
+                "Surroundings Surrounded"
+            ]
+        },
+        {
+            "cname": "Wolfgang von Kempelen: Mensch-[in der]-Maschine",
+            "id": 14493,
+            "whitelist": [
+                "Mensch-[in der]-Maschine"
+            ]
+        },
+        {
+            "cname": "Edmund Kuppel: Das Kabinett des Ferdinand von Blumenfeld",
+            "id": 14494,
+            "whitelist": [
+                "Das Kabinett des Ferdinand von Blumenfeld"
+            ]
+        },
+        {
+            "cname": "Sigmar Polke",
+            "id": 14495,
+            "whitelist": []
+        },
+        {
+            "cname": "Zwischen zwei Toden",
+            "id": 14496,
+            "whitelist": []
+        },
+        {
+            "cname": "David Link: Poetry Machine [version 1.0]",
+            "id": 14497,
+            "whitelist": [
+                "Poetry Machine [version 1.0]",
+                "David Link: Poetry Machine [version 1"
+            ]
+        },
+        {
+            "cname": "Bilder eines Reiches",
+            "id": 14498,
+            "whitelist": []
+        },
+        {
+            "cname": "Ignasi Aballí. 0–24 h",
+            "id": 14499,
+            "whitelist": [
+                "Ignasi Aballí"
+            ]
+        },
+        {
+            "cname": "Neue Werke im Medienmuseum",
+            "id": 14500,
+            "whitelist": []
+        },
+        {
+            "cname": "Meisterwerke der Medienkunst aus der ZKM-Sammlung",
+            "id": 14501,
+            "whitelist": []
+        },
+        {
+            "cname": "MindFrames. Media Study at Buffalo",
+            "id": 14502,
+            "whitelist": [
+                "MindFrames"
+            ]
+        },
+        {
+            "cname": "Digital Art Works",
+            "id": 14503,
+            "whitelist": []
+        },
+        {
+            "cname": "Notation",
+            "id": 14504,
+            "whitelist": []
+        },
+        {
+            "cname": "Bazon Brock: Lustmarsch durchs Theoriegelände",
+            "id": 14505,
+            "whitelist": [
+                "Lustmarsch durchs Theoriegelände"
+            ]
+        },
+        {
+            "cname": "Art & Language and The Red Krayola",
+            "id": 14506,
+            "whitelist": []
+        },
+        {
+            "cname": "Bankett",
+            "id": 14507,
+            "whitelist": []
+        },
+        {
+            "cname": "Schnittstelle Schreibtisch oder Wider ein Denken in Schubladen",
+            "id": 14508,
+            "whitelist": []
+        },
+        {
+            "cname": "Art & Language/Thomas Dreher: Blurting in A & L online",
+            "id": 14509,
+            "whitelist": [
+                "Blurting in A & L online"
+            ]
+        },
+        {
+            "cname": "Dennis Oppenheim: Aspen Projects",
+            "id": 14510,
+            "whitelist": [
+                "Aspen Projects"
+            ]
+        },
+        {
+            "cname": "Der Videoessay",
+            "id": 14511,
+            "whitelist": []
+        },
+        {
+            "cname": "Die 50 Besten 2004",
+            "id": 14512,
+            "whitelist": []
+        },
+        {
+            "cname": "Die 50 Besten 2003",
+            "id": 14513,
+            "whitelist": []
+        },
+        {
+            "cname": "Die Skulptur im Video",
+            "id": 14514,
+            "whitelist": []
+        },
+        {
+            "cname": "Diffusion per Vidéo",
+            "id": 14515,
+            "whitelist": []
+        },
+        {
+            "cname": "documenta 5. Die »Audiovisuelle Dokumentation« von Karl Oskar Blase",
+            "id": 14516,
+            "whitelist": [
+                "documenta 5"
+            ]
+        },
+        {
+            "cname": "Experiments in Art and Technology",
+            "id": 14517,
+            "whitelist": []
+        },
+        {
+            "cname": "Fragen Sie nicht",
+            "id": 14518,
+            "whitelist": []
+        },
+        {
+            "cname": "Gerhard Johann Lischka",
+            "id": 14519,
+            "whitelist": []
+        },
+        {
+            "cname": "Video/Ökonomie",
+            "id": 14520,
+            "whitelist": []
+        },
+        {
+            "cname": "Infermental",
+            "id": 14521,
+            "whitelist": []
+        },
+        {
+            "cname": "INNENräumeAUSSENstädte",
+            "id": 14522,
+            "whitelist": []
+        },
+        {
+            "cname": "performing_sounds",
+            "id": 14523,
+            "whitelist": []
+        },
+        {
+            "cname": "Klingende Elektronen",
+            "id": 14524,
+            "whitelist": []
+        },
+        {
+            "cname": "Landscape",
+            "id": 14525,
+            "whitelist": []
+        },
+        {
+            "cname": "Libelli",
+            "id": 14526,
+            "whitelist": []
+        },
+        {
+            "cname": "video/text",
+            "id": 14527,
+            "whitelist": []
+        },
+        {
+            "cname": "Ira Schneider: From the beginning … –  Video total",
+            "id": 14528,
+            "whitelist": [
+                "From the beginning … –  Video total"
+            ]
+        },
+        {
+            "cname": "PVC3",
+            "id": 14529,
+            "whitelist": []
+        },
+        {
+            "cname": "40jahrevideokunst.de",
+            "id": 14530,
+            "whitelist": [
+                "40jahrevideokunst"
+            ]
+        },
+        {
+            "cname": "51:49",
+            "id": 14531,
+            "whitelist": []
+        },
+        {
+            "cname": "Peter Forgács & The Labyrinth Project: The Danube Exodus",
+            "id": 14532,
+            "whitelist": [
+                "The Danube Exodus"
+            ]
+        },
+        {
+            "cname": "Max Dean: Mist",
+            "id": 14533,
+            "whitelist": [
+                "Mist"
+            ]
+        },
+        {
+            "cname": "robotlab: Juke_bots",
+            "id": 14534,
+            "whitelist": [
+                "Juke_bots"
+            ]
+        },
+        {
+            "cname": "Vertrautes Terrain",
+            "id": 14535,
+            "whitelist": []
+        },
+        {
+            "cname": "Natur und Umwelt in Armenien",
+            "id": 14536,
+            "whitelist": []
+        },
+        {
+            "cname": "Osvaldo Romberg: Theater of Transparency",
+            "id": 14537,
+            "whitelist": [
+                "Theater of Transparency"
+            ]
+        },
+        {
+            "cname": "Wunderkammer Wissenschaft",
+            "id": 14538,
+            "whitelist": []
+        },
+        {
+            "cname": "Mathematik zum Anfassen",
+            "id": 14539,
+            "whitelist": []
+        },
+        {
+            "cname": "Magnet",
+            "id": 14540,
+            "whitelist": []
+        },
+        {
+            "cname": "Enseigner/Produire",
+            "id": 14541,
+            "whitelist": []
+        },
+        {
+            "cname": "Gesichter des Überlebens",
+            "id": 14542,
+            "whitelist": []
+        },
+        {
+            "cname": "Lisa Schmitz: InVerse Bibliothek",
+            "id": 14543,
+            "whitelist": [
+                "InVerse Bibliothek"
+            ]
+        },
+        {
+            "cname": "Gao Xingjian: Papier, Tusche, Film",
+            "id": 14544,
+            "whitelist": [
+                "Papier, Tusche, Film"
+            ]
+        },
+        {
+            "cname": "ARTEAST 2000+",
+            "id": 14545,
+            "whitelist": []
+        },
+        {
+            "cname": "Auf Augenhöhe",
+            "id": 14546,
+            "whitelist": []
+        },
+        {
+            "cname": "Bewohnbare Bibliotheken",
+            "id": 14547,
+            "whitelist": []
+        },
+        {
+            "cname": "Discover Sudan",
+            "id": 14548,
+            "whitelist": []
+        },
+        {
+            "cname": "Gute Bauten",
+            "id": 14549,
+            "whitelist": []
+        },
+        {
+            "cname": "Jakob Gautel: Babelturm",
+            "id": 14550,
+            "whitelist": [
+                "Babelturm"
+            ]
+        },
+        {
+            "cname": "Camera Imago 1:1",
+            "id": 14551,
+            "whitelist": []
+        },
+        {
+            "cname": "Special Olympics Portrait Project",
+            "id": 14552,
+            "whitelist": []
+        },
+        {
+            "cname": "CloudBrowsing",
+            "id": 14553,
+            "whitelist": []
+        },
+        {
+            "cname": "Multiple Choices",
+            "id": 14554,
+            "whitelist": []
+        },
+        {
+            "cname": "Mischa Kuball: ReMix/BrocaII (Letters/Numbers)",
+            "id": 14555,
+            "whitelist": [
+                "ReMix/BrocaII (Letters/Numbers)"
+            ]
+        },
+        {
+            "cname": "Jean Baudrillard und die Künste",
+            "id": 14556,
+            "whitelist": []
+        },
+        {
+            "cname": "Mein Gen, das hat fünf Ecken...",
+            "id": 14557,
+            "whitelist": [
+                "Mein Gen, das hat fünf Ecken"
+            ]
+        },
+        {
+            "cname": "Ant Farm. 1968–1978",
+            "id": 14558,
+            "whitelist": [
+                "Ant Farm"
+            ]
+        },
+        {
+            "cname": "Frieder Nake: Die präzisen Vergnügen",
+            "id": 14559,
+            "whitelist": [
+                "Die präzisen Vergnügen"
+            ]
+        },
+        {
+            "cname": "Hans Kupelwieser",
+            "id": 14560,
+            "whitelist": []
+        },
+        {
+            "cname": "RECORD > AGAIN!",
+            "id": 14561,
+            "whitelist": []
+        },
+        {
+            "cname": "Symmetrische Kunst aus Ungarn",
+            "id": 14562,
+            "whitelist": []
+        },
+        {
+            "cname": "Konversationskunst",
+            "id": 14563,
+            "whitelist": []
+        },
+        {
+            "cname": "Ruth Vollmer & Gego: Thinking the Line",
+            "id": 14564,
+            "whitelist": [
+                "Thinking the Line"
+            ]
+        },
+        {
+            "cname": "Hiroshi Kawano. Der Philosoph am Computer",
+            "id": 14565,
+            "whitelist": [
+                "Hiroshi Kawano"
+            ]
+        },
+        {
+            "cname": "un_imaginable",
+            "id": 14566,
+            "whitelist": []
+        },
+        {
+            "cname": "Wolf Kahlen: VideoTapes 1969–2010",
+            "id": 14567,
+            "whitelist": [
+                "VideoTapes 1969–2010"
+            ]
+        },
+        {
+            "cname": "Foucault und Künste",
+            "id": 14568,
+            "whitelist": []
+        },
+        {
+            "cname": "Silent Music. George Brecht",
+            "id": 14569,
+            "whitelist": [
+                "Silent Music"
+            ]
+        },
+        {
+            "cname": "Robert Cahen: Das Unsichtbare erzählen",
+            "id": 14570,
+            "whitelist": [
+                "Das Unsichtbare erzählen"
+            ]
+        },
+        {
+            "cname": "ars viva 00/01",
+            "id": 14571,
+            "whitelist": []
+        },
+        {
+            "cname": "Bazile: Ein Maß für alle",
+            "id": 14572,
+            "whitelist": [
+                "Ein Maß für alle"
+            ]
+        },
+        {
+            "cname": "Bense und die Künste",
+            "id": 14573,
+            "whitelist": []
+        },
+        {
+            "cname": "Deleuze und die Künste",
+            "id": 14574,
+            "whitelist": []
+        },
+        {
+            "cname": "Der starke Konsument",
+            "id": 14575,
+            "whitelist": []
+        },
+        {
+            "cname": "Erwin Wurm",
+            "id": 14576,
+            "whitelist": []
+        },
+        {
+            "cname": "Guy Debord",
+            "id": 14577,
+            "whitelist": []
+        },
+        {
+            "cname": "Herbert W. Franke: Wanderer zwischen den Welten",
+            "id": 14578,
+            "whitelist": [
+                "Wanderer zwischen den Welten"
+            ]
+        },
+        {
+            "cname": "Georg Nees: Die große Versuchung",
+            "id": 14579,
+            "whitelist": [
+                "Die große Versuchung"
+            ]
+        },
+        {
+            "cname": "Paul Virilio und die Künste",
+            "id": 14580,
+            "whitelist": []
+        },
+        {
+            "cname": "rosalie: Helios",
+            "id": 14581,
+            "whitelist": [
+                "Helios"
+            ]
+        },
+        {
+            "cname": "Nam June Paik: Internet Dream",
+            "id": 14582,
+            "whitelist": [
+                "Internet Dream"
+            ]
+        },
+        {
+            "cname": "Stefano Scheda: Meteo 2004, 2004",
+            "id": 14583,
+            "whitelist": [
+                "Meteo 2004, 2004"
+            ]
+        },
+        {
+            "cname": "<SA/JO>: MicroSonical Shining Biospheres No. 1, 2009",
+            "id": 14584,
+            "whitelist": [
+                "MicroSonical Shining Biospheres No. 1, 2009",
+                "<SA/JO>: MicroSonical Shining Biospheres No"
+            ]
+        },
+        {
+            "cname": "Tim Otto Roth: 100 Tage. 100 Imachinationen",
+            "id": 14585,
+            "whitelist": [
+                "100 Tage. 100 Imachinationen",
+                "Tim Otto Roth: 100 Tage"
+            ]
+        },
+        {
+            "cname": "Boris Petrovsky: You&Me-isms",
+            "id": 14586,
+            "whitelist": [
+                "You&Me-isms"
+            ]
+        },
+        {
+            "cname": "Marco Preitschopf: [reframing] the Stainless Lack...inhale Mediatorial Oxygen. The Negative Air Pressure",
+            "id": 14587,
+            "whitelist": [
+                "[reframing] the Stainless Lack...inhale Mediatorial Oxygen. The Negative Air Pressure",
+                "Marco Preitschopf: [reframing] the Stainless Lack"
+            ]
+        },
+        {
+            "cname": "Kunstwerk Erde",
+            "id": 14588,
+            "whitelist": []
+        },
+        {
+            "cname": "Karlsruhe Multimedial. Moviemap Karlsruhe",
+            "id": 14589,
+            "whitelist": [
+                "Karlsruhe Multimedial"
+            ]
+        },
+        {
+            "cname": "Eröffnung ZKM | Museum für Neue Kunst",
+            "id": 14590,
+            "whitelist": []
+        },
+        {
+            "cname": "Début. Studentenarbeiten der Staatlichen Hochschule für Gestaltung Karlsruhe",
+            "id": 14591,
+            "whitelist": [
+                "Début"
+            ]
+        },
+        {
+            "cname": "Cube",
+            "id": 14592,
+            "whitelist": []
+        },
+        {
+            "cname": "BamiyanBuddhasBretonBlast",
+            "id": 14593,
+            "whitelist": []
+        },
+        {
+            "cname": "ZKM=FUI",
+            "id": 14594,
+            "whitelist": []
+        },
+        {
+            "cname": "Macht Rhizome!",
+            "id": 14595,
+            "whitelist": []
+        },
+        {
+            "cname": "Von Innen und Außen",
+            "id": 14596,
+            "whitelist": []
+        },
+        {
+            "cname": "Jack Goldstein",
+            "id": 14597,
+            "whitelist": []
+        },
+        {
+            "cname": "Lichtkunst aus Kunstlicht @ZKMax",
+            "id": 14598,
+            "whitelist": []
+        },
+        {
+            "cname": "Julian Rosefeldt: Trilogie des Scheiterns. Teil 1+2",
+            "id": 14599,
+            "whitelist": [
+                "Trilogie des Scheiterns. Teil 1+2",
+                "Julian Rosefeldt: Trilogie des Scheiterns"
+            ]
+        },
+        {
+            "cname": "robotlab: juke_bots 2.0",
+            "id": 14600,
+            "whitelist": [
+                "juke_bots 2.0",
+                "robotlab: juke_bots 2"
+            ]
+        },
+        {
+            "cname": "11. Marler Video Kunst Preis",
+            "id": 14601,
+            "whitelist": [
+                "11"
+            ]
+        },
+        {
+            "cname": "Gary Hill: Suspension of Disbelief",
+            "id": 14602,
+            "whitelist": [
+                "Suspension of Disbelief"
+            ]
+        },
+        {
+            "cname": "SpeedForce",
+            "id": 14603,
+            "whitelist": []
+        },
+        {
+            "cname": "Vincent Szarek, Michael Zahn",
+            "id": 14604,
+            "whitelist": []
+        },
+        {
+            "cname": "Videoart Center Tokyo",
+            "id": 14605,
+            "whitelist": []
+        },
+        {
+            "cname": "Öffentlichkeit als Medium",
+            "id": 14606,
+            "whitelist": []
+        },
+        {
+            "cname": "Öffentlichkeit als Medium II",
+            "id": 14607,
+            "whitelist": []
+        },
+        {
+            "cname": "Screening War",
+            "id": 14608,
+            "whitelist": []
+        },
+        {
+            "cname": "Screening War (ZKMax)",
+            "id": 14609,
+            "whitelist": []
+        },
+        {
+            "cname": "Klaus vom Bruch: Ausgewählte Videos",
+            "id": 14610,
+            "whitelist": [
+                "Ausgewählte Videos"
+            ]
+        },
+        {
+            "cname": "Short Frites Explosion",
+            "id": 14611,
+            "whitelist": []
+        },
+        {
+            "cname": "Shilpa Gupta",
+            "id": 14612,
+            "whitelist": []
+        },
+        {
+            "cname": "Jaundice / Addiction to Yellow",
+            "id": 14613,
+            "whitelist": []
+        },
+        {
+            "cname": "videoUNDERground",
+            "id": 14614,
+            "whitelist": []
+        },
+        {
+            "cname": "Julian Rosefeldt: Trilogie des Scheiterns (Teil 3)",
+            "id": 14615,
+            "whitelist": [
+                "Trilogie des Scheiterns (Teil 3)"
+            ]
+        },
+        {
+            "cname": "Philip Pocock: SpacePlace",
+            "id": 14616,
+            "whitelist": [
+                "SpacePlace"
+            ]
+        },
+        {
+            "cname": "MindFrames@ZKMax",
+            "id": 14617,
+            "whitelist": []
+        },
+        {
+            "cname": "Robert Cahen",
+            "id": 14618,
+            "whitelist": []
+        },
+        {
+            "cname": "Michael Kosakowski: Fortynine Inside",
+            "id": 14619,
+            "whitelist": [
+                "Fortynine Inside"
+            ]
+        },
+        {
+            "cname": "Zilla Leutenegger",
+            "id": 14620,
+            "whitelist": []
+        },
+        {
+            "cname": "Collecting Sounds",
+            "id": 14621,
+            "whitelist": []
+        },
+        {
+            "cname": "a propos ZKM: Neue Asiatische Kunst. Thermocline of Art",
+            "id": 14622,
+            "whitelist": [
+                "Neue Asiatische Kunst. Thermocline of Art",
+                "a propos ZKM: Neue Asiatische Kunst"
+            ]
+        },
+        {
+            "cname": "Susanne Wagner",
+            "id": 14623,
+            "whitelist": []
+        },
+        {
+            "cname": "Martina Salzberger and Lookatmekid: Rootless Things",
+            "id": 14624,
+            "whitelist": [
+                "Rootless Things"
+            ]
+        },
+        {
+            "cname": "Stefan Nikolaev",
+            "id": 14625,
+            "whitelist": []
+        },
+        {
+            "cname": "Videotouristen",
+            "id": 14626,
+            "whitelist": []
+        },
+        {
+            "cname": "art_clips.ch.at.de (ZKMax)",
+            "id": 14627,
+            "whitelist": [
+                "art_clips"
+            ]
+        },
+        {
+            "cname": "Ute Friedrike Jürß: Die Zeit hält den Atem an, 2007",
+            "id": 14628,
+            "whitelist": [
+                "Die Zeit hält den Atem an, 2007"
+            ]
+        },
+        {
+            "cname": "Arbeiten von Simone Westerwinter and Pietro Sanguineti",
+            "id": 14629,
+            "whitelist": []
+        },
+        {
+            "cname": "Bollywoodscratches",
+            "id": 14630,
+            "whitelist": []
+        },
+        {
+            "cname": "Bo Christian Larsson, Murena, Tobias Yves Zintel: Interesting productions #3",
+            "id": 14631,
+            "whitelist": [
+                "Interesting productions #3"
+            ]
+        },
+        {
+            "cname": "Hermann Kleinknecht. Hartmut Lerch",
+            "id": 14632,
+            "whitelist": []
+        },
+        {
+            "cname": "Harmony of Clash",
+            "id": 14633,
+            "whitelist": []
+        },
+        {
+            "cname": "DIAL",
+            "id": 14634,
+            "whitelist": []
+        },
+        {
+            "cname": "Golo Föllmer, Gívan Belá: Vanricio Kagol II",
+            "id": 14635,
+            "whitelist": [
+                "Vanricio Kagol II"
+            ]
+        },
+        {
+            "cname": "850 – Contemporary Arts Program – revisited",
+            "id": 14636,
+            "whitelist": []
+        },
+        {
+            "cname": "Apichatpong Weerasethakul: Emerald/Morakot, 2007",
+            "id": 14637,
+            "whitelist": [
+                "Emerald/Morakot, 2007"
+            ]
+        },
+        {
+            "cname": "dctp - Alexander Kluge. Das Interview als künstlerische Form",
+            "id": 14638,
+            "whitelist": [
+                "dctp"
+            ]
+        },
+        {
+            "cname": "Gerhard Friebe: The Minerva Project",
+            "id": 14639,
+            "whitelist": [
+                "The Minerva Project"
+            ]
+        },
+        {
+            "cname": "Gerwald Rockenschaub: Six Animations, 2002",
+            "id": 14640,
+            "whitelist": [
+                "Six Animations, 2002"
+            ]
+        },
+        {
+            "cname": "Gerwin Eipper: The Darkest Star, 2007",
+            "id": 14641,
+            "whitelist": [
+                "The Darkest Star, 2007"
+            ]
+        },
+        {
+            "cname": "13. Marler Video Kunst Preis ",
+            "id": 14642,
+            "whitelist": [
+                "13"
+            ]
+        },
+        {
+            "cname": "Stephanie Maier. Bill Viola",
+            "id": 14643,
+            "whitelist": []
+        },
+        {
+            "cname": "Öffentlichkeit als Medium III",
+            "id": 14644,
+            "whitelist": []
+        },
+        {
+            "cname": "Circles 3",
+            "id": 14645,
+            "whitelist": []
+        },
+        {
+            "cname": "Circles 2",
+            "id": 14646,
+            "whitelist": []
+        },
+        {
+            "cname": "Circles 4",
+            "id": 14647,
+            "whitelist": []
+        },
+        {
+            "cname": "Circles 5",
+            "id": 14648,
+            "whitelist": []
+        },
+        {
+            "cname": "Maschinensehen",
+            "id": 14649,
+            "whitelist": []
+        },
+        {
+            "cname": "The State of Image",
+            "id": 14650,
+            "whitelist": []
+        },
+        {
+            "cname": "Kraftwerk ZKM",
+            "id": 14651,
+            "whitelist": []
+        },
+        {
+            "cname": "Moments",
+            "id": 14652,
+            "whitelist": []
+        },
+        {
+            "cname": "The Name is BURROUGHS. Expanded Media",
+            "id": 14653,
+            "whitelist": [
+                "The Name is BURROUGHS"
+            ]
+        },
+        {
+            "cname": "Dieter Meier: Works 1969–2011 and the YELLO Years",
+            "id": 14654,
+            "whitelist": [
+                "Works 1969–2011 and the YELLO Years"
+            ]
+        },
+        {
+            "cname": "Franz Erhard Walther: Raum durch Handlung",
+            "id": 14655,
+            "whitelist": [
+                "Raum durch Handlung"
+            ]
+        },
+        {
+            "cname": "Bernhard Sandfort: Dialogische Malerei und das Museum der Fragen",
+            "id": 14656,
+            "whitelist": [
+                "Dialogische Malerei und das Museum der Fragen"
+            ]
+        },
+        {
+            "cname": "Józef Robakowski: The Handshake",
+            "id": 14657,
+            "whitelist": [
+                "The Handshake"
+            ]
+        },
+        {
+            "cname": "Ivan Faktor: Erstes Programm",
+            "id": 14658,
+            "whitelist": [
+                "Erstes Programm"
+            ]
+        },
+        {
+            "cname": "Sound Art",
+            "id": 14659,
+            "whitelist": []
+        },
+        {
+            "cname": "Better Books",
+            "id": 14660,
+            "whitelist": []
+        },
+        {
+            "cname": "Hirschfaktor. Die Kunst des Zitierens",
+            "id": 14661,
+            "whitelist": [
+                "Hirschfaktor"
+            ]
+        },
+        {
+            "cname": "Vidéo Vintage 1963-1983",
+            "id": 14662,
+            "whitelist": []
+        },
+        {
+            "cname": "PRÄSENTation",
+            "id": 14663,
+            "whitelist": []
+        },
+        {
+            "cname": "ARTE und ZKM präsentieren: Alles für die Kunst",
+            "id": 14664,
+            "whitelist": [
+                "Alles für die Kunst"
+            ]
+        },
+        {
+            "cname": "Inter-Facing the Archive",
+            "id": 14665,
+            "whitelist": []
+        },
+        {
+            "cname": "Resonate",
+            "id": 14666,
+            "whitelist": []
+        },
+        {
+            "cname": "ARTandPRESS",
+            "id": 14667,
+            "whitelist": []
+        },
+        {
+            "cname": "Energiefelder",
+            "id": 14668,
+            "whitelist": []
+        },
+        {
+            "cname": "Ein Sechstel der Erde",
+            "id": 14669,
+            "whitelist": []
+        },
+        {
+            "cname": "Paysages-passages",
+            "id": 14670,
+            "whitelist": []
+        },
+        {
+            "cname": "Shuichi Fukazawa: An Ordinary Window / Chiho Hoshino: Die Stadt der toten Dichter",
+            "id": 14671,
+            "whitelist": []
+        },
+        {
+            "cname": "Nicole Blaffert: Helga and Werner in KA. Besirat Tesfay: Digital Drawings",
+            "id": 14673,
+            "whitelist": [
+                "Nicole Blaffert: Helga and Werner in KA"
+            ]
+        },
+        {
+            "cname": "h | u | m | b | o | t",
+            "id": 14674,
+            "whitelist": []
+        },
+        {
+            "cname": "Media Art Action Interaction",
+            "id": 14675,
+            "whitelist": []
+        },
+        {
+            "cname": "cITy – \\\\internationaler\\medien\\kunst\\preis 2000",
+            "id": 14676,
+            "whitelist": [
+                "cITy"
+            ]
+        },
+        {
+            "cname": "Hans Diebner, Sven Sahle: Liquid Perceptron",
+            "id": 14677,
+            "whitelist": [
+                "Liquid Perceptron"
+            ]
+        },
+        {
+            "cname": "DCX. Your World in My Tears",
+            "id": 14678,
+            "whitelist": [
+                "DCX"
+            ]
+        },
+        {
+            "cname": "Dennis Del Favero: Cross Currents",
+            "id": 14679,
+            "whitelist": [
+                "Cross Currents"
+            ]
+        },
+        {
+            "cname": "Masaki Fujihata: Nuzzle Afar",
+            "id": 14680,
+            "whitelist": [
+                "Nuzzle Afar"
+            ]
+        },
+        {
+            "cname": "William Forsythe: Improvisation Technologies",
+            "id": 14681,
+            "whitelist": [
+                "Improvisation Technologies"
+            ]
+        },
+        {
+            "cname": "Furukawa, Fujihata, Münch: Small Fish",
+            "id": 14682,
+            "whitelist": [
+                "Small Fish"
+            ]
+        },
+        {
+            "cname": "Dammerstock Project Group: White Reason. Housing Development in the 1920s",
+            "id": 14683,
+            "whitelist": [
+                "White Reason. Housing Development in the 1920s",
+                "Dammerstock Project Group: White Reason"
+            ]
+        },
+        {
+            "cname": "Calin Dan: Happy Doomsday",
+            "id": 14684,
+            "whitelist": [
+                "Happy Doomsday"
+            ]
+        },
+        {
+            "cname": "Antonio Muntadas: Media Architecture Installations",
+            "id": 14685,
+            "whitelist": [
+                "Media Architecture Installations"
+            ]
+        },
+        {
+            "cname": "Michael Bielicky: Delvaux's Dream",
+            "id": 14686,
+            "whitelist": [
+                "Delvaux's Dream"
+            ]
+        },
+        {
+            "cname": "Medien Kunst Interaktion",
+            "id": 14687,
+            "whitelist": []
+        },
+        {
+            "cname": "Move on Asia",
+            "id": 14688,
+            "whitelist": []
+        },
+        {
+            "cname": "Du Zhenjun: Babel World",
+            "id": 14689,
+            "whitelist": [
+                "Babel World"
+            ]
+        },
+        {
+            "cname": "Kryptologicum",
+            "id": 14690,
+            "whitelist": []
+        },
+        {
+            "cname": "Blaffert & Wamhof: JHQ Rheindahlen",
+            "id": 14691,
+            "whitelist": [
+                "JHQ Rheindahlen"
+            ]
+        },
+        {
+            "cname": "Nothing to Declare?",
+            "id": 14692,
+            "whitelist": []
+        },
+        {
+            "cname": "Henry Flynt",
+            "id": 14693,
+            "whitelist": []
+        },
+        {
+            "cname": "Matthias Fritsch: Parallaxe, 2008",
+            "id": 14694,
+            "whitelist": [
+                "Parallaxe, 2008"
+            ]
+        },
+        {
+            "cname": "Robert Darroll, Sean Reed: Oracle",
+            "id": 14695,
+            "whitelist": [
+                "Oracle"
+            ]
+        },
+        {
+            "cname": "Chris Ziegler: Rickshaw Bangalore",
+            "id": 14696,
+            "whitelist": [
+                "Rickshaw Bangalore"
+            ]
+        },
+        {
+            "cname": "Emanuel Raab: The Image of Man",
+            "id": 14697,
+            "whitelist": [
+                "The Image of Man"
+            ]
+        },
+        {
+            "cname": "Place-Hampi",
+            "id": 14698,
+            "whitelist": []
+        },
+        {
+            "cname": "Jean Michel Bruyère: CaMg[Co3]",
+            "id": 14699,
+            "whitelist": [
+                "CaMg[Co3]"
+            ]
+        },
+        {
+            "cname": "The Wooster Group: There is Still Time... Brother",
+            "id": 14700,
+            "whitelist": [
+                "There is Still Time... Brother",
+                "The Wooster Group: There is Still Time"
+            ]
+        },
+        {
+            "cname": "Robert Darroll, Sean Reed: Orakel",
+            "id": 14701,
+            "whitelist": [
+                "Orakel"
+            ]
+        },
+        {
+            "cname": "Bernd Lintermann, Torsten Belschner: Sono reMorphed, 2007",
+            "id": 14702,
+            "whitelist": [
+                "Sono reMorphed, 2007"
+            ]
+        },
+        {
+            "cname": "Dennis Del Favero: Pentimento, 2001",
+            "id": 14703,
+            "whitelist": [
+                "Pentimento, 2001"
+            ]
+        },
+        {
+            "cname": "Jeffrey Shaw: Place-Ruhr, 2000. Place-Urbanity, 2002",
+            "id": 14704,
+            "whitelist": [
+                "Place-Ruhr, 2000. Place-Urbanity, 2002",
+                "Jeffrey Shaw: Place-Ruhr, 2000"
+            ]
+        },
+        {
+            "cname": "Malcolm McLaren: The Casino of Authenticity and Karaoke",
+            "id": 14705,
+            "whitelist": [
+                "The Casino of Authenticity and Karaoke"
+            ]
+        },
+        {
+            "cname": "Ron Kuivila: Locus of Focus",
+            "id": 14706,
+            "whitelist": [
+                "Locus of Focus"
+            ]
+        },
+        {
+            "cname": "Sensor. Zeitraum für junge Positionen_03",
+            "id": 14707,
+            "whitelist": []
+        },
+        {
+            "cname": "Sensor. Zeitraum für junge Positionen_01",
+            "id": 14708,
+            "whitelist": []
+        },
+        {
+            "cname": "Sensor. Zeitraum für junge Positionen_02",
+            "id": 14709,
+            "whitelist": []
+        },
+        {
+            "cname": "Molecules that Changed The World",
+            "id": 14710,
+            "whitelist": []
+        },
+        {
+            "cname": "Eran Schaerf. FM-Scenario: Realitätswettlauf",
+            "id": 14711,
+            "whitelist": [
+                "Realitätswettlauf"
+            ]
+        },
+        {
+            "cname": "Boris Petrovsky: Wünschelmatrix",
+            "id": 14712,
+            "whitelist": [
+                "Wünschelmatrix"
+            ]
+        },
+        {
+            "cname": "Der Algorithmus des Manfred Mohr",
+            "id": 14713,
+            "whitelist": []
+        },
+        {
+            "cname": "Beat Generation. Allen Ginsberg",
+            "id": 14714,
+            "whitelist": [
+                "Beat Generation"
+            ]
+        },
+        {
+            "cname": "Cross-border",
+            "id": 14715,
+            "whitelist": []
+        },
+        {
+            "cname": "Werner Büttner: Gemeine Wahrheiten",
+            "id": 14716,
+            "whitelist": [
+                "Gemeine Wahrheiten"
+            ]
+        },
+        {
+            "cname": "Sabine Schäfer und Joachim Krebs: Sonic Lines n’ Rooms Nr. 5",
+            "id": 14717,
+            "whitelist": [
+                "Sonic Lines n’ Rooms Nr. 5",
+                "Sabine Schäfer und Joachim Krebs: Sonic Lines n’ Rooms Nr"
+            ]
+        },
+        {
+            "cname": "Sabine Schäfer und Joachim Krebs: Sonic Lines n’ Rooms Nr. 7",
+            "id": 14718,
+            "whitelist": [
+                "Sonic Lines n’ Rooms Nr. 7"
+            ]
+        },
+        {
+            "cname": "Night Vision",
+            "id": 14719,
+            "whitelist": []
+        },
+        {
+            "cname": "On. Hall A 1997",
+            "id": 14720,
+            "whitelist": [
+                "On"
+            ]
+        },
+        {
+            "cname": "2xGOLDSTEIN: Im Zustand wie gesehen",
+            "id": 14721,
+            "whitelist": [
+                "Im Zustand wie gesehen"
+            ]
+        },
+        {
+            "cname": "Weather Station 2030",
+            "id": 14722,
+            "whitelist": []
+        },
+        {
+            "cname": "Sound Art @ Het Apollohuis",
+            "id": 14723,
+            "whitelist": []
+        },
+        {
+            "cname": "act/ion. Recorded Performances",
+            "id": 14724,
+            "whitelist": [
+                "act/ion"
+            ]
+        },
+        {
+            "cname": "Urban Blind Date: Karlsruhe − Dortmund",
+            "id": 14725,
+            "whitelist": [
+                "Karlsruhe − Dortmund"
+            ]
+        },
+        {
+            "cname": "Sensor. Zeitraum für junge Positionen_04",
+            "id": 14726,
+            "whitelist": []
+        },
+        {
+            "cname": "Sensor. Zeitraum für junge Positionen_05",
+            "id": 14727,
+            "whitelist": []
+        },
+        {
+            "cname": "Olaf Arndt, Rob Moonen: Camera Silens",
+            "id": 14728,
+            "whitelist": [
+                "Camera Silens"
+            ]
+        },
+        {
+            "cname": "Mienenspiele / About Faces",
+            "id": 14729,
+            "whitelist": []
+        },
+        {
+            "cname": "Toshio Iwai",
+            "id": 14730,
+            "whitelist": []
+        },
+        {
+            "cname": "Gewebtes Licht",
+            "id": 14731,
+            "whitelist": []
+        },
+        {
+            "cname": "Heiner Goebbels: Ein Bild, das wir Zeit nennen",
+            "id": 14732,
+            "whitelist": [
+                "Ein Bild, das wir Zeit nennen"
+            ]
+        },
+        {
+            "cname": "Matthew Day Jackson: Total Accomplishment",
+            "id": 14733,
+            "whitelist": [
+                "Total Accomplishment"
+            ]
+        },
+        {
+            "cname": "ZKM_Gameplay",
+            "id": 14734,
+            "whitelist": []
+        },
+        {
+            "cname": "David Johnson: Gefangene Früchte,  Audio-Raum-Installation",
+            "id": 14735,
+            "whitelist": [
+                "Gefangene Früchte,  Audio-Raum-Installation"
+            ]
+        },
+        {
+            "cname": "Jörg Sasse: Das darf doch nicht wahr sein, Video-Musik-Installation",
+            "id": 14736,
+            "whitelist": [
+                "Das darf doch nicht wahr sein, Video-Musik-Installation"
+            ]
+        },
+        {
+            "cname": "Gereon Lepper: Pool Party",
+            "id": 14737,
+            "whitelist": [
+                "Pool Party"
+            ]
+        },
+        {
+            "cname": "Johannes Goebel: SubBassProtoTon",
+            "id": 14738,
+            "whitelist": [
+                "SubBassProtoTon"
+            ]
+        },
+        {
+            "cname": "Werner Cee: Klangbrunnen",
+            "id": 14739,
+            "whitelist": [
+                "Klangbrunnen"
+            ]
+        },
+        {
+            "cname": "Peter Eötvös: Grillenmusik",
+            "id": 14740,
+            "whitelist": [
+                "Grillenmusik"
+            ]
+        },
+        {
+            "cname": "Gunter Demnig: Infraschall",
+            "id": 14741,
+            "whitelist": [
+                "Infraschall"
+            ]
+        },
+        {
+            "cname": "Frank Schweitzer, Gerhard Wolfstieg: I00I",
+            "id": 14742,
+            "whitelist": [
+                "I00I"
+            ]
+        },
+        {
+            "cname": "Simone Simons, Peter Bosch: Was der Wind zum Klingen bringt",
+            "id": 14743,
+            "whitelist": [
+                "Was der Wind zum Klingen bringt"
+            ]
+        },
+        {
+            "cname": "Simone Simons, Peter Bosch: The Electric Swaying Orchestra",
+            "id": 14744,
+            "whitelist": [
+                "The Electric Swaying Orchestra"
+            ]
+        },
+        {
+            "cname": "Tim Buhre, Felix Knoth: 38 cbm",
+            "id": 14745,
+            "whitelist": [
+                "38 cbm"
+            ]
+        },
+        {
+            "cname": "CrossFade",
+            "id": 14746,
+            "whitelist": []
+        },
+        {
+            "cname": "BioAdapter",
+            "id": 14747,
+            "whitelist": []
+        },
+        {
+            "cname": "Ute Friederike Jürß: You Never Know the Whole Story",
+            "id": 14748,
+            "whitelist": [
+                "You Never Know the Whole Story"
+            ]
+        },
+        {
+            "cname": "Florian Grond: Hear and Now",
+            "id": 16462,
+            "whitelist": [
+                "Hear and Now"
+            ]
+        },
+        {
+            "cname": "IDEAMA Klangpfad",
+            "id": 18910,
+            "whitelist": []
+        },
+        {
+            "cname": "The Morning Line",
+            "id": 18911,
+            "whitelist": []
+        },
+        {
+            "cname": "Marion Kalter. Silent Piece",
+            "id": 18912,
+            "whitelist": [
+                "Marion Kalter"
+            ]
+        },
+        {
+            "cname": "Die Gernsback-Prophezeiung",
+            "id": 18916,
+            "whitelist": []
+        },
+        {
+            "cname": "AppArtAward 2013 - Highlights",
+            "id": 18947,
+            "whitelist": []
+        },
+        {
+            "cname": "Holografie aus der Sammlung des ZKM",
+            "id": 18949,
+            "whitelist": []
+        },
+        {
+            "cname": "Sasha Waltz",
+            "id": 18950,
+            "whitelist": []
+        },
+        {
+            "cname": "Cerith Wyn Evans: The What If?... Scenario (after LG)",
+            "id": 18951,
+            "whitelist": [
+                "The What If?... Scenario (after LG)",
+                "Cerith Wyn Evans: The What If?"
+            ]
+        },
+        {
+            "cname": "Von Ackermann bis Zabotin",
+            "id": 19274,
+            "whitelist": []
+        },
+        {
+            "cname": "Jonas Mekas. 365 Day Project",
+            "id": 19275,
+            "whitelist": [
+                "Jonas Mekas"
+            ]
+        },
+        {
+            "cname": "Linux Audio Conference 2014 (Installationen)",
+            "id": 19297,
+            "whitelist": []
+        },
+        {
+            "cname": "fünfhochzwei",
+            "id": 19585,
+            "whitelist": []
+        },
+        {
+            "cname": "Gianfranco Baruchello. Certain Ideas",
+            "id": 19587,
+            "whitelist": [
+                "Gianfranco Baruchello"
+            ]
+        },
+        {
+            "cname": "Privatisierungen",
+            "id": 19850,
+            "whitelist": []
+        },
+        {
+            "cname": "Perry Hoberman: Faraday's Garden",
+            "id": 19862,
+            "whitelist": [
+                "Faraday's Garden"
+            ]
+        },
+        {
+            "cname": "Diemut Strebe: Sugababe",
+            "id": 19955,
+            "whitelist": [
+                "Sugababe"
+            ]
+        },
+        {
+            "cname": "Typologie",
+            "id": 19975,
+            "whitelist": []
+        },
+        {
+            "cname": "Nicolas Collins: Truth in Clouds",
+            "id": 20067,
+            "whitelist": [
+                "Truth in Clouds"
+            ]
+        },
+        {
+            "cname": "Golo Föllmer: net_musician",
+            "id": 20068,
+            "whitelist": [
+                "net_musician"
+            ]
+        },
+        {
+            "cname": "Johannes Goebel, Torsten Belschner, Bernhard Sturm: Musikschrank Rheingold",
+            "id": 20069,
+            "whitelist": [
+                "Musikschrank Rheingold"
+            ]
+        },
+        {
+            "cname": "Mark Trayle: ¢apital magneti¢",
+            "id": 20071,
+            "whitelist": [
+                "¢apital magneti¢"
+            ]
+        },
+        {
+            "cname": "Thomas Palzer, Martin Zeyn: X v 0 Statements",
+            "id": 20084,
+            "whitelist": [
+                "X v 0 Statements"
+            ]
+        },
+        {
+            "cname": "Jeffrey Shaw, Peter Weibel: Terminal Identities",
+            "id": 20086,
+            "whitelist": [
+                "Terminal Identities"
+            ]
+        },
+        {
+            "cname": "Oliver Augst & Christoph Korn: Volksliedmaschine",
+            "id": 20092,
+            "whitelist": [
+                "Volksliedmaschine"
+            ]
+        },
+        {
+            "cname": "Shane Cooper: Parasight",
+            "id": 20093,
+            "whitelist": [
+                "Parasight"
+            ]
+        },
+        {
+            "cname": "Jan Rohlf/Maverick: Sweet Dreams Are Made Of This...",
+            "id": 20094,
+            "whitelist": [
+                "Sweet Dreams Are Made Of This...",
+                "Jan Rohlf/Maverick: Sweet Dreams Are Made Of This"
+            ]
+        },
+        {
+            "cname": "Christin Lahr: [DPsNTN]",
+            "id": 20095,
+            "whitelist": [
+                "[DPsNTN]"
+            ]
+        },
+        {
+            "cname": "Manuela Barth & Barbara U. Schmidt: LaraCroft:ism",
+            "id": 20096,
+            "whitelist": [
+                "Manuela Barth & Barbara U"
+            ]
+        },
+        {
+            "cname": "Felix Stephan Huber: Reality Check One",
+            "id": 20097,
+            "whitelist": [
+                "Reality Check One"
+            ]
+        },
+        {
+            "cname": "Kristin Lucas: Host",
+            "id": 20098,
+            "whitelist": [
+                "Host"
+            ]
+        },
+        {
+            "cname": "Bjørn Melhus: Again & Again (The Borderer)",
+            "id": 20099,
+            "whitelist": [
+                "Again & Again (The Borderer)"
+            ]
+        },
+        {
+            "cname": "Anny Öztürk: Superheroes",
+            "id": 20100,
+            "whitelist": [
+                "Superheroes"
+            ]
+        },
+        {
+            "cname": "Paul M. Smith: My Round",
+            "id": 20101,
+            "whitelist": [
+                "My Round"
+            ]
+        },
+        {
+            "cname": "Milica Tomiç: I am Milica Tomiç",
+            "id": 20102,
+            "whitelist": [
+                "I am Milica Tomiç"
+            ]
+        },
+        {
+            "cname": "Orhan Kipcak: AC Audiocompounder",
+            "id": 20103,
+            "whitelist": [
+                "AC Audiocompounder"
+            ]
+        },
+        {
+            "cname": "Benjamin Heisenberg: Der Bombenkönig",
+            "id": 20104,
+            "whitelist": [
+                "Der Bombenkönig"
+            ]
+        },
+        {
+            "cname": "Navigate@art",
+            "id": 20105,
+            "whitelist": []
+        },
+        {
+            "cname": "RECORD > AGAIN! (Aachen)",
+            "id": 20189,
+            "whitelist": []
+        },
+        {
+            "cname": "RECORD > AGAIN! (Dresden)",
+            "id": 20193,
+            "whitelist": []
+        },
+        {
+            "cname": "RECORD > AGAIN! (Oldenburg)",
+            "id": 20194,
+            "whitelist": []
+        },
+        {
+            "cname": "Sven Sahle, Hans Diebner:  Chaotic Itinerancy",
+            "id": 20227,
+            "whitelist": [
+                "Chaotic Itinerancy"
+            ]
+        },
+        {
+            "cname": "Claus Bremer. mitspiel. theater und poesie 1949–1994",
+            "id": 20256,
+            "whitelist": []
+        },
+        {
+            "cname": "Ed Sommer. Planetare Allianz",
+            "id": 20257,
+            "whitelist": []
+        },
+        {
+            "cname": "Black Maria",
+            "id": 20278,
+            "whitelist": []
+        },
+        {
+            "cname": "Martin Kippenberger: Schattenspiel im Zweigwerk",
+            "id": 20649,
+            "whitelist": [
+                "Schattenspiel im Zweigwerk"
+            ]
+        },
+        {
+            "cname": "Once in a Lifetime – Formalismus heute",
+            "id": 21098,
+            "whitelist": []
+        },
+        {
+            "cname": "Die Sinnlichkeit des Unsinnlichen",
+            "id": 21306,
+            "whitelist": []
+        },
+        {
+            "cname": "ZKM_Gameplay",
+            "id": 21328,
+            "whitelist": []
+        },
+        {
+            "cname": "Circles 1–5",
+            "id": 21483,
+            "whitelist": []
+        },
+        {
+            "cname": "Lynn Hershman Leeson: Civic Radar",
+            "id": 21494,
+            "whitelist": [
+                "Civic Radar"
+            ]
+        },
+        {
+            "cname": "AppArtAward 2014 – Highlights",
+            "id": 21540,
+            "whitelist": []
+        },
+        {
+            "cname": "Vision. Das Sehen",
+            "id": 21866,
+            "whitelist": [
+                "Vision"
+            ]
+        },
+        {
+            "cname": "Schl@gfertige Typen",
+            "id": 21904,
+            "whitelist": []
+        },
+        {
+            "cname": "The Berkeley Oracle - Fragen ohne Antwort",
+            "id": 22050,
+            "whitelist": []
+        },
+        {
+            "cname": "The Berkeley Oracle - Fragen ohne Antwort",
+            "id": 22051,
+            "whitelist": []
+        },
+        {
+            "cname": "Themenführungen Juli - September 1999",
+            "id": 22155,
+            "whitelist": []
+        },
+        {
+            "cname": "KlangLabyrinth",
+            "id": 22219,
+            "whitelist": []
+        },
+        {
+            "cname": "Christoph Korn: Eingedenken",
+            "id": 22220,
+            "whitelist": [
+                "Eingedenken"
+            ]
+        },
+        {
+            "cname": "PANRAMA",
+            "id": 22752,
+            "whitelist": []
+        },
+        {
+            "cname": "MUTation",
+            "id": 22756,
+            "whitelist": []
+        },
+        {
+            "cname": "BEYOND 2014 (Installationen)",
+            "id": 22815,
+            "whitelist": []
+        },
+        {
+            "cname": "The Neuron's Turing Test: Computer-Generated Neurons",
+            "id": 23114,
+            "whitelist": [
+                "Computer-Generated Neurons"
+            ]
+        },
+        {
+            "cname": "Symbiosis – 1.5 Tonnen globale Verwicklung",
+            "id": 23267,
+            "whitelist": [
+                "Symbiosis"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Programm",
+            "id": 23289,
+            "whitelist": [
+                "Programm"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Ryoji Ikeda",
+            "id": 23290,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: GLOBAL CONTROL AND CENSORSHIP",
+            "id": 23292,
+            "whitelist": [
+                "GLOBAL CONTROL AND CENSORSHIP"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Bodenlos – Vilém Flusser und die Künste",
+            "id": 23294,
+            "whitelist": [
+                "Bodenlos"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Exo-Evolution",
+            "id": 23295,
+            "whitelist": [
+                "Exo-Evolution"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Global Games",
+            "id": 23296,
+            "whitelist": [
+                "Global Games"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Reset Modernity!",
+            "id": 23297,
+            "whitelist": [
+                "Reset Modernity!"
+            ]
+        },
+        {
+            "cname": "GLOBALE: New Sensorium",
+            "id": 23302,
+            "whitelist": [
+                "New Sensorium"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Tomás Saraceno",
+            "id": 23304,
+            "whitelist": [
+                "Tomás Saraceno"
+            ]
+        },
+        {
+            "cname": "Art & Language & Luhmann Nr. 2",
+            "id": 23332,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: Infosphäre",
+            "id": 23335,
+            "whitelist": [
+                "Infosphäre"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Armin Linke",
+            "id": 23365,
+            "whitelist": []
+        },
+        {
+            "cname": "Korpys/Löffler: Sandhaufen",
+            "id": 23396,
+            "whitelist": [
+                "Sandhaufen"
+            ]
+        },
+        {
+            "cname": "Der Modernisierungsweg der chinesischen Kunst",
+            "id": 23571,
+            "whitelist": []
+        },
+        {
+            "cname": "Die Stadt ist der Star – Kunst an der Baustelle",
+            "id": 23572,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: Transsolar + Tetsuo Kondo",
+            "id": 23573,
+            "whitelist": [
+                "Transsolar + Tetsuo Kondo"
+            ]
+        },
+        {
+            "cname": "Frauen Video Arbeiten",
+            "id": 23679,
+            "whitelist": []
+        },
+        {
+            "cname": "next_generation 5.0 − Installationen",
+            "id": 23704,
+            "whitelist": [
+                "next_generation 5"
+            ]
+        },
+        {
+            "cname": "GLOBALE: HA Schult: Action Blue",
+            "id": 23825,
+            "whitelist": []
+        },
+        {
+            "cname": "Hörspielbahn mit Live-Performance",
+            "id": 23908,
+            "whitelist": []
+        },
+        {
+            "cname": "Klanglabyrinth",
+            "id": 23909,
+            "whitelist": []
+        },
+        {
+            "cname": "Wassily im Klangcontainer",
+            "id": 23918,
+            "whitelist": []
+        },
+        {
+            "cname": "Schlosslichtspiele 2015",
+            "id": 23970,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: Virtual Sound Gallery",
+            "id": 24458,
+            "whitelist": [
+                "Virtual Sound Gallery"
+            ]
+        },
+        {
+            "cname": "Titel",
+            "id": 24536,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: Menschenrechte im digitalen Zeitalter",
+            "id": 24717,
+            "whitelist": [
+                "Menschenrechte im digitalen Zeitalter"
+            ]
+        },
+        {
+            "cname": "INTER[IN]VENÇÃO",
+            "id": 24790,
+            "whitelist": []
+        },
+        {
+            "cname": "La Rivoluzione Algoritmica",
+            "id": 24801,
+            "whitelist": []
+        },
+        {
+            "cname": "Das digitale Bauhaus",
+            "id": 24802,
+            "whitelist": []
+        },
+        {
+            "cname": "Future Cinema (Kiasma)",
+            "id": 24803,
+            "whitelist": []
+        },
+        {
+            "cname": "Future Cinema  (Tokio)",
+            "id": 24804,
+            "whitelist": []
+        },
+        {
+            "cname": "Car Culture. Das Auto als Skulptur (Lentos)",
+            "id": 24805,
+            "whitelist": [
+                "Car Culture"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Fabrizio Tamburini: Beyond Einstein’s Dream. Riding the Photons",
+            "id": 24929,
+            "whitelist": [
+                "Beyond Einstein’s Dream"
+            ]
+        },
+        {
+            "cname": "GLOBALE: raster-noton.white circle",
+            "id": 24931,
+            "whitelist": [
+                "raster-noton.white circle"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Seismographic Sounds",
+            "id": 24986,
+            "whitelist": [
+                "Seismographic Sounds"
+            ]
+        },
+        {
+            "cname": "Blaffert & Wamhof: Versuch – Bergen-Belsen",
+            "id": 24991,
+            "whitelist": [
+                "Versuch – Bergen-Belsen"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Allahs Automaten",
+            "id": 25009,
+            "whitelist": [
+                "Allahs Automaten"
+            ]
+        },
+        {
+            "cname": "GLOBALE: The Future is Here",
+            "id": 25010,
+            "whitelist": [
+                "The Future is Here"
+            ]
+        },
+        {
+            "cname": "Der kälteste Planet des Universums: Das menschliche Herz",
+            "id": 25029,
+            "whitelist": [
+                "Das menschliche Herz"
+            ]
+        },
+        {
+            "cname": "Leandro Erlich: Pulled by the Roots",
+            "id": 25104,
+            "whitelist": [
+                "Pulled by the Roots"
+            ]
+        },
+        {
+            "cname": "Hans Hollein: Car Building",
+            "id": 25108,
+            "whitelist": [
+                "Car Building"
+            ]
+        },
+        {
+            "cname": "Tim Otto Roth: Heaven's Carousel",
+            "id": 25116,
+            "whitelist": [
+                "Heaven's Carousel"
+            ]
+        },
+        {
+            "cname": "Erwin Wurm: Truck",
+            "id": 25117,
+            "whitelist": [
+                "Truck"
+            ]
+        },
+        {
+            "cname": "[MASTERCLASS]",
+            "id": 25119,
+            "whitelist": []
+        },
+        {
+            "cname": "Wermke/Leinkauf: Safe in the City",
+            "id": 25129,
+            "whitelist": [
+                "Safe in the City"
+            ]
+        },
+        {
+            "cname": "Testevent (Ausstellung, archiviert)",
+            "id": 25296,
+            "whitelist": []
+        },
+        {
+            "cname": "Testevent (Ausstellung, aktuell)",
+            "id": 25297,
+            "whitelist": []
+        },
+        {
+            "cname": "Stadtleuchten",
+            "id": 25662,
+            "whitelist": []
+        },
+        {
+            "cname": "AppArtAward 2015 – Highlights",
+            "id": 25669,
+            "whitelist": []
+        },
+        {
+            "cname": "Schlosslichtspiele",
+            "id": 25700,
+            "whitelist": []
+        },
+        {
+            "cname": "Schlosslichtspiele",
+            "id": 25710,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: David Link: Monster Resurrection",
+            "id": 26190,
+            "whitelist": []
+        },
+        {
+            "cname": "Architektur im Licht",
+            "id": 26255,
+            "whitelist": []
+        },
+        {
+            "cname": "Body in Abstraction",
+            "id": 26294,
+            "whitelist": []
+        },
+        {
+            "cname": "Von Hertz zum Handy",
+            "id": 26316,
+            "whitelist": []
+        },
+        {
+            "cname": "Werke aus den Sammlungen FER, Froehlich, Grässlin, Weishaupt",
+            "id": 26436,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: Die Infosphäre des 19. Jahrhunderts",
+            "id": 26463,
+            "whitelist": [
+                "Die Infosphäre des 19. Jahrhunderts"
+            ]
+        },
+        {
+            "cname": "Lynn Hershman Leeson. Civic Radar (Sammlung Falckenberg, Hamburg)",
+            "id": 26675,
+            "whitelist": []
+        },
+        {
+            "cname": "Bodenlos – Vilém Flusser und die Künste (Akademie der Künste, Berlin)",
+            "id": 26715,
+            "whitelist": []
+        },
+        {
+            "cname": "Refugees In A State Apartment",
+            "id": 26801,
+            "whitelist": []
+        },
+        {
+            "cname": "ArtOnYourScreen",
+            "id": 26816,
+            "whitelist": []
+        },
+        {
+            "cname": "Fast Forward Science 2015",
+            "id": 26827,
+            "whitelist": []
+        },
+        {
+            "cname": "inSonic2015 – Installationen",
+            "id": 26882,
+            "whitelist": []
+        },
+        {
+            "cname": "Update_2",
+            "id": 26904,
+            "whitelist": []
+        },
+        {
+            "cname": "Digital Art Works (CEAAC, Straßburg)",
+            "id": 26905,
+            "whitelist": []
+        },
+        {
+            "cname": "rosalie: Marathon der Tiere",
+            "id": 27034,
+            "whitelist": [
+                "Marathon der Tiere"
+            ]
+        },
+        {
+            "cname": "ZKM_Gameplay",
+            "id": 27066,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: Armin Linke",
+            "id": 27067,
+            "whitelist": [
+                "Armin Linke"
+            ]
+        },
+        {
+            "cname": "Kunst in Europa 1945–1968",
+            "id": 27070,
+            "whitelist": []
+        },
+        {
+            "cname": "Liquid Identities – Lynn Hershman Leeson (Lehmbruck Museum, Duisburg)",
+            "id": 27279,
+            "whitelist": []
+        },
+        {
+            "cname": "CROSS-BORDER (PATAKA Art + Museum, Porirua City, Neuseeland)",
+            "id": 27282,
+            "whitelist": []
+        },
+        {
+            "cname": "Aby Warburg. Mnemosyne Bilderatlas",
+            "id": 27283,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBALE: Territorial Agency",
+            "id": 27313,
+            "whitelist": [
+                "Territorial Agency"
+            ]
+        },
+        {
+            "cname": "Bodenlos – Vilém Flusser und die Künste (West, Den Haag, NL)",
+            "id": 27315,
+            "whitelist": []
+        },
+        {
+            "cname": "Renata Sas, Claudius Böhm: Learning to Be a Tourist",
+            "id": 27322,
+            "whitelist": [
+                "Learning to Be a Tourist"
+            ]
+        },
+        {
+            "cname": "GLOBALE: Der Wiener Kreis – Digitale Logik und wissenschaftliche Philosophie",
+            "id": 27489,
+            "whitelist": [
+                "Der Wiener Kreis"
+            ]
+        },
+        {
+            "cname": "BIACS 3: Youniverse",
+            "id": 27641,
+            "whitelist": [
+                "Youniverse"
+            ]
+        },
+        {
+            "cname": "Generosity",
+            "id": 27648,
+            "whitelist": []
+        },
+        {
+            "cname": "raster-noton präsentiert: white circle (Berghain, Berlin)",
+            "id": 27650,
+            "whitelist": [
+                "white circle"
+            ]
+        },
+        {
+            "cname": "in medias res...",
+            "id": 27651,
+            "whitelist": [
+                "in medias res"
+            ]
+        },
+        {
+            "cname": "Schlosslichtspiele 2016",
+            "id": 27656,
+            "whitelist": []
+        },
+        {
+            "cname": "Im Buchstabenfeld",
+            "id": 27695,
+            "whitelist": []
+        },
+        {
+            "cname": "Uncharted: User Frames in Media Arts",
+            "id": 27696,
+            "whitelist": [
+                "User Frames in Media Arts"
+            ]
+        },
+        {
+            "cname": "Monitor 1",
+            "id": 27725,
+            "whitelist": []
+        },
+        {
+            "cname": "Monitor 2 – Siemens Medienkunstpreis 1995",
+            "id": 27726,
+            "whitelist": []
+        },
+        {
+            "cname": "Milan Grygar. Sound on Paper",
+            "id": 27814,
+            "whitelist": []
+        },
+        {
+            "cname": "Frei Otto. Denken in Modellen",
+            "id": 27860,
+            "whitelist": []
+        },
+        {
+            "cname": "Digitale Wasserspiele",
+            "id": 27885,
+            "whitelist": []
+        },
+        {
+            "cname": "Aldo Tambellini. Black Matters",
+            "id": 27922,
+            "whitelist": []
+        },
+        {
+            "cname": "[MASTERCLASS]",
+            "id": 27930,
+            "whitelist": []
+        },
+        {
+            "cname": "Albrecht Kunkel: QUEST",
+            "id": 28095,
+            "whitelist": [
+                "QUEST"
+            ]
+        },
+        {
+            "cname": "Leibnitz Lager (vorläufiger Eintrag)",
+            "id": 28147,
+            "whitelist": []
+        },
+        {
+            "cname": "Hansjörg Mayer: The Smell of Ink",
+            "id": 28149,
+            "whitelist": [
+                "The Smell of Ink"
+            ]
+        },
+        {
+            "cname": "Nanni Balestrini: Wer das hir liest braucht sich vor nichts mehr zu fürchten",
+            "id": 28150,
+            "whitelist": [
+                "Wer das hir liest braucht sich vor nichts mehr zu fürchten"
+            ]
+        },
+        {
+            "cname": "soon | just | now. gerhard rühm als intermediapionier",
+            "id": 28151,
+            "whitelist": [
+                "soon | just | now"
+            ]
+        },
+        {
+            "cname": "Konrad Balder Schäuffelen: sprache ist fuer wahr ein koerper ",
+            "id": 28152,
+            "whitelist": [
+                "sprache ist fuer wahr ein koerper "
+            ]
+        },
+        {
+            "cname": "Helmut Heißenbüttel: schreiben sammeln senden",
+            "id": 28153,
+            "whitelist": [
+                "schreiben sammeln senden"
+            ]
+        },
+        {
+            "cname": "Reinhard Döhl: Alles ist möglich. Alles ist erlaubt. ",
+            "id": 28154,
+            "whitelist": [
+                "Alles ist möglich. Alles ist erlaubt. ",
+                "Reinhard Döhl: Alles ist möglich"
+            ]
+        },
+        {
+            "cname": "Markus Lüpertz",
+            "id": 28155,
+            "whitelist": []
+        },
+        {
+            "cname": "Critical New York (vorläufiger Titel)",
+            "id": 28156,
+            "whitelist": []
+        },
+        {
+            "cname": "Hybrid Layers",
+            "id": 28158,
+            "whitelist": []
+        },
+        {
+            "cname": "Denis del Favero (vorläufiger Titel)",
+            "id": 28159,
+            "whitelist": []
+        },
+        {
+            "cname": "Die Sammlung (vorläufiger TItel)",
+            "id": 28160,
+            "whitelist": []
+        },
+        {
+            "cname": "Ramon Llull | Denkmaschinen ",
+            "id": 28179,
+            "whitelist": []
+        },
+        {
+            "cname": "New Gameplay",
+            "id": 28187,
+            "whitelist": []
+        },
+        {
+            "cname": "William Kentridge: »More Sweetly Play the Dance«",
+            "id": 28191,
+            "whitelist": [
+                "»More Sweetly Play the Dance«"
+            ]
+        },
+        {
+            "cname": "AppArtAward 2016 – Highlights",
+            "id": 28194,
+            "whitelist": []
+        },
+        {
+            "cname": "trans_actions: The Accelerated Art World 1989–2011 (2011) ",
+            "id": 28256,
+            "whitelist": [
+                "The Accelerated Art World 1989–2011 (2011) "
+            ]
+        },
+        {
+            "cname": "Floris Neusüss, Renate Heyne: Leibniz’ Lager",
+            "id": 28427,
+            "whitelist": [
+                "Leibniz’ Lager"
+            ]
+        },
+        {
+            "cname": "Beat Generation",
+            "id": 28570,
+            "whitelist": []
+        },
+        {
+            "cname": "Dieter Hacker: Alle Macht den Amateuren",
+            "id": 28909,
+            "whitelist": [
+                "Alle Macht den Amateuren"
+            ]
+        },
+        {
+            "cname": "Datumsoria",
+            "id": 28952,
+            "whitelist": []
+        },
+        {
+            "cname": "Games and Politics",
+            "id": 28955,
+            "whitelist": []
+        },
+        {
+            "cname": "Dataspheres",
+            "id": 28986,
+            "whitelist": []
+        },
+        {
+            "cname": "Gideon Bachmann: Film Art on Air",
+            "id": 28998,
+            "whitelist": [
+                "Film Art on Air"
+            ]
+        },
+        {
+            "cname": "Radical Software. The Raindance Foundation, Media Ecology and Video Art",
+            "id": 29124,
+            "whitelist": [
+                "Radical Software"
+            ]
+        },
+        {
+            "cname": "Schlosslichtspiele 2017",
+            "id": 29193,
+            "whitelist": []
+        },
+        {
+            "cname": "Fast Forward Science 2016",
+            "id": 29245,
+            "whitelist": []
+        },
+        {
+            "cname": "Sammlung Werner Nekes (Arbeitstitel)",
+            "id": 29445,
+            "whitelist": []
+        },
+        {
+            "cname": "Ramon Llull | Denkmaschinen  (Arbeitstitel)",
+            "id": 29513,
+            "whitelist": []
+        },
+        {
+            "cname": "Neuzugänge der ZKM-Sammlung: Werke von Concha Jerez und José Iges",
+            "id": 29549,
+            "whitelist": [
+                "Werke von Concha Jerez und José Iges"
+            ]
+        },
+        {
+            "cname": "Resonanzen. 40 Jahre Kunststiftung Baden-Württemberg",
+            "id": 29757,
+            "whitelist": [
+                "Resonanzen"
+            ]
+        },
+        {
+            "cname": "Open Codes",
+            "id": 29787,
+            "whitelist": []
+        },
+        {
+            "cname": "Datumsoria: The Return of the Real",
+            "id": 29873,
+            "whitelist": [
+                "The Return of the Real"
+            ]
+        },
+        {
+            "cname": "Kunst in Europa 1945–1968. Die Zukunft im Blick ",
+            "id": 29910,
+            "whitelist": [
+                "Kunst in Europa 1945–1968"
+            ]
+        },
+        {
+            "cname": "// supraliminal",
+            "id": 29911,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBAL CONTROL AND CENSORSHIP ",
+            "id": 30278,
+            "whitelist": []
+        },
+        {
+            "cname": "Poetische Expansionen I",
+            "id": 30332,
+            "whitelist": []
+        },
+        {
+            "cname": "Armin Linke: The Appearance of That Which Cannot Be Seen",
+            "id": 30347,
+            "whitelist": [
+                "The Appearance of That Which Cannot Be Seen"
+            ]
+        },
+        {
+            "cname": "Joachim Krebs: Deleuze und der Sampler als Audio-Mikroskop",
+            "id": 30359,
+            "whitelist": [
+                "Deleuze und der Sampler als Audio-Mikroskop"
+            ]
+        },
+        {
+            "cname": "Centerbeam. Eine performative Skulptur des CAVS",
+            "id": 30363,
+            "whitelist": [
+                "Centerbeam"
+            ]
+        },
+        {
+            "cname": "FEMINISTISCHE AVANTGARDE der 1970er-Jahre",
+            "id": 30398,
+            "whitelist": []
+        },
+        {
+            "cname": "Bodenlos – Vilém Flusser und die Künste (GAMU, Prag, CZE)",
+            "id": 30419,
+            "whitelist": []
+        },
+        {
+            "cname": "Art & Science",
+            "id": 30430,
+            "whitelist": []
+        },
+        {
+            "cname": "Digitale Defekte",
+            "id": 30444,
+            "whitelist": []
+        },
+        {
+            "cname": "Architektur des Alphabets",
+            "id": 30446,
+            "whitelist": []
+        },
+        {
+            "cname": "Infosphäre",
+            "id": 30480,
+            "whitelist": []
+        },
+        {
+            "cname": "next_generation 7.0 – Installationen",
+            "id": 30832,
+            "whitelist": [
+                "next_generation 7"
+            ]
+        },
+        {
+            "cname": "[MASTERCLASS]",
+            "id": 30937,
+            "whitelist": []
+        },
+        {
+            "cname": "Daniel García Andújar: Let’s Democratise Democracy",
+            "id": 30941,
+            "whitelist": [
+                "Let’s Democratise Democracy"
+            ]
+        },
+        {
+            "cname": "AppArtAward 2017 – Highlights",
+            "id": 31021,
+            "whitelist": []
+        },
+        {
+            "cname": "Poetische Expansionen II",
+            "id": 31037,
+            "whitelist": []
+        },
+        {
+            "cname": "Writing the History of the Future",
+            "id": 31087,
+            "whitelist": []
+        },
+        {
+            "cname": "Lynn Hershman Leeson: Civic Radar (YBCA, San Francisco)",
+            "id": 31137,
+            "whitelist": [
+                "Civic Radar (YBCA, San Francisco)"
+            ]
+        },
+        {
+            "cname": "The Art of Immersion I",
+            "id": 31157,
+            "whitelist": []
+        },
+        {
+            "cname": "Gözde Bulakeri: CHIT-CHAT",
+            "id": 31160,
+            "whitelist": [
+                "CHIT-CHAT"
+            ]
+        },
+        {
+            "cname": "GLOBAL CONTROL AND CENSORSHIP",
+            "id": 31177,
+            "whitelist": []
+        },
+        {
+            "cname": "Zwischen Erfolg und Verfolgung",
+            "id": 31242,
+            "whitelist": []
+        },
+        {
+            "cname": "Games and Politics",
+            "id": 31310,
+            "whitelist": []
+        },
+        {
+            "cname": "Kunst in Bewegung. 100 Meisterwerke mit und durch Medien",
+            "id": 31311,
+            "whitelist": [
+                "Kunst in Bewegung"
+            ]
+        },
+        {
+            "cname": "DIA-LOGOS",
+            "id": 31359,
+            "whitelist": []
+        },
+        {
+            "cname": "Am Gefrierpunkt der Malerei",
+            "id": 31410,
+            "whitelist": []
+        },
+        {
+            "cname": "Molecules that Changed the World",
+            "id": 31459,
+            "whitelist": []
+        },
+        {
+            "cname": "Digital Imaginaries – Africas in Production",
+            "id": 32111,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBAL CONTROL AND CENSORSHIP",
+            "id": 32146,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBAL CONTROL AND CENSORSHIP",
+            "id": 32252,
+            "whitelist": []
+        },
+        {
+            "cname": "The Art of Immersion II",
+            "id": 32404,
+            "whitelist": []
+        },
+        {
+            "cname": "Web Residencies by Solitude & ZKM",
+            "id": 32463,
+            "whitelist": []
+        },
+        {
+            "cname": "Open Codes. Digital Culture Techniques",
+            "id": 32556,
+            "whitelist": [
+                "Open Codes"
+            ]
+        },
+        {
+            "cname": "Walter Giers. Electronic Art",
+            "id": 32576,
+            "whitelist": [
+                "Walter Giers"
+            ]
+        },
+        {
+            "cname": "The Art of Immersion III",
+            "id": 32577,
+            "whitelist": []
+        },
+        {
+            "cname": "SCHLOSSLICHTSPIELE 2018",
+            "id": 32894,
+            "whitelist": []
+        },
+        {
+            "cname": "Durch den schalldichten Vorhang. Das Experimentalstudio des Polnischen Rundfunks",
+            "id": 32915,
+            "whitelist": [
+                "Durch den schalldichten Vorhang"
+            ]
+        },
+        {
+            "cname": "GLOBAL CONTROL AND CENSORSHIP",
+            "id": 33088,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBAL CONTROL AND CENSORSHIP",
+            "id": 33090,
+            "whitelist": []
+        },
+        {
+            "cname": "Dieter Hacker. Alle Macht den Amateuren",
+            "id": 33091,
+            "whitelist": []
+        },
+        {
+            "cname": "GLOBAL CONTROL AND CENSORSHIP",
+            "id": 33092,
+            "whitelist": []
+        },
+        {
+            "cname": "Games and Politics",
+            "id": 33103,
+            "whitelist": []
+        },
+        {
+            "cname": "urbanauten – Individuelle Lebenswelten im digitalen Zeitalter",
+            "id": 33122,
+            "whitelist": []
+        },
+        {
+            "cname": "ONUK: temporär",
+            "id": 33163,
+            "whitelist": [
+                "temporär"
+            ]
+        },
+        {
+            "cname": "Games and Politics",
+            "id": 33165,
+            "whitelist": []
+        },
+        {
+            "cname": "Datumsoria",
+            "id": 33166,
+            "whitelist": []
+        },
+        {
+            "cname": "Datumsoria: The Return of the Real",
+            "id": 33171,
+            "whitelist": [
+                "The Return of the Real"
+            ]
+        },
+        {
+            "cname": "[MASTERCLASS]",
+            "id": 33172,
+            "whitelist": []
+        },
+        {
+            "cname": "Radical Software",
+            "id": 33193,
+            "whitelist": []
+        },
+        {
+            "cname": "generator marx: ",
+            "id": 33208,
+            "whitelist": []
+        },
+        {
+            "cname": " Dieter Jung",
+            "id": 33319,
+            "whitelist": []
+        },
+        {
+            "cname": "APPARATUM",
+            "id": 33342,
+            "whitelist": []
+        },
+        {
+            "cname": "Nationalsozialismus in Karlsruhe",
+            "id": 33345,
+            "whitelist": []
+        },
+        {
+            "cname": "Edge of Now",
+            "id": 33423,
+            "whitelist": []
+        },
+        {
+            "cname": "N-Polytope",
+            "id": 33430,
+            "whitelist": []
+        },
+        {
+            "cname": "...of Spatial Sculptures, Textures and Synthesis",
+            "id": 33448,
+            "whitelist": []
+        },
+        {
+            "cname": "Feedback #3: Marshall McLuhan und die Künste",
+            "id": 33453,
+            "whitelist": [
+                "Marshall McLuhan und die Künste"
+            ]
+        },
+        {
+            "cname": "Die Welt als Datenfeld",
+            "id": 33471,
+            "whitelist": []
+        },
+        {
+            "cname": "zkm_gameplay. the next level",
+            "id": 33512,
+            "whitelist": [
+                "zkm_gameplay"
+            ]
+        },
+        {
+            "cname": "ZKM auf ACM German Chapter Symposium ",
+            "id": 33513,
+            "whitelist": []
+        },
+        {
+            "cname": "Open Codes (Sicherheitsclone)",
+            "id": 33767,
+            "whitelist": []
+        },
+        {
+            "cname": "zeitgemäß. Wohnen in Baden-Württemberg",
+            "id": 33827,
+            "whitelist": [
+                "zeitgemäß"
+            ]
+        },
+        {
+            "cname": "Der Käfer – Ein deutsches Wunder",
+            "id": 33831,
+            "whitelist": []
+        },
+        {
+            "cname": "tx-reverse 360°",
+            "id": 33843,
+            "whitelist": []
+        },
+        {
+            "cname": "Learning Takes Place",
+            "id": 33847,
+            "whitelist": []
+        },
+        {
+            "cname": "Edge of Now",
+            "id": 33862,
+            "whitelist": []
+        },
+        {
+            "cname": "Die ganze Welt ein Bauhaus",
+            "id": 34008,
+            "whitelist": []
+        },
+        {
+            "cname": "Open Codes. The Art of Coding",
+            "id": 34361,
+            "whitelist": [
+                "Open Codes"
+            ]
+        },
+        {
+            "cname": "Negativer Raum",
+            "id": 34369,
+            "whitelist": []
+        },
+        {
+            "cname": "Edge of Now",
+            "id": 34491,
+            "whitelist": []
+        },
+        {
+            "cname": "Games and Politics",
+            "id": 34503,
+            "whitelist": []
+        }
+    ]
+}

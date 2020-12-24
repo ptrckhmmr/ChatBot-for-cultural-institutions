@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.6.3" />
+<title>app.init API documentation</title>
+<meta name="description" content="This module contains the MindMeld application" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase;cursor:pointer}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>app.init</code></h1>
+</header>
+<section id="section-intro">
+<p>This module contains the MindMeld application.</p>
+<details class="source">
+<summary>Source code</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;This module contains the MindMeld application&#34;&#34;&#34;
+from mindmeld import Application
+from mindmeld.components import QuestionAnswerer
+
+# suggestions
+from fuzzywuzzy import process
+
+# data import
+import pandas as pd
+
+import os
+app_path = os.path.dirname(__file__)
+
+# setting up knowledge base for query
+qa = QuestionAnswerer(app_path)
+qa.load_kb(&#39;app&#39;, &#39;exhibition&#39;, app_path + &#39;/data/exhibition.json&#39;)
+qa.load_kb(&#39;app&#39;, &#39;artists&#39;, app_path + &#39;/data/artists.json&#39;)
+#qa.load_kb(&#39;app&#39;, &#39;event&#39;, app_path + &#39;/data/event.json&#39;)
+qa.load_kb(&#39;app&#39;, &#39;openinghours&#39;, app_path + &#39;/data/openinghours.json&#39;)
+qa.load_kb(&#39;app&#39;, &#39;jokes&#39;, app_path + &#39;/data/jokes.json&#39;)
+
+# retrieving all suggestions
+suggestions = pd.read_csv(app_path + &#39;/data/all_possible_questions.txt&#39;,header=None, sep=&#39;\n&#39;)
+
+#suggestions_exhibition = pd.read_csv(app_path + &#39;/data/all_possible_questions.txt&#39;,header=None, sep=&#39;\n&#39;)
+
+suggestions_exhibition = pd.read_csv(app_path + &#39;/data/all_exhibition_questions.txt&#39;,header=None, sep=&#39;\n&#39;)
+
+app = Application(__name__)
+
+__all__ = [&#39;app&#39;]
+
+### Methods used within dialoque states###
+
+def string_current_exhibitions(exhibition):
+    &#34;&#34;&#34;
+    This function returns a combined string from a list of strings.
+
+    Input:
+        exhibition: list of at maximum 50 exhibitions from knowledge base
+
+    Returns:
+        String with exhibitions.
+    &#34;&#34;&#34;
+
+
+    from datetime import datetime
+
+    now = datetime.now()
+    heute = now.strftime(&#34;%Y-%m-%d&#34;)
+
+    ausstellung_offen = &#39;&#39;
+
+    for item in exhibition:
+        if (item[&#39;ende_tag&#39;] &gt; heute):
+            ausstellung_offen = ausstellung_offen + item[&#39;titel_de&#39;] + &#39;, &#39;
+
+    return ausstellung_offen
+
+
+def draw_ten_artists_from_current_exhibition(exhibition):
+    &#34;&#34;&#34;
+    This function obtains 10 entries from a list.
+
+    Input:
+        exhibition: list of exhibitions
+
+    Returns:
+        String with artists.
+    &#34;&#34;&#34;
+
+    from datetime import datetime
+    now = datetime.now()
+    heute = now.strftime(&#34;%Y-%m-%d&#34;)
+
+    s = qa.build_search(index=&#39;exhibition&#39;)
+    ausstellung_offen = []
+    artists_ausstellungen_offen = &#39;&#39;
+
+    for item in exhibition:
+        if (item[&#39;ende_tag&#39;] &gt; heute):
+            ausstellung_offen.append(item[&#39;titel_de&#39;])
+
+    for item in ausstellung_offen:
+        tmpt = s.query(titel_de=item).execute(size=1)
+        artists_ausstellungen_offen = artists_ausstellungen_offen + tmpt[0][&#39;person_freie_rolle&#39;] + &#39;, &#39;
+        artists_ausstellungen_offen = artists_ausstellungen_offen + tmpt[0][&#39;person_feste_rolle&#39;] + &#39;, &#39;
+
+    import re
+    artists_ausstellungen_offen = re.sub(&#34;\(.*?\)&#34;, &#34;&#34;, artists_ausstellungen_offen)
+    artists_ausstellungen_offen = re.sub(&#34;not available, &#34;, &#34;&#34;, artists_ausstellungen_offen)
+
+    artists_ausstellungen_offen = artists_ausstellungen_offen.split(&#39;,&#39;)
+    artists_ausstellungen_offen = pd.DataFrame(artists_ausstellungen_offen, columns=[&#39;Artists Current Exhibitions&#39;])
+    artists_ausstellungen_offen = artists_ausstellungen_offen[
+        artists_ausstellungen_offen[&#39;Artists Current Exhibitions&#39;] != &#39;&#39;]
+    artists_ausstellungen_offen = artists_ausstellungen_offen.iloc[:-1, :]
+    artists_ausstellungen_offen = artists_ausstellungen_offen.sample(n=10)
+
+    artists = &#39;&#39;
+    for index, row in artists_ausstellungen_offen.iterrows():
+        artists = artists + row[&#39;Artists Current Exhibitions&#39;] + &#39;,&#39;
+
+    artists = re.sub(&#34; , &#34;, &#34;, &#34;, artists)
+    artists = artists[:-1]
+
+    return artists
+
+
+def filter_regular_expressions(beschreibung):
+    &#34;&#34;&#34;
+    This function replaces certain patterns in a string by using regular expressions.
+
+    Input:
+        beschreibung: string variable
+
+    Returns:
+        Modified String.
+    &#34;&#34;&#34;
+
+    import re
+    beschreibung = re.sub(&#34;&lt;.*?&gt;&#34;, &#34;&#34;, beschreibung)
+    beschreibung = re.sub(&#34;&amp;.*?;&#34;, &#34;&#34;, beschreibung)
+
+    return beschreibung
+
+
+def filter_drupal(beschreibung):
+    &#34;&#34;&#34;
+    This function replaces certain patterns in a string by using regular expressions.
+
+    Input:
+        beschreibung: string variable
+
+    Returns:
+        Modified String.
+    &#34;&#34;&#34;
+
+    import re
+    beschreibung = re.sub(&#34;\(.*?\)&#34;, &#34;&#34;, beschreibung)
+
+    return beschreibung
+
+
+def übermorgen_in_datum():
+    &#34;&#34;&#34;
+    This function calculates what date the day after tomorrow is.
+
+    Returns:
+        Date as String.
+    &#34;&#34;&#34;
+
+    from datetime import datetime
+    from datetime import timedelta
+
+    now = datetime.now()
+    übermorgen = now + timedelta(days=2)
+    übermorgen = übermorgen.strftime(&#34;%Y-%m-%d&#34;)
+
+    return übermorgen
+
+
+def übermorgen_in_wochentag():
+    &#34;&#34;&#34;
+    This function calculates what week of the day in two days is.
+
+    Returns:
+        Day as String.
+    &#34;&#34;&#34;
+
+    from datetime import datetime
+    from datetime import timedelta
+
+    now = datetime.now()
+    übermorgen = now + timedelta(days=2)
+
+    wochentag = [&#34;Montag&#34;, &#34;Dienstag&#34;, &#34;Mittwoch&#34;, &#34;Donnerstag&#34;, &#34;Freitag&#34;, &#34;Samstag&#34;, &#34;Sonntag&#34;]
+    tagnummer = übermorgen.weekday()
+
+    return wochentag[tagnummer]
+
+
+def morgen_in_datum():
+    &#34;&#34;&#34;
+    This function calculates what date tomorrow  is.
+
+    Returns:
+        Date as String.
+    &#34;&#34;&#34;
+
+    from datetime import datetime
+    from datetime import timedelta
+
+    now = datetime.now()
+    morgen = now + timedelta(days=1)
+    morgen = morgen.strftime(&#34;%Y-%m-%d&#34;)
+
+    return morgen
+
+
+def morgen_in_wochentag():
+    &#34;&#34;&#34;
+    This function calculates what week of the day tomorrow is.
+
+    Returns:
+        Day as String.
+    &#34;&#34;&#34;
+
+    from datetime import datetime
+    from datetime import timedelta
+
+    now = datetime.now()
+    morgen = now + timedelta(days=1)
+
+    wochentag = [&#34;Montag&#34;, &#34;Dienstag&#34;, &#34;Mittwoch&#34;, &#34;Donnerstag&#34;, &#34;Freitag&#34;, &#34;Samstag&#34;, &#34;Sonntag&#34;]
+    tagnummer = morgen.weekday()
+
+    return wochentag[tagnummer]
+
+
+def heute_in_wochentag():
+    &#34;&#34;&#34;
+    This function calculates what week of the day today is.
+
+    Returns:
+        Day as String.
+    &#34;&#34;&#34;
+
+    from datetime import datetime
+    from datetime import timedelta
+
+    now = datetime.now()
+    heute = now
+
+    wochentag = [&#34;Montag&#34;, &#34;Dienstag&#34;, &#34;Mittwoch&#34;, &#34;Donnerstag&#34;, &#34;Freitag&#34;, &#34;Samstag&#34;, &#34;Sonntag&#34;]
+    tagnummer = heute.weekday()
+
+    return wochentag[tagnummer]
+
+
+def datum_in_wochentag(entry):
+    &#34;&#34;&#34;
+    This function calculates what week of the day corresponds to a specified date.
+
+    Input:
+        entry: date
+    Returns:
+        Day as String or NULL if error occurred.
+    &#34;&#34;&#34;
+
+    from datetime import datetime
+    from datetime import timedelta
+
+    year = str(datetime.now().year)
+    wochentag = [&#34;Montag&#34;, &#34;Dienstag&#34;, &#34;Mittwoch&#34;, &#34;Donnerstag&#34;, &#34;Freitag&#34;, &#34;Samstag&#34;, &#34;Sonntag&#34;]
+    if (entry.find(&#39;-&#39;) != -1):
+        if (entry.count(&#39;-&#39;) == 1):
+            datum = entry + &#39;-&#39; + year
+            datum = datetime.strptime(datum, &#34;%d-%m-%Y&#34;)
+            tagnummer = datum.weekday()
+
+            return wochentag[tagnummer]
+
+        if (entry.count(&#39;-&#39;) == 2):
+            year = str(datetime.now().year)
+            datum = entry
+            try:
+                datum = datetime.strptime(datum, &#34;%d-%m-%Y&#34;)
+                tagnummer = datum.weekday()
+
+                return wochentag[tagnummer]
+            except:
+                return &#39;null&#39;
+
+    elif (entry.find(&#39;/&#39;) != -1):
+        if (entry.count(&#39;/&#39;) == 1):
+            datum = entry + &#39;/&#39; + year
+            datum = datetime.strptime(datum, &#34;%d/%m/%Y&#34;)
+            tagnummer = datum.weekday()
+
+            return wochentag[tagnummer]
+
+        elif (entry.count(&#39;/&#39;) == 2):
+            year = str(datetime.now().year)
+            datum = entry
+            try:
+                datum = datetime.strptime(datum, &#34;%d/%m/%Y&#34;)
+                tagnummer = datum.weekday()
+
+                return wochentag[tagnummer]
+            except:
+                return &#39;null&#39;
+
+
+    elif (entry.find(&#39;.&#39;) != -1):
+        if (entry.count(&#39;.&#39;) == 1):
+            datum = entry + &#39;.&#39; + year
+            try:
+                datum = datetime.strptime(datum, &#34;%d.%m.%Y&#34;)
+                tagnummer = datum.weekday()
+
+                return wochentag[tagnummer]
+            except:
+                return &#39;null&#39;
+
+        if (entry.count(&#39;.&#39;) == 2):
+            if (entry[-1] == &#39;.&#39;):
+                datum = entry + year
+                datum = datetime.strptime(datum, &#34;%d.%m.%Y&#34;)
+                tagnummer = datum.weekday()
+                return wochentag[tagnummer]
+
+            else:
+                year = str(datetime.now().year)
+                datum = entry
+                try:
+                    datum = datetime.strptime(datum, &#34;%d.%m.%Y&#34;)
+                    tagnummer = datum.weekday()
+
+                    return wochentag[tagnummer]
+                except:
+                    return &#39;null.&#39;
+    else:
+        return &#39;null&#39;
+
+
+def hasNumbers(inputString):
+    &#34;&#34;&#34;
+    This function checks if a String contains a number
+
+    Input:
+        inputString: String
+
+    Returns:
+        Boolean value.
+    &#34;&#34;&#34;
+
+    import re
+    return bool(re.search(r&#39;\d&#39;, inputString))
+
+
+class Entity_memory:
+    &#34;&#34;&#34;
+    This class is used to store entities.
+    &#34;&#34;&#34;
+
+    def __init__(self, name=&#39;&#39;):
+        self._name = name
+
+        # getter method
+
+    def get_entity(self):
+        &#34;&#34;&#34;
+        This function retrieves the entity.
+
+        Returns:
+            String variable
+        &#34;&#34;&#34;
+
+        return self._name
+
+        # setter method
+
+    def set_entity(self, x):
+        &#34;&#34;&#34;
+        This function sets the entity to a specified input.
+
+        Input:
+            x: Entity as String var
+
+        Returns:
+            Nothing.
+
+        &#34;&#34;&#34;
+        self._name = x
+
+em = Entity_memory()
+em.set_entity(&#39;&#39;)
+
+
+#### intents from &#39;basic&#39; domain ####
+
+@app.handle(intent=&#39;greet&#39;)
+def welcome(request, responder):
+    &#34;&#34;&#34;
+    Saying hello to the user.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    #responder.frame = {}
+
+    # Respond with a random selection from one of the canned &#34;goodbye&#34; responses.
+    responder.reply([&#39;Hallo, ich bin dein persönlicher Chatbot! 😍&#39;, &#39;Hey! Freut mich dich kennenzulernen! 😄&#39;])
+
+
+
+@app.handle(intent=&#39;how_are_you&#39;)
+def say_I_am_doing_great(request, responder):
+    &#34;&#34;&#34;
+    Answering &#39;how are you&#39;.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    responder.reply([&#39;Bei mir ist alles besten. Ich hoffe, dass bei dir auch alles klar ist! Wie kann ich dir weiterhelfen?&#39;, &#39;Mir geht es super, vielen Dank. Wie kann ich dir weiterhelfen?&#39;,
+                     &#39;Bei mir ist alles klar. Danke der Nachfrage! Wie kann ich dir weiterhelfen?&#39;])
+
+
+@app.handle(intent=&#39;exit&#39;)
+def say_goodbye(request, responder):
+    &#34;&#34;&#34;
+    When the user ends a conversation, clear the dialogue frame and say goodbye.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    # Respond with a random selection from one of the canned &#34;goodbye&#34; responses.
+    responder.reply([&#39;Ciao!&#39;, &#39;Auf Wiedersehen!&#39;, &#39;Adios.&#39;, &#39;Tschüss! Bis zum nächsten Mal!.&#39;])
+
+
+#### intents from &#39;zkm&#39; domain ####
+
+@app.handle(intent=&#39;zkm_general&#39;)
+def say_zkm_general(request, responder):
+    &#34;&#34;&#34;
+    Replying with general information about the ZKM.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    beschreibung = &#39;Das ZKM wurde 1989 von der Stadt Karlsruhe und dem Land Baden-Würtemberg gegründet. Gründungsdirektor Heinrich Klotz formte die Mission des ZKMs, die klassischen Künste ins digitale Zeitalter fortzuschreiben. Die einzigartige Kulturinstitution ist seit 1997 in einem ehemaligen, denkmalgeschützten Industriebau, dem sogenannten Hallenbau A untergebracht, der zu seiner Entstehungszeit einer der architektonisch fortschrittlichsten in Deutschland war. Hier findest du weitere Infos dazu: https://zkm.de/de/das-zkm &#39;
+
+    # Respond
+    responder.reply(beschreibung)
+
+
+@app.handle(intent=&#39;zkm_content&#39;)
+def say_zkm_content(request, responder):
+    &#34;&#34;&#34;
+    Replying with a short definition of ZKM
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    beschreibung = &#39;Es ist ein Haus aller Medien und Gattungen, ein Haus sowohl der raumbasierten Künste wie Malerei, Fotografie und Skulptur als auch der zeitbasierten Künste wie Film, Video, Medienkunst, Musik, Tanz, Theater und Performance.&#39;
+
+    # Respond
+    responder.reply(beschreibung)
+
+@app.handle(intent=&#39;zkm_cinema&#39;)
+def say_zkm_cinema(request, responder):
+    &#34;&#34;&#34;
+    Telling the user the ZKM is not a cinema.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    beschreibung = &#39;Anders als viele Menschen denken, ist das ZKM kein Kino. Das Kino, „der Filmpalast am ZKM“ befindet sich neben dem ZKM. Hier findest du das Kinoprogramm: https://www.filmpalast.net. Bei uns im ZKM kannst du allerdings auch sehr viel Spaß haben. Schau doch auch mal bei uns vorbei, wir haben spannende interaktive Ausstellungen und ein sehr nettes Café bei uns. Hier findest du uns: https://zkm.de/de/ueber-das-zkm/kontakte &#39;
+
+    # Respond
+    responder.reply(beschreibung)
+
+
+@app.handle(intent=&#39;zkm_journey_car&#39;)
+def say_zkm_journey_car(request, responder):
+    &#34;&#34;&#34;
+    Telling the user how to get to the ZKM by car.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    beschreibung = &#39;Das ZKM ist mit dem Auto sehr gut zu erreichen. Es befindet sich in der Lorenzstraße 19 in Karlsruhe (https://goo.gl/maps/gdmpM8VNrHyNZmFu5). Im Parkhaus des ZKMs stehen etwa 700 kostenpflichtige Parkplätze zur Verfügung. Zu erreichen ist das Parkhaus »ZKM« über die Südendstraße 44 (https://goo.gl/maps/U983qzbWB3dvE6s89). Für Elektroautos stehen zwei Stromladestationen zur Verfügung. Hier findest du weitere Infos zur Anfahrt mit dem Auto: https://zkm.de/de/ausstellungen-veranstaltungen/anfahrt &#39;
+
+    # Respond
+    responder.reply(beschreibung)
+
+
+@app.handle(intent=&#39;zkm_journey_bus&#39;)
+def say_zkm_journey_bus(request, responder):
+    &#34;&#34;&#34;
+    Telling the user how to get to the ZKM by car.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    beschreibung = &#39;Das ZKM ist mit öffentlichen Verkehrsmitteln sehr gut zu erreichen. Es befindet sich in der Lorenzstraße 19 in Karlsruhe (https://goo.gl/maps/gdmpM8VNrHyNZmFu5). Die Straßenbahn Haltestelle „ZKM“ ist mit der Linie 2 am besten zu erreichen. Aufgrund von Baumaßnahmen kommt es im Raum Karlsruhe zeitweise zu geänderten Fahrtzeiten. Wir bitten Sie, die aktuelle Verkehrslage auf der Webpräsenz des Karlsruher Verkehrsverbunds (KVV) zu überprüfen. Mit dem Bus, fährt man am besten zur Haltestelle „Lorenzstraße – ZKM“. Hierhin fährt die Buslinie 55. Hier findest du weitere Infos zur Anfahrt mit den öffentlichen Verkehrsmitteln: https://zkm.de/de/ausstellungen-veranstaltungen/anfahrt &#39;
+
+    # Respond
+    responder.reply(beschreibung)
+
+
+@app.handle(intent=&#39;exhibition_duration&#39;)
+def say_exhibition_duration(request, responder):
+    &#34;&#34;&#34;
+    Telling the user how long an exhibition will be open.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    try:
+
+        # Extract id from query
+        id = request.entities[0][&#39;value&#39;][0][&#39;id&#39;]
+
+        exhibtion = qa.get(index=&#39;exhibition&#39;, id=id)
+
+        title = exhibtion[0][&#39;titel_de&#39;]
+        start = exhibtion[0][&#39;start_tag&#39;]
+        end = exhibtion[0][&#39;ende_tag&#39;]
+
+
+        response = &#39;Die Ausstellung &#39; + title + &#39; hat von &#39; + start + &#39; bis &#39; + end + &#39; geöffnet.&#39;
+
+        # Respond
+        responder.reply(response)
+
+    except:
+
+        response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+        responder.reply(response)
+
+
+
+@app.handle(intent=&#39;exhibition_description&#39;)
+def say_exhibition_description(request, responder):
+    &#34;&#34;&#34;
+    Telling the user what an exhibition is about.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    try:
+        # Extract id from query
+        id = request.entities[0][&#39;value&#39;][0][&#39;id&#39;]
+
+        exhibtion = qa.get(index=&#39;exhibition&#39;, id=id)
+
+        title = exhibtion[0][&#39;titel_de&#39;]
+        beschreibung = exhibtion[0][&#39;kurzbeschreibung_seo_de&#39;]
+
+        beschreibung = filter_regular_expressions(beschreibung)
+
+        if (beschreibung == &#39;not available&#39;):
+            responder.reply(&#39;Leider habe ich keine Informationen zur Ausstellung &#39; + title + &#39;.&#39;)
+        else:
+            # Respond
+            responder.reply(beschreibung)
+
+    except:
+        query = request.text
+
+        recommendation = process.extractOne(query, suggestions_exhibition[0])
+        score = recommendation[1]
+        suggestion = recommendation[0]
+
+        if (score &gt; 90):
+            response = &#39;Sorry, das habe ich nicht verstanden, aber meintest du vielleicht: &#39; + suggestion
+
+        else:
+            response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+        responder.reply(response)
+
+
+@app.handle(intent=&#39;exhibition_artist&#39;)
+def say_exhibition_artist(request, responder):
+    &#34;&#34;&#34;
+    Replying with the artists of an exhibition.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    try:
+
+        # Extract id from query
+        id = request.entities[0][&#39;value&#39;][0][&#39;id&#39;]
+
+        exhibtion = qa.get(index=&#39;exhibition&#39;, id=id)
+
+        title = exhibtion[0][&#39;titel_de&#39;]
+        beschreibung = exhibtion[0][&#39;person_freie_rolle&#39;]
+
+        beschreibung = filter_drupal(beschreibung)
+
+        if (beschreibung == &#39;not available&#39;):
+            responder.reply(&#39;Leider habe ich keine Informationen zur Ausstellung &#39; + title + &#39;.&#39;)
+        else:
+            # Respond
+            responder.reply(&#39;Bei der Ausstellung &#39; + title + &#39; haben folgende Künstler mitgewirkt: &#39; + beschreibung)
+
+    except:
+
+        response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+        responder.reply(response)
+
+
+
+
+@app.handle(intent=&#39;artist_information&#39;)
+def say_artist_information(request, responder):
+    &#34;&#34;&#34;
+    Telling the user about the artist.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+
+    entity = request.entities
+    print(entity)
+
+
+
+    if (entity == ()):
+
+
+
+        if (em.get_entity() == &#39;&#39;):
+            responder.reply(&#39;Über welchen Künstler möchstest du mehr wissen?&#39;)
+            print(&#39;Ohne entity IF artist info: Über welchen Künstler möchstest du mehr wissen?&#39;)
+        else:
+
+            name = em.get_entity()
+            print(&#39;Name try else&#39;)
+            print(name)
+
+
+            try:
+
+                s = qa.build_search(index=&#39;artists&#39;)
+                id = s.filter(name=name).execute()[0][&#39;id&#39;]
+
+                print(&#39;Ohne entity ELSE artist info&#39;)
+                    #print(responder.history[0][&#39;request&#39;][&#39;intent&#39;])
+                    #print(responder.history[0][&#39;request&#39;][&#39;entities&#39;][0][&#39;text&#39;])
+
+                artists = qa.get(index=&#39;artists&#39;, id=id)
+
+                title = artists[0][&#39;name&#39;]
+                beschreibung = artists[0][&#39;beschreibung_de&#39;]
+
+                beschreibung = filter_regular_expressions(beschreibung)
+
+                if (beschreibung == &#39;not available&#39;):
+                    responder.reply(&#39;Leider habe ich keine Informationen zu &#39; + title + &#39;.&#39;)
+                else:
+                    # Respond
+                    responder.reply(&#39;Hintergrundinformationen zu &#39; + title + &#39; : &#39; + beschreibung)
+
+            except:
+
+                response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+                responder.reply(response)
+
+
+    else:
+
+        em.set_entity(entity[0][&#39;text&#39;])
+
+        print(&#39;Mit entity ELSE artist info&#39;)
+        print(entity[0][&#39;text&#39;])
+        print(em.get_entity())
+
+        try:
+
+            # Extract id from query
+            id = request.entities[0][&#39;value&#39;][0][&#39;id&#39;]
+
+            artists = qa.get(index=&#39;artists&#39;, id=id)
+
+            title = artists[0][&#39;name&#39;]
+            beschreibung = artists[0][&#39;beschreibung_de&#39;]
+
+            beschreibung = filter_regular_expressions(beschreibung)
+
+            if (beschreibung == &#39;not available&#39;):
+                responder.reply(&#39;Leider habe ich keine Informationen zu &#39; + title + &#39;.&#39;)
+            else:
+                # Respond
+               responder.reply(&#39;Hintergrundinformationen zu &#39; + title + &#39; : &#39; + beschreibung)
+
+
+
+
+        except:
+
+            response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+            responder.reply(response)
+
+
+@app.handle(intent=&#39;artist_birthyear&#39;)
+def say_artist_birthyear(request, responder):
+    &#34;&#34;&#34;
+    Tell the user about the year of birth of an artist.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    entity = request.entities
+    # name =  request.entities[0][&#39;text&#39;]
+
+    if (entity == ()):
+
+        if (em.get_entity() == &#39;&#39;):
+            responder.reply(&#39;Von welchem Künstler möchstest du das Geburtsjahr wissen?&#39;)
+            print(&#39;Ohne entity IF artist birthyear: Von welchem Künstler möchstest du das Geburtsjahr wissen?&#39;)
+        else:
+
+            name = em.get_entity()
+            print(&#39;Name try else&#39;)
+            print(name)
+
+
+            try:
+
+                s = qa.build_search(index=&#39;artists&#39;)
+                id = s.filter(name=name).execute()[0][&#39;id&#39;]
+
+                print(&#39;Ohne Entity ELSE artist birthyear&#39;)
+
+                artists = qa.get(index=&#39;artists&#39;, id=id)
+
+                title = artists[0][&#39;name&#39;]
+                geburtsjahr = artists[0][&#39;born_year&#39;]
+
+                if (geburtsjahr == &#39;not available&#39;):
+                    responder.reply(&#39;Leider habe ich keine Informationen über das Geburtsjahr von &#39; + title + &#39;.&#39;)
+                else:
+                    # Respond
+                    responder.reply(title + &#39; ist im Jahr &#39; + geburtsjahr + &#39; geboren.&#39;)
+
+            except:
+
+                response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+                responder.reply(response)
+
+
+
+    else:
+
+        em.set_entity(entity[0][&#39;text&#39;])
+
+        print(&#39;Mit Entity ELSE artist birthyear&#39;)
+
+        try:
+
+            # Extract id from query
+            id = request.entities[0][&#39;value&#39;][0][&#39;id&#39;]
+
+            artists = qa.get(index=&#39;artists&#39;, id=id)
+
+            title = artists[0][&#39;name&#39;]
+            geburtsjahr = artists[0][&#39;born_year&#39;]
+
+
+            if (geburtsjahr == &#39;not available&#39;):
+                responder.reply(&#39;Leider habe ich keine Informationen über das Geburtsjahr von &#39; + title + &#39;.&#39;)
+            else:
+                # Respond
+                responder.reply(title + &#39; ist im Jahr &#39; + geburtsjahr + &#39; geboren.&#39;)
+
+        except:
+
+            response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+            responder.reply(response)
+
+
+
+@app.handle(intent=&#39;artist_birthplace&#39;)
+def say_artist_birthplace(request, responder):
+    &#34;&#34;&#34;
+    Telling the user where an artist was born.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+    entity = request.entities
+    # name =  request.entities[0][&#39;text&#39;]
+
+    if (entity == ()):
+
+        if (em.get_entity() == &#39;&#39;):
+            responder.reply(&#39;Von welchem Künstler möchstest du den Geburtsort wissen?&#39;)
+            print(&#39;Ohne entity IF artist birthyear: Von welchem Künstler möchstest du den Geburtsort wissen?&#39;)
+
+        else:
+
+            name = em.get_entity()
+
+
+            try:
+
+                s = qa.build_search(index=&#39;artists&#39;)
+                id = s.filter(name=name).execute()[0][&#39;id&#39;]
+
+                print(&#39;Ohne Entity ELSE artist birthplace&#39;)
+
+                artists = qa.get(index=&#39;artists&#39;, id=id)
+
+                title = artists[0][&#39;name&#39;]
+                geburtsort = artists[0][&#39;born_city_de&#39;]
+
+                if (geburtsort == &#39;not available&#39;):
+                    responder.reply(&#39;Leider habe ich keine Informationen über den Geburtsort von &#39; + title + &#39;.&#39;)
+                else:
+                    # Respond
+                    responder.reply(title + &#39; wurde in &#39; + geburtsort + &#39; geboren.&#39;)
+
+            except:
+
+                response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+                responder.reply(response)
+
+
+    else:
+
+        em.set_entity(entity[0][&#39;text&#39;])
+
+        try:
+
+            # Extract id from query
+            id = request.entities[0][&#39;value&#39;][0][&#39;id&#39;]
+
+            print(&#39;Mit Entity ELSE artist birthplace&#39;)
+            artists = qa.get(index=&#39;artists&#39;, id=id)
+
+            title = artists[0][&#39;name&#39;]
+            geburtsort = artists[0][&#39;born_city_de&#39;]
+
+            if (geburtsort == &#39;not available&#39;):
+                responder.reply(&#39;Leider habe ich keine Informationen über den Geburtsort von &#39; + title + &#39;.&#39;)
+            else:
+                # Respond
+                responder.reply(title + &#39; wurde in &#39; + geburtsort + &#39; geboren.&#39;)
+
+
+        except:
+
+            response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+            responder.reply(response)
+
+
+
+@app.handle(intent=&#39;artist_age&#39;)
+def say_artist_age(request, responder):
+    &#34;&#34;&#34;
+    When the user ends a conversation, clear the dialogue frame and say goodbye.
+    &#34;&#34;&#34;
+    # Clear the dialogue frame to start afresh for the next user request.
+    responder.frame = {}
+
+
+    entity = request.entities
+    # name =  request.entities[0][&#39;text&#39;]
+
+    if (entity == ()):
+
+
+        if (em.get_entity() == &#39;&#39;):
+            responder.reply(&#39;Von welchem Künstler möchstest du das Alter wissen?&#39;)
+            print(&#39;Ohne entity IF artist birthyear: Von welchem Künstler möchstest du das Alter wissen?&#39;)
+
+        else:
+
+            name = em.get_entity()
+            print(&#39;Name try else&#39;)
+            print(name)
+
+
+            try:
+
+                s = qa.build_search(index=&#39;artists&#39;)
+                id = s.filter(name=name).execute()[0][&#39;id&#39;]
+
+                artists = qa.get(index=&#39;artists&#39;, id=id)
+
+                title = artists[0][&#39;name&#39;]
+                geburtjahr = artists[0][&#39;born_year&#39;]
+                todesjahr = artists[0][&#39;died_year&#39;]
+
+                from datetime import date
+                heute = date.today()
+                diesesJahr = heute.year
+
+                if (geburtjahr == &#39;not available&#39;):
+                    responder.reply(&#39;Leider habe ich keine Informationen zum Alter von &#39; + title + &#39;.&#39;)
+                else:
+                    if (todesjahr == &#39;not available&#39;):
+                        alter = diesesJahr - int(geburtjahr)
+                        # Respond
+                        responder.reply(title + &#39; ist &#39; + str(alter) + &#39; alt.&#39;)
+
+                    else:
+                        alter = int(todesjahr) - int(geburtjahr)
+                        # Respond
+                        responder.reply(
+                                    title + &#39; ist im Jahre &#39; + todesjahr + &#39; im Alter von &#39; + str(alter) + &#39; verstorben.&#39;)
+
+            except:
+
+                response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+                responder.reply(response)
+
+
+
+
+    else:
+        em.set_entity(entity[0][&#39;text&#39;])
+
+        try:
+
+            # Extract id from query
+            id = request.entities[0][&#39;value&#39;][0][&#39;id&#39;]
+
+            artists = qa.get(index=&#39;artists&#39;, id=id)
+
+            title = artists[0][&#39;name&#39;]
+            geburtjahr = artists[0][&#39;born_year&#39;]
+            todesjahr = artists[0][&#39;died_year&#39;]
+
+            from datetime import date
+            heute = date.today()
+            diesesJahr = heute.year
+
+            if (geburtjahr == &#39;not available&#39;):
+                responder.reply(&#39;Leider habe ich keine Informationen zum Alter von &#39; + title + &#39;.&#39;)
+            else:
+                if (todesjahr == &#39;not available&#39;):
+                    alter = diesesJahr - int(geburtjahr)
+                    # Respond
+                    responder.reply(title + &#39; ist &#39; + str(alter) + &#39; alt.&#39;)
+
+                else:
+                    alter = int(todesjahr) - int(geburtjahr)
+                    # Respond
+                    responder.reply(title + &#39; ist im Jahre &#39; + todesjahr + &#39; im Alter von &#39; + str(alter) + &#39; verstorben.&#39;)
+
+        except:
+
+            response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+            responder.reply(response)
+
+
+
+@app.handle(intent=&#39;openinghours&#39;)
+def say_openinghours(request, responder):
+    &#34;&#34;&#34;
+    Telling the user when the ZKM is open.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    text = request.text
+    print(text)
+
+    entity = request.entities
+
+    if (entity == ()):
+        responder.params.allowed_intents = [&#39;zkm.openinghours&#39;] #, &#39;basic.*&#39;]
+        responder.reply(&#39;Von welchem Wochentag möchtest du die Öffnungszeiten wissen?&#39;)
+        print(entity)
+
+    else:
+        print(entity)
+        print(entity[0][&#39;text&#39;])
+
+
+        if (entity[0][&#39;text&#39;] == &#39;heute&#39;):
+            print(&#39;HEUTE&#39;)
+            s = qa.build_search(index=&#39;openinghours&#39;)
+            id = s.filter(tag=heute_in_wochentag()).execute()[0][&#39;id&#39;]
+
+            openinghours = qa.get(index=&#39;openinghours&#39;, id=id)
+            #day = openinghours[0][&#39;tag&#39;]
+            start = openinghours[0][&#39;start&#39;]
+            end = openinghours[0][&#39;ende&#39;]
+            # Respond
+            if (start == &#34;geschlossen&#34;):
+                response = &#39;Heute ist das ZKM geschlossen. 😢&#39;
+            else:
+                response = &#39;Heute öffnet das ZKM um &#39; + start + &#39; Uhr und schließt um &#39; + end + &#39; Uhr.&#39;
+
+            responder.reply(response)
+
+
+        elif (entity[0][&#39;text&#39;] == &#39;übermorgen&#39;):
+            print(&#39;ÜBERMORGEN&#39;)
+            s = qa.build_search(index=&#39;openinghours&#39;)
+            id = s.filter(tag=übermorgen_in_wochentag()).execute()[0][&#39;id&#39;]
+
+            openinghours = qa.get(index=&#39;openinghours&#39;, id=id)
+            day = openinghours[0][&#39;tag&#39;]
+            start = openinghours[0][&#39;start&#39;]
+            end = openinghours[0][&#39;ende&#39;]
+            # Respond
+            if (start == &#34;geschlossen&#34;):
+                response = &#34;Am &#34; + day + &#39; ist das ZKM geschlossen. 😢&#39;
+            else:
+                response = &#39;Am &#39; + day + &#39; öffnet das ZKM um &#39; + start + &#39; Uhr und schließt um &#39; + end + &#39; Uhr.&#39;
+
+            responder.reply(response)
+
+
+        elif(entity[0][&#39;text&#39;] == &#39;morgen&#39;):
+            print(&#39;MORGEN&#39;)
+            s = qa.build_search(index=&#39;openinghours&#39;)
+            id = s.filter(tag=morgen_in_wochentag()).execute()[0][&#39;id&#39;]
+
+            openinghours = qa.get(index=&#39;openinghours&#39;, id=id)
+            day = openinghours[0][&#39;tag&#39;]
+            start = openinghours[0][&#39;start&#39;]
+            end = openinghours[0][&#39;ende&#39;]
+            # Respond
+            if (start == &#34;geschlossen&#34;):
+                response = &#34;Am &#34; + day + &#39; ist das ZKM geschlossen. 😢&#39;
+            else:
+                response = &#39;Am &#39; + day + &#39; öffnet das ZKM um &#39; + start + &#39; Uhr und schließt um &#39; + end + &#39; Uhr.&#39;
+
+            responder.reply(response)
+
+        elif (hasNumbers(entity[0][&#39;text&#39;])):
+            print(&#39;TEXT&#39;)
+            s = qa.build_search(index=&#39;openinghours&#39;)
+
+            if (datum_in_wochentag(entity[0][&#39;text&#39;]) == &#39;null&#39;):
+                responder.params.allowed_intents = [&#39;zkm.openinghours&#39;]  # , &#39;basic.*&#39;]
+                responder.reply(&#39;Könntest du das Datum noch einmal im Zahlenformat eingeben, damit ich dir weiterhelfen kann?&#39;)
+            else:
+                id = s.filter(tag=datum_in_wochentag(entity[0][&#39;text&#39;])).execute()
+                id = id[0][&#39;id&#39;]
+
+                openinghours = qa.get(index=&#39;openinghours&#39;, id=id)
+                day = openinghours[0][&#39;tag&#39;]
+                start = openinghours[0][&#39;start&#39;]
+                end = openinghours[0][&#39;ende&#39;]
+                # Respond
+                if (start == &#34;geschlossen&#34;):
+                    response = &#34;Am &#34; + day + &#39; den &#39; + entity[0][&#39;text&#39;] + &#39; ist das ZKM geschlossen. 😢&#39;
+                else:
+                    response = &#39;Am &#39; + day + &#39; den &#39; + entity[0][&#39;text&#39;] + &#39; öffnet das ZKM um &#39; + start + &#39; Uhr und schließt um &#39; + end + &#39; Uhr.&#39;
+
+                responder.reply(response)
+
+        else:
+            #Verarbeitung von Wochentagen
+            print(&#39;Verarbeitung Wochentage&#39;)
+            id = request.entities[0][&#39;value&#39;][0][&#39;id&#39;]
+
+            openinghours = qa.get(index=&#39;openinghours&#39;, id=id)
+            day = openinghours[0][&#39;tag&#39;]
+            start = openinghours[0][&#39;start&#39;]
+            end = openinghours[0][&#39;ende&#39;]
+            # Respond
+            if (start == &#34;geschlossen&#34;):
+                response = &#34;Am &#34; + day + &#39; ist das ZKM geschlossen. 😢&#39;
+            else:
+                response = &#39;Am &#39; + day + &#39; öffnet das ZKM um &#39; + start + &#39; Uhr und schließt um &#39; + end + &#39; Uhr.&#39;
+
+            responder.reply(response)
+
+
+@app.dialogue_flow(domain=&#39;zkm&#39;, intent=&#39;exhibition_current&#39;)
+def say_exhibition_current(request, responder):
+    &#34;&#34;&#34;
+    Telling the user what exhibitions are open at the moment.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+
+    em.set_entity(&#39;&#39;)
+    # Clear the dialogue frame to start afresh for the next user request.
+
+    text = request.text
+    print(text)
+
+    if (text == &#39;ZKM gerade Ausstellungen &amp;+*bnbn?&#39;):
+
+        print(&#39;ausstellungzkmaktuell&#39;)
+        exhibition = qa.get(index=&#39;exhibition&#39;, size=50, _sort=&#39;ende_tag&#39;, _sort_type=&#39;desc&#39;)
+
+        ausstellung_offen = string_current_exhibitions(exhibition)
+
+        #responder.reply(&#39;Ich habe Informationen über Ausstellungen des ZKMs, deren Zeitraum und Inhalte sowie die mitwirkenden Künstler für dich. Aktuell sind folgende Ausstellungen im ZKM zu sehen: &#39; + ausstellung_offen)
+        responder.reply(ausstellung_offen)
+
+
+    if (text == &#39;ZKM gerade Ausstellungen &amp;+*bnbn??&#39;):
+
+        print(&#39;ZKM gerade Ausstellungen &amp;+*bnbn??&#39;)
+        exhibition = qa.get(index=&#39;exhibition&#39;, size=50, _sort=&#39;ende_tag&#39;, _sort_type=&#39;desc&#39;)
+
+        artists = draw_ten_artists_from_current_exhibition(exhibition)
+
+        #responder.reply(&#39;Ich habe Informationen über das Geburtsjahr, das Alter, den Geburtsort und über den allgemeinen Werdegang der jeweiligen Künstler. Diese zehn Künstler sind beispielsweise aktuell in unseren Ausstellungen zu sehen: &#39; + artists)
+        responder.reply(artists)
+
+
+    responder.frame = {}
+
+    exhibition = qa.get(index=&#39;exhibition&#39;, size=50, _sort=&#39;ende_tag&#39;, _sort_type=&#39;desc&#39;)
+    ausstellung_offen = string_current_exhibitions(exhibition)
+
+    # Respond
+    responder.reply(&#39;Folgende Ausstellungen sind aktuell geöffnet: &#39; + ausstellung_offen)
+    responder.exit_flow()
+
+@say_exhibition_current.handle(default=True)
+def default_handler(request, responder):
+
+    &#34;&#34;&#34;
+    Default dialog handler
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+
+    responder.reply(&#39;Damit kann ich dir leider nicht weiterhelfen.&#39;)
+    responder.exit_flow()
+
+@say_exhibition_current.handle(intent=&#39;exhibition_current&#39;)
+def say_exhibition_current_in_flow_handler(request, responder):
+
+    &#34;&#34;&#34;
+    Dialog flow handler for current exhibitions.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+
+    say_exhibition_current(request, responder)
+
+
+#### intents from &#39;fun&#39; domain ####
+@app.handle(intent=&#39;jokes&#39;)
+def say_jokes(request, responder):
+    &#34;&#34;&#34;
+    Telling user jokes.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+
+    em.set_entity(&#39;&#39;)
+
+    responder.frame = {}
+
+    import random
+    number = int(random.randint(1, 14))
+
+    joke = qa.get(index=&#39;jokes&#39;, id=number)
+    joke = joke[0][&#39;joke&#39;]
+
+    responder.reply(joke)
+
+
+#### intents from &#39;unknown&#39; domain ####
+
+@app.handle(default=True)
+@app.handle(intent=&#39;unsupported&#39;)
+def default(request, responder):
+    &#34;&#34;&#34;
+    When the user asks an unrelated question, convey the lack of understanding for the requested
+    information and suggest an alternative.
+
+    Returns:
+        Nothing.
+    &#34;&#34;&#34;
+    em.set_entity(&#39;&#39;)
+
+    query = request.text
+
+    score = process.extractOne(query, suggestions[0])[1]
+    suggestion = process.extractOne(query, suggestions[0])[0]
+
+    if (score &gt; 90):
+        response = &#39;Sorry, das habe ich nicht verstanden, aber meintest du vielleicht: &#39; + suggestion
+    else:
+        response = &#39;Sorry, das habe ich nicht verstanden.&#39;
+
+    responder.reply(response)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="app" href="index.html">app</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.6.3</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

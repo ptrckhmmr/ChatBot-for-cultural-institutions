@@ -1,0 +1,15 @@
+Weißt du wann ihr am {29.07.|time} schließt?
+Hat das ZKM am {29.07.|time} auf?
+Haben sie am {15.09.|time} offen?
+Wie lange haben Sie geöffnet?
+Wann macht das ZKM {morgen|time} auf? 
+Wann hat das ZKM geöffnet?
+Öffnungszeiten?
+Wie lange habt ihr {Samstag|time} auf? 
+Um wie viel Uhr schließt das ZKM? 
+Was sind die Öffnungszeiten des ZKM? 
+Wann schließt ihr?
+Weißt du wann das ZKM {morgen|time} zu macht?
+Wann ist das ZKM offen?
+Weißt du wann das ZKM am {29.07.|time} öffnet?
+Weißt du wann das ZKM {morgen|time} zu macht?

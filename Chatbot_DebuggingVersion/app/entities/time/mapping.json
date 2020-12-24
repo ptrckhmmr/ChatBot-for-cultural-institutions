@@ -1,0 +1,79 @@
+{
+    "entities": [
+        {
+            "cname": "Montag",
+            "id": 1,
+            "whitelist": ["montags"]
+        },
+        {
+            "cname": "Dienstag",
+            "id": 2,
+            "whitelist": ["dienstags"]
+        },
+        {
+            "cname": "Mittwoch",
+            "id": 3,
+            "whitelist": ["mittwochs"]
+        },
+        {
+            "cname": "Donnerstag",
+            "id": 4,
+            "whitelist": ["donnerstags"]
+        },
+        {
+            "cname": "Freitag",
+            "id": 5,
+            "whitelist": ["freitags"]
+        },
+        {
+            "cname": "Samstag",
+            "id": 6,
+            "whitelist": ["samstags"]
+        },
+        {
+            "cname": "Sonntag",
+            "id": 7,
+            "whitelist": ["sonntags"]
+        },
+        {
+            "cname": "Feiertag",
+            "id": 8,
+            "whitelist": ["feiertags"]
+        },
+        {
+            "cname": "Weihnachten",
+            "id": 9,
+            "whitelist": []
+        },
+        {
+            "cname": "1. Weihnachtsfeiertag",
+            "id": 10,
+            "whitelist": []
+        },
+        {
+            "cname": "2. Weihnachtsfeiertag",
+            "id": 11,
+            "whitelist": []
+        },
+        {
+            "cname": "Ostern",
+            "id": 12,
+            "whitelist": []
+        },
+        {
+            "cname": "Neujahr",
+            "id": 13,
+            "whitelist": []
+        },
+        {
+            "cname": "Silvester",
+            "id": 14,
+            "whitelist": []
+        },
+        {
+            "cname": "24. Dezember",
+            "id": 15,
+            "whitelist": ["24.12.", "24.12"]
+        }
+    ]
+}
