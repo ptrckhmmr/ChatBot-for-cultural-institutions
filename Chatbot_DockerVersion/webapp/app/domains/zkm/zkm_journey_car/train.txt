@@ -1,0 +1,393 @@
+Anfahrt Auto
+Anfahrt autobahn
+Anfahrt mit dem Auto
+Anfahrt via Auto
+Auto aufladen
+Auto aufladen zkm
+Erreichbarkeit Auto
+Erreichbarkeit zkm Auto
+Erreiche ich das ZKM mit dem Auto gut?
+Erreiche ich das ZKM mit dem Auto schnell?
+Erreiche ich das ZKM mit dem Auto?
+Erreiche ich euch mit dem Auto gut?
+Erreiche ich euch mit dem Auto schnell?
+Erreiche ich euch mit dem Auto?
+Gibt es bei euch ein Parkhaus?
+Gibt es bei euch eine Lademöglichkeit?
+Gibt es bei euch Parkmöglichkeiten?
+Gibt es bei euch parkplätze?
+Gibt es die Möglichkeit mein Auto bei euch aufzuladen?
+Gibt es die Möglichkeit mein Auto bei euch zu laden?
+Gibt es die Möglichkeit mein Auto bei euch zu parken?
+Gibt es die Möglichkeit mein eauto bei euch aufzuladen?
+Gibt es die Möglichkeit mein eauto bei euch zu laden?
+Gibt es die Möglichkeit mein Elektroauto bei euch aufzuladen?
+Gibt es die Möglichkeit mein Elektroauto bei euch zu laden?
+Gibt’s bei euch ein Parkhaus?
+Gibt’s bei euch eine Ladesäule?
+Gibt’s bei euch Ladesäulen?
+Gibt’s bei euch Parkmöglichkeiten?
+Gibt’s bei euch parkplätze?
+Habt ihr ein Parkhaus?
+Habt ihr eine Lademöglichkeit?
+Habt ihr eine Ladesäule?
+Habt ihr ladesäulen?
+Habt ihr Parkmöglichkeiten?
+Gibt es parkplätze?
+Hat das ZKM ein Parkhaus? 
+Hat das ZKM Parkmöglichkeiten? 
+Hat das ZKM Parkplätze? 
+Hat es bei euch ein Parkhaus?
+Hat es bei euch Parkmöglichkeiten?
+Hat es bei euch parkplätze?
+Hats bei euch ein Parkhaus?
+Hats bei euch Parkmöglichkeiten?
+Hats bei euch parkplätze?
+Kann ich mein Auto bei euch auch abstellen?
+Kann ich mein Auto bei euch aufladen?
+Kann ich mein Auto bei euch irgendwo abstellen?
+Kann ich mein Auto bei euch laden?
+Kann ich mein e Auto bei euch aufladen?
+Kann ich mein e Auto bei euch laden?
+Kann ich mein E-Auto bei euch aufladen?
+Kann ich mein E-Auto bei euch laden?
+kann ich mein elektroauto bei euch aufladen?
+Kann ich mein Elektroauto bei euch laden?
+Kann ich mit dem Auto gut zu euch kommen?
+Kann ich mit dem Auto gut zu euch kommen?
+Kann ich mit dem Auto gut zum zkm fahren?
+Kann ich mit dem Auto gut zum zkm kommen?
+Kann ich mit dem Auto schnell zu euch kommen?
+Kann ich mit dem Auto schnell zu euch kommen?
+Kann ich mit dem Auto schnell zum zkm fahren?
+Kann ich mit dem Auto schnell zum zkm kommen?
+Kann ich mit dem Auto zu euch kommen?
+Kann ich mit dem Auto zu euch kommen?
+Kann ich mit dem Auto zum zkm kommen?
+Kann man beim ZKM parken? 
+Ladesäule
+parken
+parken zkm
+parkhaus
+parkhaus zkm
+parkmöglichkeiten
+parkmöglichkeiten zkm
+parkplatz
+parkplatz zkm
+parkplätze  
+Parkplätze zkm 
+Steht mein Auto bei euch sicher?
+Was ist der beste weg mit dem Auto zu euch?
+Was ist der beste Weg mit dem Auto zum zkm?
+Was ist der beste Weg zu euch mit dem Auto?
+Was ist der beste Weg zum zkm mit dem Auto?
+Was ist der geschickteste Weg mit dem Auto zu euch?
+Was ist die Adresse vom ZKM die ich in mein Navi eingeben muss?
+Was ist die beste Anfahrt mit dem Auto zum zkm?
+Wie erreiche ich das zkm mit dem Auto am besten?
+Wie erreiche ich das zkm mit dem Auto am schnellsten?
+Wie erreiche ich euch mit dem auto am besten?
+wie erreiche ich euch mit dem auto am schnellsten?
+Wie erreiche ich euch mit dem Auto?
+Wie fährt man am besten mit dem auto zu euch?
+Wie fährt man am besten mit dem auto zum zkm?
+Wie komm ich mit dem Auto zu euch?
+Wie komm ich mit dem Auto zum zkm?
+Wie komme ich mit dem Auto am besten zum ZKM? 
+Wie komme ich mit dem Auto zu euch?
+Wie komme ich mit dem Auto zum zkm?
+wie kommt man am besten mit dem auto zu euch?
+Wie kommt man am besten mit dem auto zum zkm?
+Wie sieht das bei euch mit einem Parkhaus aus?
+Wie sieht das bei euch mit nem Parkhaus aus?
+Wie sieht das bei euch mit Parkmöglichkeiten aus?
+Wie sieht das bei euch mit parplätzen aus?
+Wo kann ich mein Auto parken?
+Wo kann man bei euch parken? 
+Wo kann man beim ZKM parken? 
+Wohin muss ich mit dem Auto fahren um das zkm zu erreichen?
+Wie komm ich am besten mit dem Auto zu euch?
+Wie komm ich am besten mit dem Auto zum zkm?
+Wie komm ich mit dem Auto am besten zu euch?
+Wie komm ich mit dem Auto am besten zum zkm?
+Wie komm ich am schnellsten mit dem Auto zu euch?
+Wie komm ich am schnellsten mit dem Auto zum zkm?
+Wie komm ich mit dem Auto am schnellsten zu euch?
+Wie komm ich mit dem Auto am schnellsten zum zkm?
+Wie komme ich am besten mit dem Auto zu euch?
+Wie komme ich am besten mit dem Auto zum zkm?
+Wie komme ich mit dem Auto am besten zu euch?
+Wie komme ich mit dem Auto am besten zum zkm?
+Wie fahr ich mit dem Auto am besten zu euch?
+Wie fahr ich mit dem Auto am besten zum zkm?
+Wie fahr ich am besten mit dem Auto zu euch?
+Wie fahr ich am besten mit dem Auto zum zkm?
+Wie fahre ich am besten mit dem Auto zu euch?
+Wie fahre ich am besten mit dem Auto zum zkm?
+Wie fahre ich mit dem Auto am besten zu euch?
+Wie fahre ich mit dem Auto am besten zum zkm?
+Kann ich mein Auto dann bei euch aufladen?
+Gibt’s in eurem Parkhaus Ladesäulen?
+Habt ihr Ladesäulen im Parkhaus?
+Wie siehts aus mit Parklätzen und Ladesäulen?
+Ich möchte mit dem Auto ins zkm kommen geht das?
+Ich möchte mit dem Auto ins zkm fahren geht das?
+Ich möchte mit dem Auto ins zkm kommen ist das möglich?
+Ich möchte mit dem Auto ins zkm fahren ist das möglich?
+Ich würde gerne mit dem auto zum zkm geht das?
+Ich würde gerne mit dem auto zum zkm wie geht das?
+Ich würde gerne mit dem auto zum zkm ist das möglich?
+Kann ich mit dem Auto zu euch?
+Kommt man mit dem Auto zu euch?
+Kommt man mit dem Auto gut zu euch?
+Komme ich mit dem Auto zu euch?
+Kann ich mit dem Auto zu euch fahren?
+Was ist die beste Art mit dem Auto zu euch zu kommen?
+Mit dem Auto kann man auch zu euch oder?
+Kann ich mit dem Auto zum zkm?
+Kommt man mit dem Auto zum zkm?
+Kommt man mit dem Auto gut zum zkm?
+Komme ich mit dem Auto zum zkm?
+Kann ich mit dem Auto zum zkm fahren?
+Anfhatr autobahn
+Anfahtr mit dem Auto
+Auto aufladne
+Auto aufladen zmk
+Erreihcbakreti Auto
+Erreichbarkeit zkm Atuo
+Erreiche ich das ZKM imt dme Auto gut?
+Erreiche ihc das ZKM mit dme Auto schnell?
+Erreiheh ich das ZKM mit dem Uato?
+Erreiche ich euch mti dem Auto gu?t
+Erreiche ich euch mit edm Auto shcnlel?
+Erreiche cih euch mit dem Auto?
+Gibt es bei euch ein Parkhaus?
+Gibt es bei euch eine Alaemöglickekit?
+Gibt es bei euch Pakrömlgcihkeiten?
+Gibt es bei euch parkplätze?
+Gibt es die Möglichkeit emin Auto bei euch zu pakren?
+Gbit es dei Möglichkeit mein eauto bei euch aufzuladen?
+Gibt es die Möglichkeit mein Elektroauto bei uech aufzuladen?
+Gitb es dei Möglichkeit mein Elektroauto bie euch zu laden?
+Gbit’s bei euch ein Parkhaus?
+Gibt’s ebi euch eine Ladesäule?
+Igbt’s bei euch Parkmöglichkeiten?
+Igbt’s bei euch parkplätze?
+Habt hir ein Parkhaus?
+Habt ihr iene Lademöglichkeit?
+Gibt es parkplätze?
+Hat das ZKM ein Parkhaus? 
+Hat das ZMK Parkmöglichkeiten? 
+Hat das ZKM Parklptäze? 
+Hat es bie euch ein Parkhaus?
+Hat es ebi euch parkplätze?
+Hats bie euch ein Parkhaus?
+Hast bei euch Parkmöglichkeiten?
+Hats bei uech parkplätze?
+Kann ich meni Auto bei euch irgendwo absetlle?n
+Kann ich mein Auto bei euhc ldaen?
+Kann ich mein e Auto bei uech aufladen?
+Kann ich emin e Auto ebi euch laden?
+Aknn ich meni E-Auto bei euch laden?
+kann ich emin elektroauto bei euch ufuladen?
+Kann ich mein Elektroauto bie euch laedn?
+Kann ich mit edm Auto gut zu uech kommen?
+Kann ich mit dem Atuo gut zu euch kommen?
+Kann ich mit dem Auto ugt zum kzm fahren?
+Kann ich imt dem Auto gut zum zkm kmoemn?
+Kann ich mit dme Auto schnell zu euch okmme?n
+Aknn ich mit dem Auto schnell uzm zkm fahren?
+Kann ich mit dem Auto schnell zum kzm okmemn?
+Kann ich mit dem Auto zu euch okmmen?
+parkplätze  
+Parkplätze zmk 
+Steht mein Auto ebi euch sicher?
+Was ist der ebste weg mit edm Auto zu euch?
+Aws its der beste Ewg mit dem Auto zum zkm?
+Was ist der beste Weg zu uech imt edm Auto?
+Was ist der bsete Weg zum zmk imt dem Auto?
+Was ist die Adresse vom ZKM ide ich in mein Navi eingeben msus?
+Wie erreiche ihc das zkm mit dem Auto am schenlltstn?
+Wie erreiche ich euch mit dem auto am ebsetn?
+Wei erreiche cih euch mit dem Auto?
+Wie fährt mna am besten mit dem auto zu euch?
+Wie kmom ich mit dem Auto zu euch?
+Wie komm ich mit edm Auto uzm zkm?
+Wei okmme ich mit dem Auto am besten zmu ZKM? 
+Wie komem ich mit dem Auto zu euch?
+Wie komme cih mit dem Auto uzm zkm?
+wei okmmt man am besten mit dem auto zu euch?
+Wie kmomt man am betsen mit dem auto uzm zkm?
+Wie sieht ads bei euch mti einem Parkhaus aus?
+Wie sieht dsa bei euch mti Parkmöglichkeiten aus?
+Wo kann ich mein Auto parken?
+Wo kann man bei euch parken? 
+Wo aknn man beim ZKM parken? 
+Woihn muss ich mit dem Auto fahren um das zkm zu erreichen?
+Wei komm ihc am bseten mit dem Auto zu euch?
+Wie komm ich am bestne mit dme Auto zum zk?m
+Wei komm ich mit dem Auto am besten zu euhc?
+Iwe komm ich mit dme Auto am besten zum kzm?
+Wie komm ich am cshnelllten mti dme Auto zu euch?
+Wie komm ich am schnellsten imt dem Auto zmu zkm?
+Wie okmm ich mit dem Auto am schnellsten zu euhc?
+Wie komm ich mit edm Auto am schnellsten zmu zmk?
+Wei okmme ich mit dme Auto am besten zu euch?
+Wie komme ich mit dme Auto am besten zmu zk?m
+Wie fahr ich am besetn mit dme Auto zmu zkm?
+Wie fahre cih mit dem Auto am betsen zu euch?
+Wie fahre ich mit dme Auto am ebsten uzm zkm?
+Kann ich mien Auto dann bei euch afulade?n
+Gbit’s in eurem Parkhaus Ladesäulen?
+Habt hir Ladesäulen im Parkhaus?
+Ich möchet mit dme Auto ins zkm kommen geth das?
+Ich möchte mit dem Auto ins zkm kommen sit ads mgölic?h
+Ich ömchte mit dem Auto ins zkm fahern ist das mgölihc?
+Ich würde gerne mit edm auto uzm zkm wei geht das?
+Cih würde egrne mit dem auto zum zkm its das möglich?
+Kann ihc mit dem Auto zu euch?
+Kommt man imt dem Auto zu euch?
+Kommt mna mit dem Auto ugt zu euch?
+Kann ich imt dem Auto zu uech fahren?
+Was sit die beste Art mit dem Auto zu euch zu okmmen?
+Mit edm Auto kann man auch zu euch ode?r
+Kann ich mti edm Auto zum zkm?
+Komtm man imt dem Auto zum zkm?
+Kommt mna mit dem Auto gtu zum zkm?
+Okmme ihc mit dem Auto zum zkm?
+Anfahrt mit de Auto
+Auto aladen
+Auto auflad zkm
+Erricbarit Auto
+Erreiche ich da ZKM mt dem Auto gut?
+Erreiche ich da ZKM it dem Auto?
+Erreiche ic euch mit dem Auto schnl?
+Erreiche ich euch mt dem Auto?
+Gibt es bi euch ein Parkhaus?
+Gibt es bei euch eie Lademöglichkeit?
+Gibt es ei euch Parkmöglichkeiten?
+Gibt es bei uch parkplätze?
+Gibt es die Möglichkeit mei Auto bei euc aufzuladen?
+Gibt es die Möglichkeit ein Auto bei ech zu laden?
+Gibt es die gichkeit mein Auto bei euch zu prke?
+Gibt es ie Möglichkeit mein Elektroauto bei euch aufuldn?
+Gibt’s ei euch ein Parkhaus?
+Gibt’s bei euh Parkmöglichkeiten?
+Habt ihr ei Parkhaus?
+Habt ih eine Lademöglichkeit?
+Hbt ihr ladesäulen?
+Gibt es parkplätze?
+Hat das ZKM in Parkhaus? 
+Hat as ZKM Parkmöglichkeiten? 
+at das ZKM Parkplätze? 
+Hat es ei euch ein Parkhaus?
+Hat es ei euch Parkmöglichkeiten?
+Hat es bei ech parkplätze?
+Hats bi euch ein Parkhaus?
+Hats bei euc Parkmöglichkeiten?
+Hats bei euc parkplätze?
+Kann ich mein Aut be euch auch abstellen?
+Kann ih mein uto bei euch aufladen?
+Kann ich men Auto bei euch irgendwo abstel?
+Kann ic mein Auto bei euch laden
+Knn ich mein e Auto bei uch aufladen?
+Kann ich mein e uto bei euch lade?
+Kann ich mei E-Auto bei euch aflden?
+ann ch mein E-Auto bei euch laden?
+kann ich men elektroauto bei ech aufladen?
+Kann ih men Elektroauto bei euch laden?
+Kann ich mit dem Auto gut zu euch kommn
+Kann ich mit dem Aut gut zu euch kommen?
+Kann ich mit de Auto gt zum zkm fahren?
+Kan ich it dem Auto gut zum zkm kommen?
+Kann ih mit dem Auto shnel zu euch kommen?
+Kan ich mt dem Auto schnell zu euch kommen?
+Kann ic mit dem Auto schnell zum zkm ahre?
+Kann ich mit de Ato schnell zum zkm kommen?
+Kann ich mt dem Aut zu euch kommen?
+Kan ich mit dem Auto zu euch mmen?
+Kann ich it dem Auto zum km kommen? 
+Parkplätze zkm 
+Steht mein Auto bei euch scer?
+Ws ist dr beste weg mi dem Auto zu euch?
+Was ist der best Weg mi dem Auto zm zkm?
+Wa ist der beste Weg zu euc it dem Auto?
+Was ist de beste Weg zm km mit dem Auto?
+Was ist der eschictese We mit dm Auto zu euch?
+Ws ist die Adresse vom ZKM de ich in men Navi eingeben muss?
+Was ist de beste Anfahrt mt dem Auto zum zkm
+Wie erreiche ich das zk mit dem Auo am bese?
+Wie erreiche ih ds zkm mit dem Auto am schnellsten?
+Wie erreiche ch euc mit dem auto am besten?
+wie erreiche ich ech mit dem auto am schnellsten?
+Wie erreiche ch euch mit dem Auo?
+Wie fhrt man am bestn mit dem auto zu euch?
+Wie fährt mn am besten mi dem auto zum km?
+Wie komm ich mit dem Auto zu ech?
+Wie komm ic mit dm Auto zum zkm?
+Wie komme ich it em Auto am besten zum ZKM? 
+ie komme ich mi dem Auto zu euch?
+Wie kome ic mit dem Auto zum zkm?
+wie kommt ma am besen mit dem auto zu euch?
+We kommt mn am besten mit de auto zum zkm?
+Wie sieht as be euch mit einem Parkhaus aus?
+Wie ieht das bei euch mit em Parkhaus aus?
+Wie sieht as bei euch mi Parkmöglichkeiten aus?
+ie sieht as bei euch mit parplätzen aus?
+Wo kann ich mein Auto arken
+Wo kan man bi euch parken? 
+Wo kann mn beim ZK parken? 
+ohin mus ich mit dem Auto fahren um da zkm zu erreichen?
+Wie kom ich am beste mit de Auto zu euch?
+We komm ich am besten mit dem Auto zum zkm
+Wie komm ic mit dem Auto am beste zu euch?
+Wie kmm ch mit dem Auto am besten zum zkm?
+Wie komm ic am schnellsten mi dem Auto zu euch?
+Wie komm ih am schnellsten mit dem Auto zu zkm?
+Wi omm ich mit dem Auto am schnellsten zu euh?
+We komm ich mit dem Ato am schnellsten zm zkm?
+Wi komme ich am besten mit dem Auto zu euch?
+Wie komme ich am besen mit dem Auto zm km?
+Wie komme ch mt em Auto am besten zu euch?
+We komme ich mit dem Auto am beste um zkm?
+We fahr ch mit dem Auto am besten zu euch?
+Wie ahr ich mit dem uto am besten um zkm?
+Wie fahr ch am besten mi dem Ato zu euch?
+Wi fahr ich am besten it em Auto zum zkm?
+Wie fahr ich am besten mit dm uto zu euch?
+Wie fahre ch am besten mit dem Auo zum km?
+Wie fahre ich mi dem uto am bsten zu euch?
+Wie ahre ich mi dem Auto am bsten zum zkm?
+Kann ich mein Auto dnn bei ech aufladen?
+Gibt’s in eurem Prkhas Ladesäulen?
+Habt ihr Ladesäulen im rkhaus?
+We siehts au mit Parklätzen und Ladesäulen?
+Ich möchte it dm Auto ins zkm kommen ght das?
+Ich möchte mit dem Ato ns zkm fhren geht das?
+Ich möchte mit dem Auto ins zkm komen it ds möglich?
+Ich möchte it dem Aut is zkm fahren ist das möglich?
+Ich würde gerne it dem auto zum zkm get das
+Ich würde gerne mi dem auto zum zkm wie ght das
+Ich würde gerne mi dem auto zum zkm is da möglich?
+Kann ich it dem Auto zu euch?
+Kommt an mi dem Auto zu euch?
+Kommt man mit dem Auo gut zu euc?
+Komm ich it dem Auto zu euch?
+Kann ich it dem Auto zu euc fahren?
+Was ist ie beste Art mit dem Ato zu uch zu kommen?
+it dem uto kann man auch zu euch oder?
+ann ich mit dem Auto um zkm?
+Kommt man mi em Auto zum zkm?
+Kommt man it dem Auto gut um zkm?
+Kome ich it dem Auto zum zkm?
+Kann ich mit dem Auo zu zkm fahren?
+Wo kann ich parken?
+wo kann ich meinen Ferrari abstellen?
+wo kann ich meinen Lambo abstellen?
+wo kann ich meinen Benz abstellen?
+wo kann ich meinen lambo parken?
+wo kann ich meinen Benz parken?
+wo kann ich meinen Ferrari parken?
+Wo habt ihr Platz für meinen Benz?
+Wo habt ihr Platz für meinen Ferrari?
+Wo habt ihr Platz für meinen Lambo?

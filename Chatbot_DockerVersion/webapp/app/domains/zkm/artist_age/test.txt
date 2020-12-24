@@ -1,0 +1,16 @@
+Welches Alter hat sie?
+Welches Alter hat er?
+Gib mir das Alter von {Markus Oehlen|artists}
+Alter Künstler {Lance Hulme|artists}
+Gib mir Infos über das Alter von dem Künstler {Cecile Bauer|artists}
+Welche Alter ist die Künstlerin {Marion Schmidt|artists}?
+Lebensjahre Künstlerin {Valerio Bonis|artists}
+Wie viele Jahre ist er?
+Sag mir mal das Alter von ihm
+Weißt du wie alt {Jesper Munk Jensen|artists} ist?
+Wie alt ist {John Sanborn|artists} zur Zeit?
+Wie viele Jahre ist ARSTIST jung?
+Was ist das Alter von dem Künstler {Andreas Dorau|artists}?
+Was ist das derzeitige Alter von ihm?
+Sag mir mal das Alter von dem Künstler {Marcus Antonius Wesselmann|artists}
+Weißt du wie alt der Künstler {Carolin Engel|artists} ist?

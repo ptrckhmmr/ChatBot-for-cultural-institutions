@@ -1,0 +1,231 @@
+{
+    "rasa_nlu_data": {
+        "common_examples": [
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Ist die Ausstellung Open Codes am Montag offen?"
+            },
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Welche Ausstellungen gibt es gerade?"
+            },
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Was ist das aktuelle Programm?"
+            },
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Welche Veranstaltungen gibt es am Sonntag?"
+            },
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Welche Veranstaltungen gibt es n\u00e4chste Woche?"
+            },
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Welche Veranstaltungen gibt es im Juli?"
+            },
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Gibt es heute einen Vortrag?"
+            },
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Was f\u00fcr einen Workshop gibt es morgen?"
+            },
+            {
+                "entities": [],
+                "intent": "Gr\u00fcn",
+                "text": "Gibt es heute was f\u00fcr Kinder?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wieviel kostet der Eintritt f\u00fcr die Ausstellung XY"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wann haben sie ge\u00f6ffnet?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Ist das ZKM am 2. Weihnachtsfeiertag ge\u00f6ffnet?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Um wieviel Uhr schlie\u00dfen sie?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Welche Workshops bieten sie an?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wo sind die Klos?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wo kann ich mein Baby wikeln?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wo kann ich am ZMK parken?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Kostet das Parken im ZKM?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Welche Bahn f\u00e4hrt zum ZKM?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Kann man Gruppenkarten kaufen?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wie sind die Stornobedingungen?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wie melde ich f\u00fcr einen Workshop an?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Kann ich einen Workshop reservieren?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wie bezahle ich einen Workshop?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wann ist das Workshopb\u00fcro erreichbar?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wo sind die Schliessf\u00e4cher?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wie gro\u00df sind die Schliessf\u00e4cher?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wo sind die Toiletten?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wann wurde das ZKM gegr\u00fcndet?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Was ist das ZKM?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wof\u00fcr steht ZKM?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wer ist der Chef hier?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Wer hat das ZKM gegr\u00fcndet?"
+            },
+            {
+                "entities": [],
+                "intent": "Gelb",
+                "text": "Was ist Medienkunst?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Muss ich etwas mitbringen?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "K\u00f6nnen die Kinder nach dem Workshop etwas mit nach Hause nehmen?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Welcher Workshop passt zu dieser Ausstellung?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Sind Sie die Kasse?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Was gibt es hier?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Ist das auch was f\u00fcr Kinder?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Darf man fotografieren?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Gibt es auch Erm\u00e4\u00dfigung ?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Was kann man sich hier anschauen?"
+            },
+            {
+                "entities": [],
+                "intent": "Rot",
+                "text": "Warum ist es so schlecht ausgeschildert?"
+            },
+            {
+                "entities": [],
+                "intent": "Blau",
+                "text": "Wie erfahre ich, wann der Workshop wieder angeboten wird?"
+            }
+        ]
+    }
+}

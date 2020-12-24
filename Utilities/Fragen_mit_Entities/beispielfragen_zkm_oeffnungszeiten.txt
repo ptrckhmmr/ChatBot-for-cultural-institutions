@@ -1,0 +1,88 @@
+Wie lange haben Sie geöffnet?
+Hat das ZKM geöffnet?
+Was sind die Öffnungszeiten?
+Öffnungszeiten
+öffnungszeiten 
+Wann öffnet das ZKM? 
+Wann haben Sie offen? 
+Bis wann haben Sie geöffnet?  
+Wann schließen Sie? 
+Bis wann haben Sie am {Samstag|time} offen?
+Von wann bis wann hat das ZKM geöffnet?
+Was sind die Öffnungszeiten des ZKM? 
+Wie sind beim ZKM die Öffnungszeiten? 
+Wann kann man {morgen|time} ins ZKM kommen? 
+Um wie viel Uhr öffnet das ZKM? 
+Um wie viel Uhr schließt das ZKM? 
+Wann kann man am {30.05.|time} ins ZKM kommen? 
+Von wann bis wann ist das ZKM offen? 
+Öffnungszeiten zkm
+Wie lange habt ihr {morgen|time} auf? 
+Wie lange hat das ZKM {morgen|time} auf? 
+Wann macht ihr {morgen|time} auf? 
+Wann macht das ZKM {morgen|time} auf? 
+Wann macht das ZKM am {1.10.|time} auf? 
+Wann seid ihr {morgen|time} offen? 
+Wie lange habt ihr {übermorgen|time} auf? 
+Wie lange hat das ZKM {übermorgen|time} auf? 
+Wann macht ihr am {24.07|time} auf? 
+Wann macht das ZKM {übermorgen|time} auf? 
+Wann seid ihr {morgen|time} offen? 
+Wie lange habt ihr {Samstag|time} auf? 
+Wann macht ihr {Mittwoch|time} auf? 
+Wann habt ihr auf? 
+Wann hat das ZKM morgen auf? 
+Wie habt ihr geöffnet? 
+Wie hat das ZKM geöffnet? 
+Wie lange hat das ZKM geöffnet?
+Wie lauten die Öffnungszeiten des ZKM?
+Wie sind die Öffnungszeiten?
+Wie lange hat das ZKM {montags|time} geöffnet?
+Ist {morgen|time} um 8 Uhr schon geöffnet? 
+Wann habt ihr {übermorgen|time} offen? 
+Wie sind die Öffnungszeiten am Wochenende? 
+Wie lang hat das ZKM geöffnet?
+öffnungszeiten ZKM Karlsruhe
+Öffnungszeiten?
+Haben Sie an {Feiertag|time} geöffnet?
+wie lange habt ihr an {feiertag|time} geöffnet?
+Ist an {Feiertag|time} geöffnet?
+Wie lange haben Sie geöffnet?
+wie lange habn sie geöffnt?
+Hat das ZKM {2. Weihnachtsfeiertag|time} geöffnet?
+Hat das ZKM {Feiertag|time} geöffnet?
+Was sind die Öffnungszeiten?
+Wie lange haben Sie am {1.Weihnachtsfeiertag|time} geöffnet?
+Wie lange haben Sie am {2. Weihnachtsfeiertag|time} offen?
+Haben sie {übermorgen|time} geöffnet?
+Haben sie {morgen|time} offen?
+haben sie {Sonntag|time} auf?
+Kann ich {Donnerstag|time} vorbeikommen?
+Kann man {morgen|time} kommen?
+Was sind die Öffnungszeiten am {24.12|time}?
+Wie sind die Öffnungszeiten am {Feiertag|time}?
+Ist {Freitag|time} geöffnet?
+Ist am {Mittwoch |time} geöffnet?
+Ist {Freitag|time} offen?
+Kann man am {20.02|time} kommen?
+Kann ich am {10.1.|time} vorbeikommen?
+Ist am {Mittwoch |time} auf?
+Wie lange ist das ZKM am {Mittwoch |time} geöffnet?
+Bis wann ist das ZKM am {übermorgen|time} auf?
+Bis wie viel Uhr ist das ZKM am {morgen|time} offen?
+Wie lange ist das ZKM am {Mittwoch |time} für Besucher geöffnet?
+Bis wann ist das ZKM am {übermorgen|time} für Besucher auf?
+Bis wie viel Uhr ist das ZKM am {morgen|time} für Besucher offen?
+Haben sie am {23.7|time} auf?
+Haben sie am {15.9.|time} offen?
+Haben sie am {23.7|time} geöffnet?
+Ist am {21.5.|time} geöffnet?
+Ist am {5. März|time} auf?
+Wie lange haben sie am {9. Juli|time} offen?
+Am {Donnerstag|time}.
+Am {Montag|time}
+{morgen|time}
+{übermorgen|time}
+{23.7|time}
+{15.9.|time}
+{2.4.2019|time}

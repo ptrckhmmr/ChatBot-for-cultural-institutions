@@ -1,0 +1,23 @@
+version: '3'
+services:
+  mindmeld:
+    image: mindmeldworkbench/dep:latest
+    ports:
+        - 9300:9300
+        - 9200:9200
+        - 7151:7151
+        
+  webapp:
+    build: ./webapp
+    ports:
+        - 5000:5000
+    restart: on-failure
+    depends_on:
+        - "mindmeld"
+    environment:
+        - MM_ES_HOST=mindmeld
+        - DEFAULT_DUCKLING_URL=http://mindmeld:7151/parse
+        - DUCKLING_URL=http://mindmeld:7151/parse
+
+
+  

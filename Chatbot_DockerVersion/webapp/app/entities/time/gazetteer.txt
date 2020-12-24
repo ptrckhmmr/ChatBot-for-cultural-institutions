@@ -1,0 +1,20 @@
+Montag
+Dienstag
+Mittwoch
+Donnerstag
+Freitag
+Samstag
+Sonntag
+Feiertag
+Weihnachten
+1. Weihnachtsfeiertag
+2. Weihnachtsfeiertag
+Ostern
+Neujahr
+Silvester
+24. Dezember
+24.12
+1.5
+24.9.
+04.08.
+04.02

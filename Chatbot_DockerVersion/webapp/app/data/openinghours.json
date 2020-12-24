@@ -1,0 +1,98 @@
+[
+    {
+        "ende": "geschlossen",
+        "id": 1,
+        "start": "geschlossen",
+        "tag": "Montag"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 2,
+        "start": "geschlossen",
+        "tag": "Dienstag"
+    },
+    {
+        "ende": "18:00",
+        "id": 3,
+        "start": "10:00",
+        "tag": "Mittwoch"
+    },
+    {
+        "ende": "18:00",
+        "id": 4,
+        "start": "10:00",
+        "tag": "Donnerstag"
+    },
+    {
+        "ende": "18:00",
+        "id": 5,
+        "start": "10:00",
+        "tag": "Freitag"
+    },
+    {
+        "ende": "18:00",
+        "id": 6,
+        "start": "11:00",
+        "tag": "Samstag"
+    },
+    {
+        "ende": "18:00",
+        "id": 7,
+        "start": "11:00",
+        "tag": "Sonntag"
+    },
+    {
+        "ende": "18:00",
+        "id": 8,
+        "start": "11:00",
+        "tag": "Feiertag"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 9,
+        "start": "geschlossen",
+        "tag": "Weihnachten"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 10,
+        "start": "geschlossen",
+        "tag": "1. Weihnachtsfeiertag"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 11,
+        "start": "geschlossen",
+        "tag": "2. Weihnachtsfeiertag"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 12,
+        "start": "geschlossen",
+        "tag": "Ostern"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 13,
+        "start": "geschlossen",
+        "tag": "Neujahr"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 14,
+        "start": "geschlossen",
+        "tag": "Silvester"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 15,
+        "start": "geschlossen",
+        "tag": "24. Dezember"
+    },
+    {
+        "ende": "geschlossen",
+        "id": 16,
+        "start": "geschlossen",
+        "tag": "24.12"
+    }
+]

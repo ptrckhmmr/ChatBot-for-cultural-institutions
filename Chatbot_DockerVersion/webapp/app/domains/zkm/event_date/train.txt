@@ -1,0 +1,8 @@
+Findet am {01.07.10|event} ein Event statt?
+Findet am {10.15.06|event} ein Event statt?
+Findet am {01.16.09|event} ein Event am ZKM statt?
+Findet am {05.12.10|event} ein Event am ZKM statt?
+Wird am {07.11.09|event} ein Event angeboten?
+Wird am {06.13.10|event} ein Event angeboten?
+Wird am {01.16.09|event} ein Event am ZKM angeboten?
+Wird am {09.01.09|event} ein Event am ZKM angeboten?

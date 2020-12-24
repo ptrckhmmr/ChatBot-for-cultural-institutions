@@ -1,0 +1,6 @@
+"<Query ""Mach's gut."">";"exit";"greet";"{'exit': 0.2956921031096773, 'greet': 0.7043078968903227}";"class"
+"<Query 'Servus'>";"exit";"greet";"{'exit': 0.10033670209180501, 'greet': 0.899663297908195}";"class"
+"<Query 'Tschüssi'>";"exit";"greet";"{'exit': 0.23321610776151536, 'greet': 0.7667838922384846}";"class"
+"<Query 'Tschüssle'>";"exit";"greet";"{'exit': 0.23321610776151536, 'greet': 0.7667838922384846}";"class"
+"<Query 'Hat mich gefreut'>";"exit";"greet";"{'exit': 0.20198848732451324, 'greet': 0.7980115126754868}";"class"
+"<Query 'Bye bye'>";"exit";"greet";"{'exit': 0.23118729678102568, 'greet': 0.7688127032189743}";"class"

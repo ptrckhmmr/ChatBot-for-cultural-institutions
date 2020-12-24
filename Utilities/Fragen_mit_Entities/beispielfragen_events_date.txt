@@ -1,0 +1,4 @@
+Findet am TIME ein Event statt?
+Findet am TIME ein Event am ZKM statt?
+Wird am TIME ein Event angeboten?
+Wird am TIME ein Event am ZKM angeboten?

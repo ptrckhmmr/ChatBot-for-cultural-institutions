@@ -1,0 +1,24 @@
+# Missing label for {} at position {}.format(key,idx)
+Wann hat die {Jean Michel Bruyère: CaMg[Co3]|exhibition} geöffnet?
+Von wann bis wann hat die {Christin Lahr: [DPsNTN]|exhibition} geöffnet?
+
+# invalid_index_name_exception
+Wann ist {Eröffnung ZKM | Medienmuseum|exhibition}?
+Wann ist {Ramon Llull | Denkmaschinen  (Arbeitstitel)|exhibition}?
+Wann ist {Eröffnung ZKM | Medienmuseum|exhibition}?
+
+# AssertionError: Span 'start' must be less than or equal to 'end'
+Wann schließt die Ausstellung {Martin Kippenberger: Das 2. Sein|exhibition}?
+
+
+
+
+
+
+
+
+
+
+
+
+
